@@ -145,6 +145,3 @@ func main() {
 		koreanOrEnglishNumbers()
 	}
 }
-
-main()
-print("안녕히 가세요, goodbye 👋\nTomas Daniel Nieto, 2019, Me™️")
