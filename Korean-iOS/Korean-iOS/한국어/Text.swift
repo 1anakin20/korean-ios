@@ -84,7 +84,7 @@ func koreanChoice() {
 	var inputWord = "inputWord declaration value koreanChoice"
 	while(inputWord.isEmpty == false) {
 		let choosedWord = chooseKoreanWordFromArray()
-		print(choosedWord)
+		//print(choosedWord)
 		inputWord = readLine() ?? "Default value inputWord korean choice".lowercased()
 		print(checkAnswerKoreanToEnglish(userInput: inputWord, randKoWord: choosedWord))
 	}
@@ -134,9 +134,9 @@ func numberChoiceEngishToKorean() {
 	}
 }
 
-func main() {
+func main(choice: String) {
 	print("For korean to english type: korean,\nfor english to korean type: english\nfor numbers type: numbers")
-	let choice = readLine()!.lowercased()
+	//let choice = " "
 	if(choice == "korean") {
 		koreanChoice()
 	} else if(choice == "english") {
