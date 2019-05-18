@@ -9,25 +9,48 @@
 import UIKit
 
 class EnglishToKoreanUIViewController: UIViewController {
-	@IBOutlet weak var outputLabelEnglishToKorean: UIView!
+	@IBOutlet weak var outputLabel: UILabel!
 	@IBOutlet weak var inputTextFieldEnglishToKorean: UITextField!
 	
-	var inputTextFieldString: String = " "
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+		inputTextFieldEnglishToKorean.delegate = self
+		// Do any additional setup after loading the view.
+	}
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+	@IBAction func acceptEnteredText(_ sender: Any) {
+		let inputText = inputTextFieldEnglishToKorean.text!
+		checkAnswerEnglishToKoreanNumbers(randNumber: showKoreanRandomNum(), choice: inputText)
+	}
 	
-    /*
-    // MARK: - Navigation
+	func showKoreanRandomNum() -> Int {
+		let numbersCreator = numbersCreatorFunctions()
+		let randNumber = numbersCreator.randomNumber()
+		let koNumber = numbersCreator.numberDecimaltoStringKorean(decimalNumber: randNumber)
+		outputLabel.text = koNumber
+		return randNumber
+	}
+	
+	func checkAnswerEnglishToKoreanNumbers(randNumber: Int, choice: String) {
+		// Check if English matchs Korean number
+		let numbersCreator = numbersCreatorFunctions()
+		let koNumber = numbersCreator.numberDecimaltoStringKorean(decimalNumber: randNumber)
+		var choice = " "
+		choice = inputTextFieldEnglishToKorean.text!
+		if(choice == String(randNumber)) {
+			outputLabel.text = "That was the good answer"
+		} else {
+			let returnWrongAnswer: String = "The good answer for \(koNumber) was \(randNumber)"
+			outputLabel.text = returnWrongAnswer
+		}
+	}
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+extension EnglishToKoreanUIViewController : UITextFieldDelegate {
+	
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		textField.resignFirstResponder()
+		return true
+	}
 }

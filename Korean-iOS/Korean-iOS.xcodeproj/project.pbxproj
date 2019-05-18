@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B306ADC2229045A100F1E8C1 /* numbersFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306ADC1229045A100F1E8C1 /* numbersFunctions.swift */; };
 		B3DC6B32228F25D500856252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B31228F25D500856252 /* AppDelegate.swift */; };
 		B3DC6B34228F25D500856252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B33228F25D500856252 /* ViewController.swift */; };
 		B3DC6B37228F25D500856252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DC6B35228F25D500856252 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B306ADC1229045A100F1E8C1 /* numbersFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numbersFunctions.swift; sourceTree = "<group>"; };
 		B3DC6B2E228F25D500856252 /* Korean-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Korean-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DC6B31228F25D500856252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3DC6B33228F25D500856252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				B3DC6B31228F25D500856252 /* AppDelegate.swift */,
 				B3DC6B44228F3F4800856252 /* Text.swift */,
 				B3DC6B43228F3F4800856252 /* numbers.swift */,
+				B306ADC1229045A100F1E8C1 /* numbersFunctions.swift */,
 				B3DC6B35228F25D500856252 /* Main.storyboard */,
 				B3DC6B33228F25D500856252 /* ViewController.swift */,
 				B3DC6B49228FA1A300856252 /* EnglishToKoreanUIViewController.swift */,
@@ -149,6 +152,7 @@
 			files = (
 				B3DC6B48228FA18400856252 /* KoreanToEnglishUIViewController.swift in Sources */,
 				B3DC6B45228F3F4800856252 /* numbers.swift in Sources */,
+				B306ADC2229045A100F1E8C1 /* numbersFunctions.swift in Sources */,
 				B3DC6B4A228FA1A300856252 /* EnglishToKoreanUIViewController.swift in Sources */,
 				B3DC6B34228F25D500856252 /* ViewController.swift in Sources */,
 				B3DC6B46228F3F4800856252 /* Text.swift in Sources */,
