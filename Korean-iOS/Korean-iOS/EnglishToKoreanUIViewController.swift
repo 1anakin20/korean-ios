@@ -9,14 +9,17 @@
 import UIKit
 
 class EnglishToKoreanUIViewController: UIViewController {
-
+	@IBOutlet weak var outputLabelEnglishToKorean: UIView!
+	@IBOutlet weak var inputTextFieldEnglishToKorean: UITextField!
+	
+	var inputTextFieldString: String = " "
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
+	
     /*
     // MARK: - Navigation
 

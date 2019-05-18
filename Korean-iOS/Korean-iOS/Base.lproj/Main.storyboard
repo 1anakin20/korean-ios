@@ -17,13 +17,53 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yn-q0-zMx">
+                                <rect key="frame" x="16" y="175" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFJ-Zf-gAV">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="YFB-pz-TAK" kind="show" id="aJR-c1-8xR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter text" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-Zg-gAq">
+                                <rect key="frame" x="16" y="269" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Yn-q0-zMx" firstAttribute="top" secondItem="bFJ-Zf-gAV" secondAttribute="bottom" constant="36" id="GNY-0g-Maq">
+                                <variation key="heightClass=regular-widthClass=compact" constant="125"/>
+                            </constraint>
+                            <constraint firstItem="bFJ-Zf-gAV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="M9i-8k-3qI"/>
+                            <constraint firstItem="8Yn-q0-zMx" firstAttribute="leading" secondItem="hJH-Zg-gAq" secondAttribute="leading" id="Q02-qZ-IHx"/>
+                            <constraint firstItem="8Yn-q0-zMx" firstAttribute="trailing" secondItem="hJH-Zg-gAq" secondAttribute="trailing" id="SDa-E0-2hy"/>
+                            <constraint firstItem="bFJ-Zf-gAV" firstAttribute="leading" secondItem="8Yn-q0-zMx" secondAttribute="leading" id="i0A-Eb-tYn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bFJ-Zf-gAV" secondAttribute="trailing" symbolic="YES" id="ipm-Gm-41Y"/>
+                            <constraint firstItem="bFJ-Zf-gAV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mRj-fU-Cms"/>
+                            <constraint firstItem="hJH-Zg-gAq" firstAttribute="top" secondItem="8Yn-q0-zMx" secondAttribute="bottom" constant="8" symbolic="YES" id="oIa-l6-bbI">
+                                <variation key="heightClass=regular-widthClass=compact" constant="73"/>
+                            </constraint>
+                            <constraint firstItem="8Yn-q0-zMx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="yL2-x9-k53"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="inputTextFieldEnglishToKorean" destination="hJH-Zg-gAq" id="QzJ-F1-Jf2"/>
+                        <outlet property="outputLabelEnglishToKorean" destination="8bC-Xf-vdC" id="70G-yT-TE9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1166" y="-251"/>
+            <point key="canvasLocation" x="1163.768115942029" y="-251.78571428571428"/>
         </scene>
         <!--Korean To EnglishUI View Controller-->
         <scene sceneID="bDw-Q9-aau">
@@ -48,24 +88,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdv-Dk-GdE">
-                                <rect key="frame" x="101" y="250" width="119" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdv-Dk-GdE">
+                                <rect key="frame" x="100.5" y="250" width="119" height="30"/>
                                 <state key="normal" title="English to Korean"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="changeEnglishToKoreanUI" id="KcO-pO-ohR"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofJ-eO-aC7">
-                                <rect key="frame" x="101" y="288" width="119" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofJ-eO-aC7">
+                                <rect key="frame" x="100.5" y="288" width="119" height="30"/>
                                 <state key="normal" title="Korean to English"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="leading" secondItem="ofJ-eO-aC7" secondAttribute="leading" id="OaJ-Ya-etv"/>
+                            <constraint firstItem="ofJ-eO-aC7" firstAttribute="top" secondItem="xdv-Dk-GdE" secondAttribute="bottom" constant="8" symbolic="YES" id="PI9-h7-zZF"/>
+                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Bfc-Qx-pYs" secondAttribute="leading" id="QXe-r0-3eA"/>
+                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="centerX" secondItem="1Ah-5I-OkQ" secondAttribute="centerX" id="XDf-Wm-055"/>
+                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="top" secondItem="Bfc-Qx-pYs" secondAttribute="top" constant="230" id="o4i-jf-0Mp"/>
+                            <constraint firstItem="Bfc-Qx-pYs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ofJ-eO-aC7" secondAttribute="trailing" symbolic="YES" id="qk1-MC-Srl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bfc-Qx-pYs"/>
                     </view>
+                    <connections>
+                        <outlet property="changeToViewEnglishToKoreanUI" destination="xdv-Dk-GdE" id="5qm-Bd-Axc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmS-Kx-Rhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="347" y="130"/>
+            <point key="canvasLocation" x="346.875" y="129.92957746478874"/>
         </scene>
     </scenes>
 </document>
