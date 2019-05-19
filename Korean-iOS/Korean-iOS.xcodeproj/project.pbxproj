@@ -79,12 +79,12 @@
 				B3DC6B44228F3F4800856252 /* Text.swift */,
 				B3DC6B43228F3F4800856252 /* numbers.swift */,
 				B3DC6B35228F25D500856252 /* Main.storyboard */,
+				B3DC6B3A228F25D700856252 /* LaunchScreen.storyboard */,
 				B3DC6B33228F25D500856252 /* ViewController.swift */,
 				B3DC6B49228FA1A300856252 /* EnglishToKoreanUIViewController.swift */,
 				B3DC6B47228FA18400856252 /* KoreanToEnglishUIViewController.swift */,
 				B3A94069229195B000F4C282 /* classes */,
 				B3DC6B38228F25D700856252 /* Assets.xcassets */,
-				B3DC6B3A228F25D700856252 /* LaunchScreen.storyboard */,
 				B3DC6B3D228F25D700856252 /* Info.plist */,
 			);
 			path = "Korean-iOS";
@@ -322,7 +322,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.Korean-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.Korean-iOS.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,7 +341,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.Korean-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.Korean-iOS.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
