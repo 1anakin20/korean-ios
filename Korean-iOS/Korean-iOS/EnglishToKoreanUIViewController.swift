@@ -40,7 +40,8 @@ class EnglishToKoreanUIViewController: UIViewController {
 	func showKoreanRandomNum() {
 		let numbersCreator = numbersCreatorFunctions()
 		let randNumber = numbersCreator.randomNumber()
-		// Return Label and button to default colours
+		// Return Label and button to default colors
+		resetToDefaultState()
 		outputLabel.text = String(randNumber)
 		randIntNumber = randNumber
 	}
