@@ -15,12 +15,14 @@ class EnglishToKoreanUIViewController: UIViewController {
 	
 	private var randIntNumber: Int = 666 //Default value for randIntNumber is 666
 	private var acceptButtonStateContinue = false
-	// Objects for default class
+	// Object for default class
 	let ObjDefaults = defaults()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		//Make view to defaults
+		resetToDefaultState()
 		showKoreanRandomNum()
 		inputTextFieldEnglishToKorean.delegate = self
 		// Do any additional setup after loading the view.
@@ -28,7 +30,7 @@ class EnglishToKoreanUIViewController: UIViewController {
 	
 	@IBAction func acceptEnteredText(_ sender: Any) {
 		let inputText = inputTextFieldEnglishToKorean.text!
-		//Check if current title is Next or Check
+		// Check if variable acceptButtonStateContinue is true to continue
 		if(acceptButtonStateContinue) {
 			resetToDefaultState()
 			showKoreanRandomNum()
@@ -40,8 +42,6 @@ class EnglishToKoreanUIViewController: UIViewController {
 	func showKoreanRandomNum() {
 		let numbersCreator = numbersCreatorFunctions()
 		let randNumber = numbersCreator.randomNumber()
-		// Return Label and button to default colors
-		resetToDefaultState()
 		outputLabel.text = String(randNumber)
 		randIntNumber = randNumber
 	}
