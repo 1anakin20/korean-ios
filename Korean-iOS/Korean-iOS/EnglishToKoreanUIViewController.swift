@@ -72,6 +72,7 @@ class EnglishToKoreanUIViewController: UIViewController {
 		acceptButton.setTitle(defaultTitleButton, for: .normal)
 		acceptButton.setTitleColor(defaultTextColor, for: .normal)
 		outputLabel.textColor = defaultTextColor
+		inputTextFieldEnglishToKorean.text = ""
 	}
 }
 
