@@ -75,11 +75,15 @@ class EnglishToKoreanUIViewController: UIViewController {
 		inputTextFieldEnglishToKorean.text = ""
 		acceptButtonStateContinue = false
 	}
+	
+	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		inputTextFieldEnglishToKorean.resignFirstResponder()
+	}
 }
 
 extension EnglishToKoreanUIViewController : UITextFieldDelegate {
 	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-		textField.resignFirstResponder()
+		acceptEnteredText(self)
 		return true
 	}
 }
