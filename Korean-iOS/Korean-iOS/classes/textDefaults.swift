@@ -8,7 +8,7 @@
 
 import UIKit
 
-class defaults: NSObject {
+class textDefaults: NSObject {
 	// Default constasts for UI aspects such as text, text color
 	let defaultTextColor = UIColor.black
 	let textColorGood = UIColor.green

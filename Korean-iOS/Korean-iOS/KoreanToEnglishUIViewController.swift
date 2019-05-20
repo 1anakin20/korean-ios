@@ -17,7 +17,7 @@ class KoreanToNumberUIViewController: UIViewController {
 	private var randIntNumber = 777 //Default value
 	private var acceptButtonNumberStateContinue = false
 	// Object for default class
-	let ObjDefaults = defaults()
+	let ObjDefaults = textDefaults()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()

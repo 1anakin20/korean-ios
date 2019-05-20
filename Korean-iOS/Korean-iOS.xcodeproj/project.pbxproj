@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B306ADC2229045A100F1E8C1 /* numbersFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306ADC1229045A100F1E8C1 /* numbersFunctions.swift */; };
-		B3A94068229195AB00F4C282 /* defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A94067229195AB00F4C282 /* defaults.swift */; };
+		B306ADC2229045A100F1E8C1 /* numbersCreatorFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306ADC1229045A100F1E8C1 /* numbersCreatorFunctions.swift */; };
+		B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A94067229195AB00F4C282 /* textDefaults.swift */; };
 		B3DC6B32228F25D500856252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B31228F25D500856252 /* AppDelegate.swift */; };
 		B3DC6B34228F25D500856252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B33228F25D500856252 /* ViewController.swift */; };
 		B3DC6B37228F25D500856252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DC6B35228F25D500856252 /* Main.storyboard */; };
@@ -21,8 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B306ADC1229045A100F1E8C1 /* numbersFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numbersFunctions.swift; sourceTree = "<group>"; };
-		B3A94067229195AB00F4C282 /* defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defaults.swift; sourceTree = "<group>"; };
+		B306ADC1229045A100F1E8C1 /* numbersCreatorFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numbersCreatorFunctions.swift; sourceTree = "<group>"; };
+		B3A94067229195AB00F4C282 /* textDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textDefaults.swift; sourceTree = "<group>"; };
 		B3DC6B2E228F25D500856252 /* Korean-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Korean-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DC6B31228F25D500856252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3DC6B33228F25D500856252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,8 +50,8 @@
 		B3A94069229195B000F4C282 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				B3A94067229195AB00F4C282 /* defaults.swift */,
-				B306ADC1229045A100F1E8C1 /* numbersFunctions.swift */,
+				B3A94067229195AB00F4C282 /* textDefaults.swift */,
+				B306ADC1229045A100F1E8C1 /* numbersCreatorFunctions.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -162,9 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3DC6B48228FA18400856252 /* KoreanToEnglishUIViewController.swift in Sources */,
-				B3A94068229195AB00F4C282 /* defaults.swift in Sources */,
+				B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */,
 				B3DC6B45228F3F4800856252 /* numbers.swift in Sources */,
-				B306ADC2229045A100F1E8C1 /* numbersFunctions.swift in Sources */,
+				B306ADC2229045A100F1E8C1 /* numbersCreatorFunctions.swift in Sources */,
 				B3DC6B4A228FA1A300856252 /* NumberToKoreanUIViewController.swift in Sources */,
 				B3DC6B34228F25D500856252 /* ViewController.swift in Sources */,
 				B3DC6B46228F3F4800856252 /* Text.swift in Sources */,
