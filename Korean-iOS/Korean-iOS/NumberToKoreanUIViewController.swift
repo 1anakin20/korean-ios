@@ -10,7 +10,7 @@ import UIKit
 
 class NumberToKoreanUIViewController: UIViewController {
 	@IBOutlet weak var outputLabel: UILabel!
-	@IBOutlet weak var inputTextFieldEnglishToKorean: UITextField!
+	@IBOutlet weak var inputTextFieldNumberToKorean: UITextField!
 	@IBOutlet weak var acceptButton: UIButton!
 	
 	private var randIntNumber: Int = 666 //Default value for randIntNumber is 666
@@ -24,12 +24,12 @@ class NumberToKoreanUIViewController: UIViewController {
 		//Make view to defaults
 		resetToDefaultState()
 		showKoreanRandomNum()
-		inputTextFieldEnglishToKorean.delegate = self
+		inputTextFieldNumberToKorean.delegate = self
 		// Do any additional setup after loading the view.
 	}
 	
 	@IBAction func acceptEnteredText(_ sender: Any) {
-		let inputText = inputTextFieldEnglishToKorean.text!
+		let inputText = inputTextFieldNumberToKorean.text!
 		// Check if variable acceptButtonStateContinue is true to continue
 		if(acceptButtonStateContinue) {
 			resetToDefaultState()
@@ -70,12 +70,12 @@ class NumberToKoreanUIViewController: UIViewController {
 		acceptButton.setTitle(ObjDefaults.defaultTitleButton, for: .normal)
 		acceptButton.setTitleColor(ObjDefaults.defaultTextColor, for: .normal)
 		outputLabel.textColor = ObjDefaults.defaultTextColor
-		inputTextFieldEnglishToKorean.text = ""
+		inputTextFieldNumberToKorean.text = ""
 		acceptButtonStateContinue = false
 	}
 	
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-		inputTextFieldEnglishToKorean.resignFirstResponder()
+		inputTextFieldNumberToKorean.resignFirstResponder()
 	}
 }
 

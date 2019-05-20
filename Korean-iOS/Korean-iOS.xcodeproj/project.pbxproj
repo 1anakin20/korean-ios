@@ -17,7 +17,7 @@
 		B3DC6B45228F3F4800856252 /* numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B43228F3F4800856252 /* numbers.swift */; };
 		B3DC6B46228F3F4800856252 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B44228F3F4800856252 /* Text.swift */; };
 		B3DC6B48228FA18400856252 /* KoreanToEnglishUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B47228FA18400856252 /* KoreanToEnglishUIViewController.swift */; };
-		B3DC6B4A228FA1A300856252 /* EnglishToKoreanUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B49228FA1A300856252 /* EnglishToKoreanUIViewController.swift */; };
+		B3DC6B4A228FA1A300856252 /* NumberToKoreanUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		B3DC6B43228F3F4800856252 /* numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = numbers.swift; path = "한국어/numbers.swift"; sourceTree = "<group>"; };
 		B3DC6B44228F3F4800856252 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Text.swift; path = "한국어/Text.swift"; sourceTree = "<group>"; };
 		B3DC6B47228FA18400856252 /* KoreanToEnglishUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToEnglishUIViewController.swift; sourceTree = "<group>"; };
-		B3DC6B49228FA1A300856252 /* EnglishToKoreanUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishToKoreanUIViewController.swift; sourceTree = "<group>"; };
+		B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberToKoreanUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 				B3DC6B35228F25D500856252 /* Main.storyboard */,
 				B3DC6B3A228F25D700856252 /* LaunchScreen.storyboard */,
 				B3DC6B33228F25D500856252 /* ViewController.swift */,
-				B3DC6B49228FA1A300856252 /* EnglishToKoreanUIViewController.swift */,
+				B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */,
 				B3DC6B47228FA18400856252 /* KoreanToEnglishUIViewController.swift */,
 				B3A94069229195B000F4C282 /* classes */,
 				B3DC6B38228F25D700856252 /* Assets.xcassets */,
@@ -165,7 +165,7 @@
 				B3A94068229195AB00F4C282 /* defaults.swift in Sources */,
 				B3DC6B45228F3F4800856252 /* numbers.swift in Sources */,
 				B306ADC2229045A100F1E8C1 /* numbersFunctions.swift in Sources */,
-				B3DC6B4A228FA1A300856252 /* EnglishToKoreanUIViewController.swift in Sources */,
+				B3DC6B4A228FA1A300856252 /* NumberToKoreanUIViewController.swift in Sources */,
 				B3DC6B34228F25D500856252 /* ViewController.swift in Sources */,
 				B3DC6B46228F3F4800856252 /* Text.swift in Sources */,
 				B3DC6B32228F25D500856252 /* AppDelegate.swift in Sources */,

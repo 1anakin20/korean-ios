@@ -50,8 +50,6 @@ class KoreanToNumberUIViewController: UIViewController {
 		// Check if Korean matchs English number
 		let numbersCreator = numbersCreatorFunctions()
 		let koNumber = numbersCreator.numberDecimaltoStringKorean(decimalNumber: randIntNumber)
-		var choice = " "
-		choice = inputFieldNumber.text!
 		if(choice == randKoNumber) {
 			outputLabelNumber.text = "That was the good answer"
 			outputLabelNumber.textColor = ObjDefaults.textColorGood
