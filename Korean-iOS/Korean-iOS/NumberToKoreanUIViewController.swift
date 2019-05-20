@@ -56,7 +56,7 @@ class NumberToKoreanUIViewController: UIViewController {
 			acceptButton.setTitleColor(ObjDefaults.textColorGood, for: .normal)
 			acceptButton.setTitle(ObjDefaults.nextTitleButton, for: .normal)
 		} else {
-			let returnWrongAnswer: String = "The good answer for \(koNumber) was \(randNumber)"
+			let returnWrongAnswer: String = "The good answer for \(randNumber) was \(koNumber)"
 			outputLabel.text = returnWrongAnswer
 			outputLabel.textColor = ObjDefaults.textColorWrong
 			acceptButton.setTitleColor(ObjDefaults.textColorWrong, for: .normal)

@@ -29,9 +29,8 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="250" constant="60" id="8ce-Sb-mAN"/>
                                 </constraints>
-                                <state key="normal" title="Accept">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Accept"/>
                                 <connections>
                                     <action selector="acceptEnteredText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B5V-as-wL6"/>
                                 </connections>
@@ -95,9 +94,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" priority="250" constant="60" id="jlh-z6-sJ6"/>
                                 </constraints>
-                                <state key="normal" title="Accept">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Accept"/>
                                 <connections>
                                     <action selector="acceptEnteredNumber:" destination="wLW-7Q-06z" eventType="touchUpInside" id="aZL-sz-0bT"/>
                                 </connections>
@@ -181,6 +178,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0xl-jX-JHc"/>
+        <segue reference="aJR-c1-8xR"/>
     </inferredMetricsTieBreakers>
 </document>
