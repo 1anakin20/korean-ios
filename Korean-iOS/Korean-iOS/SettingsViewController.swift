@@ -9,22 +9,33 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+	@IBOutlet weak var incorrectSettingsLabel: UILabel!
+	@IBOutlet weak var maxTextField: UITextField!
+	@IBOutlet weak var minTextField: UITextField!
+	
+	// Objects
+	let intMax = UserSettingsDefaults().checkMax()
+	let intMin = UserSettingsDefaults().checkMin()
+	let userDefaults = UserSettingsDefaults()
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		
         // Do any additional setup after loading the view.
+		showUserSettingsTextFields()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+	
+	@IBAction func backButton(_ sender: Any) {
+		userDefaults.saveMaxMin(maxTextField: maxTextField, minTextField: minTextField)
+	}
+	
+	func showUserSettingsTextFields() {
+		maxTextField.text = String(intMax)
+		minTextField.text = String(intMin)
+	}
+	
+	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		maxTextField.resignFirstResponder()
+		minTextField.resignFirstResponder()
+	}
 }

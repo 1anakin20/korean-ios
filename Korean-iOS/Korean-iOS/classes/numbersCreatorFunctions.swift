@@ -9,6 +9,10 @@
 import UIKit
 
 class numbersCreatorFunctions: NSObject {
+	// Functions values
+	let intMax = UserSettingsDefaults().checkMax()
+	let intMin = UserSettingsDefaults().checkMin()
+	
 	let koreanDigitNames = [0:"영",
 							1:"일",
 							2:"이",
@@ -20,9 +24,11 @@ class numbersCreatorFunctions: NSObject {
 							8:"팔",
 							9:"구",
 		] as [Int : String]
+	
 
+	
 	func randomNumber() -> Int {
-		let randomNum = Int.random(in: 1...100) // 100 for debuggin purposes
+		let randomNum = Int.random(in: intMin...intMax) // 100 for debuggin purposes
 		return randomNum
 	}
 	

@@ -9,5 +9,31 @@
 import UIKit
 
 class UserSettingsDefaults: NSObject {
-
+	let defaults = UserDefaults.standard
+	
+	// Keys strings
+	let maxKey = "userDefaultsMaxKey"
+	let minKey = "userDefaultsMinKey"
+	
+	func saveMaxMin(maxTextField: UITextField, minTextField: UITextField) {
+		defaults.set(textFieldToInt(fromtextField: maxTextField), forKey: maxKey)
+		defaults.set(textFieldToInt(fromtextField: minTextField), forKey: minKey)
+	}
+	
+	func checkMax() -> Int {
+		let intMax = defaults.integer(forKey: maxKey)
+		return intMax
+	}
+	
+	func checkMin() -> Int {
+		let intMin = defaults.integer(forKey: minKey)
+		return intMin
+	}
+	
+	func textFieldToInt(fromtextField: UITextField) -> Int {
+		guard let text = fromtextField.text, let intNumber = Int(text) else {
+			return 1
+		}
+		return intNumber
+	}
 }
