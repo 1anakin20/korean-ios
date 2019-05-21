@@ -57,7 +57,7 @@ class KoreanToNumberUIViewController: UIViewController {
 		if(choice == randKoNumber) {
 			answerReaction.goodAnswer(outputLabel: outputLabelNumber, acceptButton: acceptButtonNumber, image: imageView)
 		} else {
-			answerReaction.wrongAnswer(outputLabel: outputLabelNumber, acceptButton: acceptButtonNumber, randNumber: randIntNumber, koNumber: koNumber)
+			answerReaction.wrongAnswer(outputLabel: outputLabelNumber, acceptButton: acceptButtonNumber, randNumber: randIntNumber, koNumber: koNumber, image: imageView)
 		}
 		acceptButtonNumberStateContinue = true
 	}

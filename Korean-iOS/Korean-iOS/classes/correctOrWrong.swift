@@ -19,17 +19,19 @@ class correctOrWrong: NSObject {
 		outputLabel.textColor = ObjDefaults.textColorGood
 		acceptButton.setTitleColor(ObjDefaults.textColorGood, for: .normal)
 		acceptButton.setTitle(ObjDefaults.nextTitleButton, for: .normal)
-		image.image = UIImage(named: randomImage.randomImage())
+		image.image = UIImage(named: randomImage.randomImage(imageArray: randomImage.grandmaImages))
 		image.isHidden = false
 		playSounds.playCorrectSound()
 	}
 	
-	func wrongAnswer(outputLabel: UILabel, acceptButton: UIButton, randNumber: Int, koNumber: String) {
+	func wrongAnswer(outputLabel: UILabel, acceptButton: UIButton, randNumber: Int, koNumber: String, image: UIImageView) {
 		let returnWrongAnswer: String = "The good answer for \(randNumber) was \(koNumber)"
 		outputLabel.text = returnWrongAnswer
 		outputLabel.textColor = ObjDefaults.textColorWrong
 		acceptButton.setTitleColor(ObjDefaults.textColorWrong, for: .normal)
 		acceptButton.setTitle(ObjDefaults.nextTitleButton, for: .normal)
+		image.image = UIImage(named: randomImage.randomImage(imageArray: randomImage.grandpaImages))
+		image.isHidden = false
 		playSounds.playIncorrectSound()
 	}
 	

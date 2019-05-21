@@ -9,17 +9,27 @@
 import UIKit
 
 class images: NSObject {
-	let grandmaImages = [
+	// Arrays of images
+	public let grandmaImages: [String] = [
 		"grandma1.png",
 		"grandma2.png",
 		"grandma3.png",
 		"grandma4.png",
+		"grandma5.jpg",
 	]
 	
-	func randomImage() -> String {
-		guard let randomImage = grandmaImages.shuffled().randomElement() else {
-			return "grandma1.png"
+	public let grandpaImages: [String] = [
+		"grandpa1.jpg",
+		"grandpa2.jpj",
+		"grandpa3.jpg",
+	]
+	
+	func randomImage(imageArray: [String]) -> String {
+		guard let randomImage = imageArray.shuffled().randomElement() else {
+			return "media-offline.jpg"
 		}
 		return randomImage
 	}
+	
+	
 }

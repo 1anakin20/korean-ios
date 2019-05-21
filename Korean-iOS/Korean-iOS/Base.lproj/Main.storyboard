@@ -48,7 +48,7 @@
                                     <segue destination="YFB-pz-TAK" kind="show" id="aJR-c1-8xR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grandma1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RCO-is-caU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grandma5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RCO-is-caU">
                                 <rect key="frame" x="75" y="20" width="170" height="138"/>
                             </imageView>
                         </subviews>
@@ -113,7 +113,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grandma1" translatesAutoresizingMaskIntoConstraints="NO" id="FbW-Lf-COK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grandma5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FbW-Lf-COK">
                                 <rect key="frame" x="75" y="20" width="170" height="138"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KF-my-ZHn">
@@ -169,9 +169,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdv-Dk-GdE">
-                                <rect key="frame" x="16" y="218" width="288" height="63"/>
+                                <rect key="frame" x="16" y="218" width="288" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="7m4-o1-t4N"/>
+                                    <constraint firstAttribute="height" constant="60" id="7m4-o1-t4N"/>
                                 </constraints>
                                 <state key="normal" title="Number to Korean" backgroundImage="bleuBackground.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -181,9 +181,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofJ-eO-aC7">
-                                <rect key="frame" x="16" y="288" width="288" height="51"/>
+                                <rect key="frame" x="16" y="285" width="288" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="R3d-0I-CvN"/>
+                                    <constraint firstAttribute="height" constant="60" id="R3d-0I-CvN"/>
                                 </constraints>
                                 <state key="normal" title="Korean to Number" backgroundImage="bleuBackground.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -291,10 +291,9 @@
     </scenes>
     <resources>
         <image name="bleuBackground.png" width="1000" height="500"/>
-        <image name="grandma1" width="489" height="485"/>
-        <image name="grandma1.jpg" width="489" height="485"/>
+        <image name="grandma5.jpg" width="460" height="471"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aJR-c1-8xR"/>
+        <segue reference="0xl-jX-JHc"/>
     </inferredMetricsTieBreakers>
 </document>
