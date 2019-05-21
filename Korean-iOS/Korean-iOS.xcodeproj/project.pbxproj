@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B306ADC2229045A100F1E8C1 /* numbersCreatorFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306ADC1229045A100F1E8C1 /* numbersCreatorFunctions.swift */; };
+		B318B3BB22943A6B0087231C /* bleuBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B318B3BA22943A6A0087231C /* bleuBackground.png */; };
+		B318B3BD22943DC50087231C /* grayBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B318B3BC22943DC50087231C /* grayBackground.png */; };
 		B34E11D822938C6C00704125 /* sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34E11D722938C6C00704125 /* sounds.swift */; };
 		B34E11DD2293935A00704125 /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = B34E11DC2293935A00704125 /* incorrect.wav */; };
 		B34E11DF2293936F00704125 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = B34E11DE2293936F00704125 /* correct.wav */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		B306ADC1229045A100F1E8C1 /* numbersCreatorFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numbersCreatorFunctions.swift; sourceTree = "<group>"; };
+		B318B3BA22943A6A0087231C /* bleuBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bleuBackground.png; sourceTree = "<group>"; };
+		B318B3BC22943DC50087231C /* grayBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayBackground.png; sourceTree = "<group>"; };
 		B34E11D722938C6C00704125 /* sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sounds.swift; sourceTree = "<group>"; };
 		B34E11DC2293935A00704125 /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incorrect.wav; sourceTree = "<group>"; };
 		B34E11DE2293936F00704125 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
@@ -69,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B318B3B922943A560087231C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B318B3BA22943A6A0087231C /* bleuBackground.png */,
+				B318B3BC22943DC50087231C /* grayBackground.png */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		B323DDF922939E8A00BA7AAC /* original source code */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +151,7 @@
 				B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */,
 				B3EE12802292FE6400A3BE4C /* SettingsViewController.swift */,
 				B3A94069229195B000F4C282 /* classes */,
+				B318B3B922943A560087231C /* UI */,
 				B34E11DB229391EF00704125 /* sounds */,
 				B379D2052293A58A0080BCED /* images */,
 				B323DDF922939E8A00BA7AAC /* original source code */,
@@ -205,8 +219,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B318B3BD22943DC50087231C /* grayBackground.png in Resources */,
 				B3DC6B3C228F25D700856252 /* LaunchScreen.storyboard in Resources */,
 				B34E11DD2293935A00704125 /* incorrect.wav in Resources */,
+				B318B3BB22943A6B0087231C /* bleuBackground.png in Resources */,
 				B379D20B2293AB470080BCED /* grandma2.jpg in Resources */,
 				B379D2112293AE9F0080BCED /* grandma4.png in Resources */,
 				B379D20C2293AB470080BCED /* grandma3.png in Resources */,
