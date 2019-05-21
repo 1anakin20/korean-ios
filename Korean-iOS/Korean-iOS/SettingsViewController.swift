@@ -9,7 +9,6 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-	@IBOutlet weak var incorrectSettingsLabel: UILabel!
 	@IBOutlet weak var maxTextField: UITextField!
 	@IBOutlet weak var minTextField: UITextField!
 	
@@ -18,12 +17,12 @@ class SettingsViewController: UIViewController {
 	let intMin = UserSettingsDefaults().checkMin()
 	let userDefaults = UserSettingsDefaults()
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
-        // Do any additional setup after loading the view.
+		// Do any additional setup after loading the view.
 		showUserSettingsTextFields()
-    }
+	}
 	
 	@IBAction func backButton(_ sender: Any) {
 		userDefaults.saveMaxMin(maxTextField: maxTextField, minTextField: minTextField)
