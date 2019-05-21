@@ -12,6 +12,7 @@ class KoreanToNumberUIViewController: UIViewController {
 	@IBOutlet weak var outputLabelNumber: UILabel!
 	@IBOutlet weak var inputFieldNumber: UITextField!
 	@IBOutlet weak var acceptButtonNumber: UIButton!
+	@IBOutlet weak var imageView: UIImageView!
 	
 	//Private variables
 	private var randIntNumber = 777 //Default value
@@ -54,7 +55,7 @@ class KoreanToNumberUIViewController: UIViewController {
 		let numbersCreator = numbersCreatorFunctions()
 		let koNumber = numbersCreator.numberDecimaltoStringKorean(decimalNumber: randIntNumber)
 		if(choice == randKoNumber) {
-			answerReaction.goodAnswer(outputLabel: outputLabelNumber, acceptButton: acceptButtonNumber)
+			answerReaction.goodAnswer(outputLabel: outputLabelNumber, acceptButton: acceptButtonNumber, image: imageView)
 		} else {
 			answerReaction.wrongAnswer(outputLabel: outputLabelNumber, acceptButton: acceptButtonNumber, randNumber: randIntNumber, koNumber: koNumber)
 		}
@@ -67,6 +68,7 @@ class KoreanToNumberUIViewController: UIViewController {
 		acceptButtonNumber.setTitleColor(ObjDefaults.defaultTextColor, for: .normal)
 		outputLabelNumber.textColor = ObjDefaults.defaultTextColor
 		inputFieldNumber.text = ""
+		imageView.isHidden = true
 		acceptButtonNumberStateContinue = false
 	}
 	

@@ -12,6 +12,11 @@
 		B34E11DD2293935A00704125 /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = B34E11DC2293935A00704125 /* incorrect.wav */; };
 		B34E11DF2293936F00704125 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = B34E11DE2293936F00704125 /* correct.wav */; };
 		B34E11E1229395CD00704125 /* correctOrWrong.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34E11E0229395CD00704125 /* correctOrWrong.swift */; };
+		B379D20B2293AB470080BCED /* grandma2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B379D2082293AB470080BCED /* grandma2.jpg */; };
+		B379D20C2293AB470080BCED /* grandma3.png in Resources */ = {isa = PBXBuildFile; fileRef = B379D2092293AB470080BCED /* grandma3.png */; };
+		B379D20D2293AB470080BCED /* grandma1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B379D20A2293AB470080BCED /* grandma1.jpg */; };
+		B379D20F2293ABA70080BCED /* images.swift in Sources */ = {isa = PBXBuildFile; fileRef = B379D20E2293ABA70080BCED /* images.swift */; };
+		B379D2112293AE9F0080BCED /* grandma4.png in Resources */ = {isa = PBXBuildFile; fileRef = B379D2102293AE9F0080BCED /* grandma4.png */; };
 		B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A94067229195AB00F4C282 /* textDefaults.swift */; };
 		B3DC6B32228F25D500856252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B31228F25D500856252 /* AppDelegate.swift */; };
 		B3DC6B34228F25D500856252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B33228F25D500856252 /* ViewController.swift */; };
@@ -32,6 +37,11 @@
 		B34E11DC2293935A00704125 /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incorrect.wav; sourceTree = "<group>"; };
 		B34E11DE2293936F00704125 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
 		B34E11E0229395CD00704125 /* correctOrWrong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = correctOrWrong.swift; sourceTree = "<group>"; };
+		B379D2082293AB470080BCED /* grandma2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grandma2.jpg; sourceTree = "<group>"; };
+		B379D2092293AB470080BCED /* grandma3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grandma3.png; sourceTree = "<group>"; };
+		B379D20A2293AB470080BCED /* grandma1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grandma1.jpg; sourceTree = "<group>"; };
+		B379D20E2293ABA70080BCED /* images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = images.swift; sourceTree = "<group>"; };
+		B379D2102293AE9F0080BCED /* grandma4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grandma4.png; sourceTree = "<group>"; };
 		B3A94067229195AB00F4C282 /* textDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textDefaults.swift; sourceTree = "<group>"; };
 		B3DC6B2E228F25D500856252 /* Korean-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Korean-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DC6B31228F25D500856252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +50,8 @@
 		B3DC6B38228F25D700856252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3DC6B3B228F25D700856252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3DC6B3D228F25D700856252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3DC6B43228F3F4800856252 /* numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = numbers.swift; path = "한국어/numbers.swift"; sourceTree = "<group>"; };
-		B3DC6B44228F3F4800856252 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Text.swift; path = "한국어/Text.swift"; sourceTree = "<group>"; };
+		B3DC6B43228F3F4800856252 /* numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = numbers.swift; sourceTree = "<group>"; };
+		B3DC6B44228F3F4800856252 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToNumberUIViewController.swift; sourceTree = "<group>"; };
 		B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberToKoreanUIViewController.swift; sourceTree = "<group>"; };
 		B3EE127E2292FDE700A3BE4C /* UserSettingsDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsDefaults.swift; sourceTree = "<group>"; };
@@ -59,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B323DDF922939E8A00BA7AAC /* original source code */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC6B44228F3F4800856252 /* Text.swift */,
+				B3DC6B43228F3F4800856252 /* numbers.swift */,
+			);
+			path = "original source code";
+			sourceTree = "<group>";
+		};
 		B34E11DB229391EF00704125 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,11 +87,23 @@
 			path = sounds;
 			sourceTree = "<group>";
 		};
+		B379D2052293A58A0080BCED /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B379D20A2293AB470080BCED /* grandma1.jpg */,
+				B379D2082293AB470080BCED /* grandma2.jpg */,
+				B379D2092293AB470080BCED /* grandma3.png */,
+				B379D2102293AE9F0080BCED /* grandma4.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		B3A94069229195B000F4C282 /* classes */ = {
 			isa = PBXGroup;
 			children = (
 				B306ADC1229045A100F1E8C1 /* numbersCreatorFunctions.swift */,
 				B34E11E0229395CD00704125 /* correctOrWrong.swift */,
+				B379D20E2293ABA70080BCED /* images.swift */,
 				B34E11D722938C6C00704125 /* sounds.swift */,
 				B3A94067229195AB00F4C282 /* textDefaults.swift */,
 				B3EE127E2292FDE700A3BE4C /* UserSettingsDefaults.swift */,
@@ -100,8 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				B3DC6B31228F25D500856252 /* AppDelegate.swift */,
-				B3DC6B44228F3F4800856252 /* Text.swift */,
-				B3DC6B43228F3F4800856252 /* numbers.swift */,
 				B3DC6B35228F25D500856252 /* Main.storyboard */,
 				B3DC6B3A228F25D700856252 /* LaunchScreen.storyboard */,
 				B3DC6B33228F25D500856252 /* ViewController.swift */,
@@ -110,6 +139,8 @@
 				B3EE12802292FE6400A3BE4C /* SettingsViewController.swift */,
 				B3A94069229195B000F4C282 /* classes */,
 				B34E11DB229391EF00704125 /* sounds */,
+				B379D2052293A58A0080BCED /* images */,
+				B323DDF922939E8A00BA7AAC /* original source code */,
 				B3DC6B38228F25D700856252 /* Assets.xcassets */,
 				B3DC6B3D228F25D700856252 /* Info.plist */,
 			);
@@ -176,8 +207,12 @@
 			files = (
 				B3DC6B3C228F25D700856252 /* LaunchScreen.storyboard in Resources */,
 				B34E11DD2293935A00704125 /* incorrect.wav in Resources */,
+				B379D20B2293AB470080BCED /* grandma2.jpg in Resources */,
+				B379D2112293AE9F0080BCED /* grandma4.png in Resources */,
+				B379D20C2293AB470080BCED /* grandma3.png in Resources */,
 				B3DC6B39228F25D700856252 /* Assets.xcassets in Resources */,
 				B3DC6B37228F25D500856252 /* Main.storyboard in Resources */,
+				B379D20D2293AB470080BCED /* grandma1.jpg in Resources */,
 				B34E11DF2293936F00704125 /* correct.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +228,7 @@
 				B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */,
 				B3DC6B45228F3F4800856252 /* numbers.swift in Sources */,
 				B3EE12812292FE6400A3BE4C /* SettingsViewController.swift in Sources */,
+				B379D20F2293ABA70080BCED /* images.swift in Sources */,
 				B34E11D822938C6C00704125 /* sounds.swift in Sources */,
 				B306ADC2229045A100F1E8C1 /* numbersCreatorFunctions.swift in Sources */,
 				B3DC6B4A228FA1A300856252 /* NumberToKoreanUIViewController.swift in Sources */,

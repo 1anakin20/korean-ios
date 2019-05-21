@@ -12,12 +12,15 @@ class correctOrWrong: NSObject {
 	// Objects
 	let ObjDefaults = textDefaults()
 	let playSounds = sounds()
+	let randomImage = images()
 
-	func goodAnswer(outputLabel: UILabel, acceptButton: UIButton) {
+	func goodAnswer(outputLabel: UILabel, acceptButton: UIButton, image: UIImageView) {
 		outputLabel.text = "That was the good answer"
 		outputLabel.textColor = ObjDefaults.textColorGood
 		acceptButton.setTitleColor(ObjDefaults.textColorGood, for: .normal)
 		acceptButton.setTitle(ObjDefaults.nextTitleButton, for: .normal)
+		image.image = UIImage(named: randomImage.randomImage())
+		image.isHidden = false
 		playSounds.playCorrectSound()
 	}
 	
