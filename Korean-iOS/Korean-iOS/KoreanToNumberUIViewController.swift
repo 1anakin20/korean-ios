@@ -16,8 +16,11 @@ class KoreanToNumberUIViewController: UIViewController {
 	//Private variables
 	private var randIntNumber = 777 //Default value
 	private var acceptButtonNumberStateContinue = false
-	// Object for default class
+	
+	// Object
+	let answerReaction = correctOrWrong()
 	let ObjDefaults = textDefaults()
+	let playSounds = sounds()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -51,16 +54,9 @@ class KoreanToNumberUIViewController: UIViewController {
 		let numbersCreator = numbersCreatorFunctions()
 		let koNumber = numbersCreator.numberDecimaltoStringKorean(decimalNumber: randIntNumber)
 		if(choice == randKoNumber) {
-			outputLabelNumber.text = "That was the good answer"
-			outputLabelNumber.textColor = ObjDefaults.textColorGood
-			acceptButtonNumber.setTitleColor(ObjDefaults.textColorGood, for: .normal)
-			acceptButtonNumber.setTitle(ObjDefaults.nextTitleButton, for: .normal)
+			answerReaction.goodAnswer(outputLabel: outputLabelNumber, acceptButton: acceptButtonNumber)
 		} else {
-			let returnWrongAnswer: String = "The good answer for \(koNumber) was \(randIntNumber)"
-			outputLabelNumber.text = returnWrongAnswer
-			outputLabelNumber.textColor = ObjDefaults.textColorWrong
-			acceptButtonNumber.setTitleColor(ObjDefaults.textColorWrong, for: .normal)
-			acceptButtonNumber.setTitle(ObjDefaults.nextTitleButton, for: .normal)
+			answerReaction.wrongAnswer(outputLabel: outputLabelNumber, acceptButton: acceptButtonNumber, randNumber: randIntNumber, koNumber: koNumber)
 		}
 		acceptButtonNumberStateContinue = true
 	}

@@ -14,6 +14,7 @@ class UserSettingsDefaults: NSObject {
 	// Keys strings
 	let maxKey = "userDefaultsMaxKey"
 	let minKey = "userDefaultsMinKey"
+	let wasLaunchedBefore = "com.korean.FirstLaunch.WasLaunchedBefore"
 	
 	func saveMaxMin(maxTextField: UITextField, minTextField: UITextField) {
 		defaults.set(textFieldToInt(fromtextField: maxTextField), forKey: maxKey)

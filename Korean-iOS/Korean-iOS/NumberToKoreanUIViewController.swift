@@ -15,17 +15,19 @@ class NumberToKoreanUIViewController: UIViewController {
 	
 	private var randIntNumber: Int = 666 //Default value for randIntNumber is 666
 	private var acceptButtonStateContinue = false
-	// Object for default class
+	
+	// Objects
+	let answerReaction = correctOrWrong()
 	let ObjDefaults = textDefaults()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		// Do any additional setup after loading the view.
 		//Make view to defaults
 		resetToDefaultState()
 		showKoreanRandomNum()
 		inputTextFieldNumberToKorean.delegate = self
-		// Do any additional setup after loading the view.
 	}
 	
 	@IBAction func acceptEnteredText(_ sender: Any) {
@@ -51,16 +53,9 @@ class NumberToKoreanUIViewController: UIViewController {
 		let numbersCreator = numbersCreatorFunctions()
 		let koNumber = numbersCreator.numberDecimaltoStringKorean(decimalNumber: randNumber)
 		if(choice == String(koNumber)) {
-			outputLabel.text = "That was the good answer"
-			outputLabel.textColor = ObjDefaults.textColorGood
-			acceptButton.setTitleColor(ObjDefaults.textColorGood, for: .normal)
-			acceptButton.setTitle(ObjDefaults.nextTitleButton, for: .normal)
+			answerReaction.goodAnswer(outputLabel: outputLabel, acceptButton: acceptButton)
 		} else {
-			let returnWrongAnswer: String = "The good answer for \(randNumber) was \(koNumber)"
-			outputLabel.text = returnWrongAnswer
-			outputLabel.textColor = ObjDefaults.textColorWrong
-			acceptButton.setTitleColor(ObjDefaults.textColorWrong, for: .normal)
-			acceptButton.setTitle(ObjDefaults.nextTitleButton, for: .normal)
+			answerReaction.wrongAnswer(outputLabel: outputLabel, acceptButton: acceptButton, randNumber: randNumber, koNumber: String(koNumber))
 		}
 		acceptButtonStateContinue = true
 	}

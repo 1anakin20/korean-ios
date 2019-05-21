@@ -46,7 +46,8 @@ class ViewController: UIViewController {
 	}
 	
 	func firstLaunchDefaultValues() {
-		let firstLaunch = FirstLaunch(userDefaults: .standard, key: "com.korean.FirstLaunch.WasLaunchedBefore")
+		let userSettings = UserSettingsDefaults()
+		let firstLaunch = FirstLaunch(userDefaults: .standard, key: userSettings.wasLaunchedBefore)
 		if(firstLaunch.isFirstLaunch) {
 			let maxKey = UserSettingsDefaults().maxKey
 			let minKey = UserSettingsDefaults().minKey
