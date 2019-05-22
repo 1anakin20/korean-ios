@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YFB-pz-TAK">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XMd-vm-1dG">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="NumberToKoreanUIViewController" customModule="Korean_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-Zg-gAq">
@@ -45,10 +45,10 @@
                                 <rect key="frame" x="16" y="20" width="48" height="30"/>
                                 <state key="normal" title="&lt; Back"/>
                                 <connections>
-                                    <segue destination="YFB-pz-TAK" kind="show" id="aJR-c1-8xR"/>
+                                    <segue destination="XMd-vm-1dG" kind="show" id="Mrt-E0-PAR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grandma5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RCO-is-caU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grandma1.png" translatesAutoresizingMaskIntoConstraints="NO" id="RCO-is-caU">
                                 <rect key="frame" x="75" y="20" width="170" height="138"/>
                             </imageView>
                         </subviews>
@@ -80,21 +80,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074.375" y="-595.77464788732391"/>
+            <point key="canvasLocation" x="2070" y="-788"/>
         </scene>
         <!--Korean To NumberUI View Controller-->
         <scene sceneID="bDw-Q9-aau">
             <objects>
                 <viewController id="wLW-7Q-06z" customClass="KoreanToNumberUIViewController" customModule="Korean_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="61T-q5-h4N">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VD-6b-Xz8">
                                 <rect key="frame" x="16" y="20" width="48" height="30"/>
                                 <state key="normal" title="&lt; Back"/>
                                 <connections>
-                                    <segue destination="YFB-pz-TAK" kind="show" id="0xl-jX-JHc"/>
+                                    <segue destination="XMd-vm-1dG" kind="show" id="xVR-8F-rOd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="028-ln-Q9L">
@@ -113,7 +113,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grandma5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FbW-Lf-COK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grandma1.png" translatesAutoresizingMaskIntoConstraints="NO" id="FbW-Lf-COK">
                                 <rect key="frame" x="75" y="20" width="170" height="138"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KF-my-ZHn">
@@ -151,27 +151,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0U-Th-rlL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1072.5" y="159.50704225352112"/>
+            <point key="canvasLocation" x="2070" y="-100"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="99w-pM-9kc">
             <objects>
                 <viewController id="YFB-pz-TAK" customClass="ViewController" customModule="Korean_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Ah-5I-OkQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgS-Bf-27n">
-                                <rect key="frame" x="247" y="20" width="57" height="30"/>
-                                <state key="normal" title="Settings"/>
-                                <connections>
-                                    <segue destination="i46-dK-gLS" kind="show" id="uzc-LU-db6"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdv-Dk-GdE">
-                                <rect key="frame" x="16" y="218" width="288" height="60"/>
+                                <rect key="frame" x="16" y="202" width="288" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="7m4-o1-t4N"/>
+                                    <constraint firstAttribute="height" constant="60" id="KOr-IA-Ohe"/>
                                 </constraints>
                                 <state key="normal" title="Number to Korean" backgroundImage="bleuBackground.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -181,9 +174,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofJ-eO-aC7">
-                                <rect key="frame" x="16" y="285" width="288" height="60"/>
+                                <rect key="frame" x="16" y="270" width="288" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="R3d-0I-CvN"/>
+                                    <constraint firstAttribute="height" constant="60" id="pQV-dy-PBw"/>
                                 </constraints>
                                 <state key="normal" title="Korean to Number" backgroundImage="bleuBackground.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -195,39 +188,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="trailing" secondItem="ofJ-eO-aC7" secondAttribute="trailing" id="5oy-q3-zIm"/>
-                            <constraint firstItem="ofJ-eO-aC7" firstAttribute="top" secondItem="xdv-Dk-GdE" secondAttribute="bottom" constant="7" id="DdI-TJ-ucx"/>
-                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="trailing" secondItem="xgS-Bf-27n" secondAttribute="trailing" id="FWp-NT-oUy"/>
-                            <constraint firstItem="xgS-Bf-27n" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Bfc-Qx-pYs" secondAttribute="leading" symbolic="YES" id="LfE-Hg-1ug"/>
-                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="leading" secondItem="1Ah-5I-OkQ" secondAttribute="leadingMargin" id="jLS-Y6-PE3"/>
-                            <constraint firstItem="xgS-Bf-27n" firstAttribute="top" secondItem="Bfc-Qx-pYs" secondAttribute="top" id="kOz-FH-fS3"/>
-                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="top" secondItem="1Ah-5I-OkQ" secondAttribute="top" constant="218" id="kgI-lM-5oP"/>
-                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="leading" secondItem="ofJ-eO-aC7" secondAttribute="leading" id="slI-Mi-qGY"/>
-                            <constraint firstItem="xgS-Bf-27n" firstAttribute="trailing" secondItem="1Ah-5I-OkQ" secondAttribute="trailingMargin" id="tIn-xk-kio"/>
+                            <constraint firstItem="ofJ-eO-aC7" firstAttribute="top" secondItem="xdv-Dk-GdE" secondAttribute="bottom" constant="8" symbolic="YES" id="1GN-ly-NBQ"/>
+                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="leading" secondItem="ofJ-eO-aC7" secondAttribute="leading" id="3oj-5b-N0e"/>
+                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="top" secondItem="Bfc-Qx-pYs" secondAttribute="top" constant="182" id="Aob-7j-FfN"/>
+                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="leading" secondItem="1Ah-5I-OkQ" secondAttribute="leadingMargin" id="CaQ-YE-wsL"/>
+                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="trailing" secondItem="ofJ-eO-aC7" secondAttribute="trailing" id="NdW-lS-Ne1"/>
+                            <constraint firstItem="xdv-Dk-GdE" firstAttribute="trailing" secondItem="1Ah-5I-OkQ" secondAttribute="trailingMargin" id="UAv-qe-8Af"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bfc-Qx-pYs"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="TwZ-UQ-HW1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmS-Kx-Rhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121.875" y="225"/>
+            <point key="canvasLocation" x="1116" y="-269"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Item-->
         <scene sceneID="xoI-fr-8bi">
             <objects>
                 <viewController id="i46-dK-gLS" customClass="SettingsViewController" customModule="Korean_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QrJ-Qf-Fc1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWO-pe-0Zr">
-                                <rect key="frame" x="16" y="20" width="48" height="30"/>
-                                <state key="normal" title="&lt; Back"/>
-                                <connections>
-                                    <action selector="backButton:" destination="i46-dK-gLS" eventType="touchUpInside" id="9S5-se-CKt"/>
-                                    <segue destination="YFB-pz-TAK" kind="show" id="gO1-eJ-edQ"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" placeholder="Max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XT1-41-oAH">
                                 <rect key="frame" x="136" y="128" width="48" height="30"/>
                                 <nil key="textColor"/>
@@ -258,17 +241,14 @@
                             <constraint firstItem="XT1-41-oAH" firstAttribute="top" secondItem="3Oi-Rk-06p" secondAttribute="bottom" constant="8" symbolic="YES" id="05a-Ih-LuR"/>
                             <constraint firstItem="K37-1T-IfO" firstAttribute="top" secondItem="BSr-BV-j2k" secondAttribute="bottom" constant="8" symbolic="YES" id="799-zN-fyV"/>
                             <constraint firstItem="3Oi-Rk-06p" firstAttribute="centerX" secondItem="QrJ-Qf-Fc1" secondAttribute="centerX" id="8Qi-AE-Kdz"/>
-                            <constraint firstItem="hWO-pe-0Zr" firstAttribute="top" secondItem="QUd-Y9-EPI" secondAttribute="top" id="USH-xA-qXw"/>
                             <constraint firstItem="BSr-BV-j2k" firstAttribute="centerX" secondItem="XT1-41-oAH" secondAttribute="centerX" id="WTj-Sn-ewA"/>
                             <constraint firstItem="3Oi-Rk-06p" firstAttribute="top" secondItem="QUd-Y9-EPI" secondAttribute="top" constant="79" id="Wad-Ds-FY5"/>
                             <constraint firstItem="XT1-41-oAH" firstAttribute="leading" secondItem="QUd-Y9-EPI" secondAttribute="leading" constant="112" id="aJz-f6-Jo1"/>
                             <constraint firstItem="K37-1T-IfO" firstAttribute="centerX" secondItem="BSr-BV-j2k" secondAttribute="centerX" id="fGe-mO-ruW"/>
                             <constraint firstItem="XT1-41-oAH" firstAttribute="trailing" secondItem="QrJ-Qf-Fc1" secondAttribute="trailingMargin" constant="-95" id="ilR-e6-HyZ"/>
-                            <constraint firstItem="QUd-Y9-EPI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hWO-pe-0Zr" secondAttribute="trailing" symbolic="YES" id="jRa-tJ-Fkh"/>
                             <constraint firstItem="3Oi-Rk-06p" firstAttribute="centerX" secondItem="XT1-41-oAH" secondAttribute="centerX" id="k8S-2z-Brk"/>
                             <constraint firstItem="K37-1T-IfO" firstAttribute="leading" secondItem="QUd-Y9-EPI" secondAttribute="leading" constant="138" id="kdg-1K-z7p"/>
                             <constraint firstItem="BSr-BV-j2k" firstAttribute="top" secondItem="XT1-41-oAH" secondAttribute="bottom" constant="32" id="m7U-bB-rSv"/>
-                            <constraint firstItem="hWO-pe-0Zr" firstAttribute="leading" secondItem="QrJ-Qf-Fc1" secondAttribute="leadingMargin" id="nXy-tY-l4u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QUd-Y9-EPI"/>
                         <variation key="default">
@@ -279,6 +259,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="nPw-Eu-t0h"/>
                     <connections>
                         <outlet property="maxTextField" destination="XT1-41-oAH" id="Bcb-0X-NlI"/>
                         <outlet property="minTextField" destination="K37-1T-IfO" id="2Lm-pO-9yT"/>
@@ -286,14 +267,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STR-8z-4mo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1075.3623188405797" y="924.10714285714278"/>
+            <point key="canvasLocation" x="1116" y="531"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="d2w-62-gwC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XMd-vm-1dG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PeD-dI-wPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YFB-pz-TAK" kind="relationship" relationship="viewControllers" id="frH-8n-ctE"/>
+                        <segue destination="i46-dK-gLS" kind="relationship" relationship="viewControllers" id="uoH-pe-Iha"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QYH-xF-dvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="214"/>
         </scene>
     </scenes>
     <resources>
         <image name="bleuBackground.png" width="1000" height="500"/>
-        <image name="grandma5.jpg" width="460" height="471"/>
+        <image name="grandma1.png" width="489" height="485"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0xl-jX-JHc"/>
+        <segue reference="Mrt-E0-PAR"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -23,11 +23,7 @@ class SettingsViewController: UIViewController {
 		// Do any additional setup after loading the view.
 		showUserSettingsTextFields()
 	}
-	
-	@IBAction func backButton(_ sender: Any) {
-		userDefaults.saveMaxMin(maxTextField: maxTextField, minTextField: minTextField)
-	}
-	
+
 	func showUserSettingsTextFields() {
 		maxTextField.text = String(intMax)
 		minTextField.text = String(intMin)
@@ -36,5 +32,6 @@ class SettingsViewController: UIViewController {
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		maxTextField.resignFirstResponder()
 		minTextField.resignFirstResponder()
+		userDefaults.saveMaxMin(maxTextField: maxTextField, minTextField: minTextField)
 	}
 }
