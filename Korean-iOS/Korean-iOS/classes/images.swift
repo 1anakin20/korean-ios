@@ -9,27 +9,23 @@
 import UIKit
 
 class images: NSObject {
-	// Arrays of images
-	public let grandmaImages: [String] = [
-		"grandma1.png",
-		"grandma2.png",
-		"grandma3.png",
-		"grandma4.png",
-		"grandma5.jpg",
-	]
+	// Variables for image number
+	let grandmaTotalImages = 5
+	let grandpaTotalImages = 3
 	
-	public let grandpaImages: [String] = [
-		"grandpa1.jpg",
-		"grandpa2.jpj",
-		"grandpa3.jpg",
-	]
-	
-	func randomImage(imageArray: [String]) -> String {
-		guard let randomImage = imageArray.shuffled().randomElement() else {
-			return "media-offline.jpg"
+	func randomGrandma(imagesChoice: String) -> UIImage {
+		var maxImages = 1
+		if(imagesChoice == "grandma") {
+			maxImages = grandmaTotalImages
+		} else if(imagesChoice == "grandpa") {
+			maxImages = grandpaTotalImages
+		} else {
+			maxImages = 1
+			print("Error imagesChoice was set to default 1")
+		}
+		guard let randomImage = UIImage(named: "\(imagesChoice)\(arc4random_uniform(UInt32(maxImages)) + 1).png") else {
+			return UIImage(named: "media-offline.jpg")!
 		}
 		return randomImage
 	}
-	
-	
 }

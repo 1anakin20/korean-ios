@@ -19,7 +19,7 @@ class correctOrWrong: NSObject {
 		outputLabel.textColor = ObjDefaults.textColorGood
 		acceptButton.setTitleColor(ObjDefaults.textColorGood, for: .normal)
 		acceptButton.setTitle(ObjDefaults.nextTitleButton, for: .normal)
-		image.image = UIImage(named: randomImage.randomImage(imageArray: randomImage.grandmaImages))
+		image.image = randomImage.randomGrandma(imagesChoice: "grandma")
 		image.isHidden = false
 		playSounds.playCorrectSound()
 	}
@@ -30,19 +30,19 @@ class correctOrWrong: NSObject {
 		outputLabel.textColor = ObjDefaults.textColorWrong
 		acceptButton.setTitleColor(ObjDefaults.textColorWrong, for: .normal)
 		acceptButton.setTitle(ObjDefaults.nextTitleButton, for: .normal)
-		image.image = UIImage(named: randomImage.randomImage(imageArray: randomImage.grandpaImages))
+		image.image = randomImage.randomGrandma(imagesChoice: "grandpa")
 		image.isHidden = false
 		playSounds.playIncorrectSound()
 	}
-	
-	/*****
-	func resetToDefaultState(acceptButton: UIButton, outputLabel: UILabel, inputTextField: UITextField, acceptButtonStateContinue: Bool) {
+	func resetToDefaultState(acceptButton: UIButton, outputLabel: UILabel, inputTextFieldNumber: UITextField, imageView: UIImageView) -> Bool {
 		// Wil reset UI to default state in colors and text
 		acceptButton.setTitle(ObjDefaults.defaultTitleButton, for: .normal)
 		acceptButton.setTitleColor(ObjDefaults.defaultTextColor, for: .normal)
 		outputLabel.textColor = ObjDefaults.defaultTextColor
-		inputTextField.text = ""
-		acceptButtonStateContinue = false
+		inputTextFieldNumber.text = ""
+		imageView.isHidden = true
+		
+		// acceptButtonStateContinue
+		return false
 	}
-*******/
 }
