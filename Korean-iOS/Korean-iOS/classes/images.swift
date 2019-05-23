@@ -10,7 +10,7 @@ import UIKit
 
 class images: NSObject {
 	// Variables for image number
-	let grandmaTotalImages = 5
+	let grandmaTotalImages = 4
 	let grandpaTotalImages = 3
 	
 	func randomGrandma(imagesChoice: String) -> UIImage {
