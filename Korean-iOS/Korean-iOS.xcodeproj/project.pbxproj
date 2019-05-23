@@ -41,7 +41,7 @@
 		B3E47BE822970A3D00126BC3 /* Purpe_rounded_rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BE722970A3D00126BC3 /* Purpe_rounded_rectangle.png */; };
 		B3E47BEC22970BD100126BC3 /* Bleu_rounded_rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BEB22970BD100126BC3 /* Bleu_rounded_rectangle.png */; };
 		B3EE127F2292FDE700A3BE4C /* UserSettingsDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE127E2292FDE700A3BE4C /* UserSettingsDefaults.swift */; };
-		B3EE12812292FE6400A3BE4C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE12802292FE6400A3BE4C /* SettingsViewController.swift */; };
+		B3EE12812292FE6400A3BE4C /* NumbersOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE12802292FE6400A3BE4C /* NumbersOptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +81,7 @@
 		B3E47BE722970A3D00126BC3 /* Purpe_rounded_rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Purpe_rounded_rectangle.png; sourceTree = "<group>"; };
 		B3E47BEB22970BD100126BC3 /* Bleu_rounded_rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bleu_rounded_rectangle.png; sourceTree = "<group>"; };
 		B3EE127E2292FDE700A3BE4C /* UserSettingsDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsDefaults.swift; sourceTree = "<group>"; };
-		B3EE12802292FE6400A3BE4C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B3EE12802292FE6400A3BE4C /* NumbersOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersOptionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,8 +212,8 @@
 				B3E47BE522964ABA00126BC3 /* PlayViewController.swift */,
 				B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */,
 				B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */,
+				B3EE12802292FE6400A3BE4C /* NumbersOptionsViewController.swift */,
 				B3E47BD42295B8DA00126BC3 /* NotesViewController.swift */,
-				B3EE12802292FE6400A3BE4C /* SettingsViewController.swift */,
 			);
 			path = UIViewControllers;
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 				B3E47BE622964ABA00126BC3 /* PlayViewController.swift in Sources */,
 				B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */,
 				B3DC6B45228F3F4800856252 /* numbers.swift in Sources */,
-				B3EE12812292FE6400A3BE4C /* SettingsViewController.swift in Sources */,
+				B3EE12812292FE6400A3BE4C /* NumbersOptionsViewController.swift in Sources */,
 				B379D20F2293ABA70080BCED /* images.swift in Sources */,
 				B34E11D822938C6C00704125 /* sounds.swift in Sources */,
 				B306ADC2229045A100F1E8C1 /* numbersCreatorFunctions.swift in Sources */,

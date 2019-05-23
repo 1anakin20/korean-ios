@@ -13,7 +13,7 @@ class images: NSObject {
 	let grandmaTotalImages = 4
 	let grandpaTotalImages = 3
 	
-	func randomGrandma(imagesChoice: String) -> UIImage {
+	func imageChoice(imagesChoice: String) -> UIImage {
 		var maxImages = 1
 		if(imagesChoice == "grandma") {
 			maxImages = grandmaTotalImages

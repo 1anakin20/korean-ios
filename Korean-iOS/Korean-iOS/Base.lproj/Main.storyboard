@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XMd-vm-1dG">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -37,13 +37,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ul-f2-c96">
-                                <rect key="frame" x="0.0" y="44" width="320" height="473"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uY8-GL-QEU">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAn-iq-IUG">
-                                                <rect key="frame" x="30" y="25" width="86" height="61"/>
+                                                <rect key="frame" x="30" y="25" width="111" height="79"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="Bleu_rounded_rectangle.png">
                                                     <attributedString key="attributedTitle">
@@ -68,7 +68,7 @@
                                     <constraint firstAttribute="trailing" secondItem="uY8-GL-QEU" secondAttribute="trailing" id="3Vc-Ik-Ggp"/>
                                     <constraint firstItem="uY8-GL-QEU" firstAttribute="leading" secondItem="0Ul-f2-c96" secondAttribute="leading" id="HLb-Lq-sHF"/>
                                     <constraint firstItem="uY8-GL-QEU" firstAttribute="centerX" secondItem="0Ul-f2-c96" secondAttribute="centerX" id="MfC-V8-BjJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="uY8-GL-QEU" secondAttribute="bottom" id="lqC-kO-ktG"/>
+                                    <constraint firstAttribute="bottom" secondItem="uY8-GL-QEU" secondAttribute="bottom" constant="-27" id="lqC-kO-ktG"/>
                                     <constraint firstItem="uY8-GL-QEU" firstAttribute="top" secondItem="0Ul-f2-c96" secondAttribute="top" id="v9z-JE-4TV"/>
                                 </constraints>
                             </scrollView>
@@ -79,7 +79,7 @@
                             <constraint firstAttribute="width" secondItem="0Ul-f2-c96" secondAttribute="width" id="JrT-91-Pq8"/>
                             <constraint firstItem="0Ul-f2-c96" firstAttribute="leading" secondItem="O0Q-3u-QGX" secondAttribute="leading" id="RNP-vm-zc1"/>
                             <constraint firstItem="0Ul-f2-c96" firstAttribute="trailing" secondItem="O0Q-3u-QGX" secondAttribute="trailing" id="feG-Mf-Vkt"/>
-                            <constraint firstItem="uY8-GL-QEU" firstAttribute="height" secondItem="aOi-c4-1kc" secondAttribute="height" id="gC4-W4-kZo"/>
+                            <constraint firstItem="uY8-GL-QEU" firstAttribute="height" secondItem="aOi-c4-1kc" secondAttribute="height" constant="-100" id="gC4-W4-kZo"/>
                             <constraint firstItem="0Ul-f2-c96" firstAttribute="bottom" secondItem="O0Q-3u-QGX" secondAttribute="bottom" id="lKS-Sk-1Rv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O0Q-3u-QGX"/>
@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dg2-Fa-vhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="-7"/>
+            <point key="canvasLocation" x="592.5" y="-7.394366197183099"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d2w-62-gwC">

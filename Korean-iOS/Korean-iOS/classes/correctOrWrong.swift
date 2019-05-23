@@ -19,7 +19,7 @@ class correctOrWrong: NSObject {
 		outputLabel.textColor = ObjDefaults.textColorGood
 		acceptButton.setTitleColor(ObjDefaults.textColorGood, for: .normal)
 		acceptButton.setTitle(ObjDefaults.nextTitleButton, for: .normal)
-		image.image = randomImage.randomGrandma(imagesChoice: "grandma")
+		image.image = randomImage.imageChoice(imagesChoice: "grandma")
 		image.isHidden = false
 		playSounds.playCorrectSound()
 	}
@@ -30,7 +30,7 @@ class correctOrWrong: NSObject {
 		outputLabel.textColor = ObjDefaults.textColorWrong
 		acceptButton.setTitleColor(ObjDefaults.textColorWrong, for: .normal)
 		acceptButton.setTitle(ObjDefaults.nextTitleButton, for: .normal)
-		image.image = randomImage.randomGrandma(imagesChoice: "grandpa")
+		image.image = randomImage.imageChoice(imagesChoice: "grandpa")
 		image.isHidden = false
 		playSounds.playIncorrectSound()
 	}
