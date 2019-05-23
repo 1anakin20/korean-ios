@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XMd-vm-1dG">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,7 +16,7 @@
                 <viewControllerPlaceholder storyboardName="Numbers" referencedIdentifier="NumbersViewControllerID" id="Pux-pX-V3H" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMp-7l-CiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744" y="-686"/>
+            <point key="canvasLocation" x="1371" y="-7"/>
         </scene>
         <!--Notes-->
         <scene sceneID="zXi-Aq-G3B">
@@ -26,7 +26,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOr-DB-dTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968" y="829"/>
+            <point key="canvasLocation" x="593" y="701"/>
         </scene>
         <!--Play-->
         <scene sceneID="19W-4M-WGs">
@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ul-f2-c96">
-                                <rect key="frame" x="0.0" y="20" width="320" height="531"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="473"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uY8-GL-QEU">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
@@ -89,73 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dg2-Fa-vhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967.5" y="-521.83098591549299"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="xoI-fr-8bi">
-            <objects>
-                <viewController id="i46-dK-gLS" customClass="SettingsViewController" customModule="Korean_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QrJ-Qf-Fc1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" placeholder="Max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XT1-41-oAH">
-                                <rect key="frame" x="136" y="128" width="48" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oi-Rk-06p">
-                                <rect key="frame" x="144" y="99" width="32" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSr-BV-j2k">
-                                <rect key="frame" x="146" y="190" width="28" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="Min" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K37-1T-IfO">
-                                <rect key="frame" x="137.5" y="219" width="45" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="XT1-41-oAH" firstAttribute="top" secondItem="3Oi-Rk-06p" secondAttribute="bottom" constant="8" symbolic="YES" id="05a-Ih-LuR"/>
-                            <constraint firstItem="K37-1T-IfO" firstAttribute="top" secondItem="BSr-BV-j2k" secondAttribute="bottom" constant="8" symbolic="YES" id="799-zN-fyV"/>
-                            <constraint firstItem="3Oi-Rk-06p" firstAttribute="centerX" secondItem="QrJ-Qf-Fc1" secondAttribute="centerX" id="8Qi-AE-Kdz"/>
-                            <constraint firstItem="BSr-BV-j2k" firstAttribute="centerX" secondItem="XT1-41-oAH" secondAttribute="centerX" id="WTj-Sn-ewA"/>
-                            <constraint firstItem="3Oi-Rk-06p" firstAttribute="top" secondItem="QUd-Y9-EPI" secondAttribute="top" constant="79" id="Wad-Ds-FY5"/>
-                            <constraint firstItem="XT1-41-oAH" firstAttribute="leading" secondItem="QUd-Y9-EPI" secondAttribute="leading" constant="112" id="aJz-f6-Jo1"/>
-                            <constraint firstItem="K37-1T-IfO" firstAttribute="centerX" secondItem="BSr-BV-j2k" secondAttribute="centerX" id="fGe-mO-ruW"/>
-                            <constraint firstItem="XT1-41-oAH" firstAttribute="trailing" secondItem="QrJ-Qf-Fc1" secondAttribute="trailingMargin" constant="-95" id="ilR-e6-HyZ"/>
-                            <constraint firstItem="3Oi-Rk-06p" firstAttribute="centerX" secondItem="XT1-41-oAH" secondAttribute="centerX" id="k8S-2z-Brk"/>
-                            <constraint firstItem="K37-1T-IfO" firstAttribute="leading" secondItem="QUd-Y9-EPI" secondAttribute="leading" constant="138" id="kdg-1K-z7p"/>
-                            <constraint firstItem="BSr-BV-j2k" firstAttribute="top" secondItem="XT1-41-oAH" secondAttribute="bottom" constant="32" id="m7U-bB-rSv"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="QUd-Y9-EPI"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="aJz-f6-Jo1"/>
-                                <exclude reference="ilR-e6-HyZ"/>
-                                <exclude reference="kdg-1K-z7p"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="nPw-Eu-t0h"/>
-                    <connections>
-                        <outlet property="maxTextField" destination="XT1-41-oAH" id="Bcb-0X-NlI"/>
-                        <outlet property="minTextField" destination="K37-1T-IfO" id="2Lm-pO-9yT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="STR-8z-4mo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="968" y="154"/>
+            <point key="canvasLocation" x="593" y="-7"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d2w-62-gwC">
@@ -170,7 +104,6 @@
                     <connections>
                         <segue destination="wgt-cu-Fxe" kind="relationship" relationship="viewControllers" id="ySZ-n9-dbi"/>
                         <segue destination="6dU-vb-g7k" kind="relationship" relationship="viewControllers" id="xAy-1i-OLc"/>
-                        <segue destination="i46-dK-gLS" kind="relationship" relationship="viewControllers" id="uoH-pe-Iha"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYH-xF-dvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,6 +115,5 @@
         <image name="Bleu_rounded_rectangle.png" width="142" height="102"/>
         <image name="notes.png" width="18.75" height="18.75"/>
         <image name="play.png" width="18.75" height="18.75"/>
-        <image name="settings.png" width="22.5" height="22.5"/>
     </resources>
 </document>
