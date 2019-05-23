@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class NumbersOptionsViewController: UIViewController {
 	@IBOutlet weak var maxTextField: UITextField!
 	@IBOutlet weak var minTextField: UITextField!
 	
@@ -23,7 +23,11 @@ class SettingsViewController: UIViewController {
 		// Do any additional setup after loading the view.
 		showUserSettingsTextFields()
 	}
-
+	
+	@IBAction func backButton(_ sender: Any) {
+		userDefaults.saveMaxMin(maxTextField: maxTextField, minTextField: minTextField)
+	}
+	
 	func showUserSettingsTextFields() {
 		maxTextField.text = String(intMax)
 		minTextField.text = String(intMin)
