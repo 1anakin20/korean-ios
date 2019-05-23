@@ -34,6 +34,12 @@
 		B3DC6B46228F3F4800856252 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B44228F3F4800856252 /* Text.swift */; };
 		B3DC6B48228FA18400856252 /* KoreanToNumberUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */; };
 		B3DC6B4A228FA1A300856252 /* NumberToKoreanUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */; };
+		B3E47BD52295B8DA00126BC3 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E47BD42295B8DA00126BC3 /* NotesViewController.swift */; };
+		B3E47BD92295BA3500126BC3 /* notes.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BD82295BA3500126BC3 /* notes.png */; };
+		B3E47BDB2295BA8F00126BC3 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BDA2295BA8F00126BC3 /* play.png */; };
+		B3E47BE12295BB5700126BC3 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BE02295BB5700126BC3 /* settings.png */; };
+		B3E47BE4229649BE00126BC3 /* Numbers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BE2229649BE00126BC3 /* Numbers.storyboard */; };
+		B3E47BE622964ABA00126BC3 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E47BE522964ABA00126BC3 /* PlayViewController.swift */; };
 		B3EE127F2292FDE700A3BE4C /* UserSettingsDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE127E2292FDE700A3BE4C /* UserSettingsDefaults.swift */; };
 		B3EE12812292FE6400A3BE4C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE12802292FE6400A3BE4C /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +74,12 @@
 		B3DC6B44228F3F4800856252 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToNumberUIViewController.swift; sourceTree = "<group>"; };
 		B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberToKoreanUIViewController.swift; sourceTree = "<group>"; };
+		B3E47BD42295B8DA00126BC3 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		B3E47BD82295BA3500126BC3 /* notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notes.png; sourceTree = "<group>"; };
+		B3E47BDA2295BA8F00126BC3 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = ../../../../../../../../../Downloads/play.png; sourceTree = "<group>"; };
+		B3E47BE02295BB5700126BC3 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		B3E47BE3229649BE00126BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Korean-iOS/Base.lproj/Numbers.storyboard"; sourceTree = "<group>"; };
+		B3E47BE522964ABA00126BC3 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		B3EE127E2292FDE700A3BE4C /* UserSettingsDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsDefaults.swift; sourceTree = "<group>"; };
 		B3EE12802292FE6400A3BE4C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +100,9 @@
 			children = (
 				B318B3BA22943A6A0087231C /* bleuBackground.png */,
 				B318B3BC22943DC50087231C /* grayBackground.png */,
+				B3E47BDA2295BA8F00126BC3 /* play.png */,
+				B3E47BD82295BA3500126BC3 /* notes.png */,
+				B3E47BE02295BB5700126BC3 /* settings.png */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -177,11 +192,9 @@
 			children = (
 				B3DC6B31228F25D500856252 /* AppDelegate.swift */,
 				B3DC6B35228F25D500856252 /* Main.storyboard */,
+				B3E47BE2229649BE00126BC3 /* Numbers.storyboard */,
 				B3DC6B3A228F25D700856252 /* LaunchScreen.storyboard */,
-				B3DC6B33228F25D500856252 /* ViewController.swift */,
-				B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */,
-				B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */,
-				B3EE12802292FE6400A3BE4C /* SettingsViewController.swift */,
+				B3E47BD32295B89300126BC3 /* UIViewControllers */,
 				B3A94069229195B000F4C282 /* classes */,
 				B34E11DB229391EF00704125 /* sounds */,
 				B379D2052293A58A0080BCED /* images */,
@@ -190,6 +203,19 @@
 				B3DC6B3D228F25D700856252 /* Info.plist */,
 			);
 			path = "Korean-iOS";
+			sourceTree = "<group>";
+		};
+		B3E47BD32295B89300126BC3 /* UIViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC6B33228F25D500856252 /* ViewController.swift */,
+				B3E47BE522964ABA00126BC3 /* PlayViewController.swift */,
+				B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */,
+				B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */,
+				B3E47BD42295B8DA00126BC3 /* NotesViewController.swift */,
+				B3EE12802292FE6400A3BE4C /* SettingsViewController.swift */,
+			);
+			path = UIViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,12 +276,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E47BD92295BA3500126BC3 /* notes.png in Resources */,
+				B3E47BDB2295BA8F00126BC3 /* play.png in Resources */,
 				B318B3BD22943DC50087231C /* grayBackground.png in Resources */,
 				B3DC6B3C228F25D700856252 /* LaunchScreen.storyboard in Resources */,
 				B34E11DD2293935A00704125 /* incorrect.wav in Resources */,
 				B318B3BB22943A6B0087231C /* bleuBackground.png in Resources */,
+				B3E47BE12295BB5700126BC3 /* settings.png in Resources */,
 				B36E9D592294DEEE006F5DC1 /* grandma5.png in Resources */,
 				B36E9D602294DF7D006F5DC1 /* grandpa2.png in Resources */,
+				B3E47BE4229649BE00126BC3 /* Numbers.storyboard in Resources */,
 				B36E9D5A2294DEEE006F5DC1 /* grandma3.png in Resources */,
 				B36E9D582294DEEE006F5DC1 /* grandma4.png in Resources */,
 				B36E9D5F2294DF7D006F5DC1 /* grandpa1.png in Resources */,
@@ -277,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3DC6B48228FA18400856252 /* KoreanToNumberUIViewController.swift in Sources */,
+				B3E47BE622964ABA00126BC3 /* PlayViewController.swift in Sources */,
 				B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */,
 				B3DC6B45228F3F4800856252 /* numbers.swift in Sources */,
 				B3EE12812292FE6400A3BE4C /* SettingsViewController.swift in Sources */,
@@ -286,6 +317,7 @@
 				B3DC6B4A228FA1A300856252 /* NumberToKoreanUIViewController.swift in Sources */,
 				B3DC6B34228F25D500856252 /* ViewController.swift in Sources */,
 				B3DC6B46228F3F4800856252 /* Text.swift in Sources */,
+				B3E47BD52295B8DA00126BC3 /* NotesViewController.swift in Sources */,
 				B3EE127F2292FDE700A3BE4C /* UserSettingsDefaults.swift in Sources */,
 				B3DC6B32228F25D500856252 /* AppDelegate.swift in Sources */,
 				B34E11E1229395CD00704125 /* correctOrWrong.swift in Sources */,
@@ -309,6 +341,14 @@
 				B3DC6B3B228F25D700856252 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B3E47BE2229649BE00126BC3 /* Numbers.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3E47BE3229649BE00126BC3 /* Base */,
+			);
+			name = Numbers.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
