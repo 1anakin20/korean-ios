@@ -174,8 +174,8 @@
 			children = (
 				B306ADC1229045A100F1E8C1 /* numbersCreatorFunctions.swift */,
 				B34E11E0229395CD00704125 /* correctOrWrong.swift */,
-				B3D8044F229778D9005BEA77 /* korEngDict.sqlite */,
 				B3D8044E229778D9005BEA77 /* KorEngDict.swift */,
+				B3D8044F229778D9005BEA77 /* korEngDict.sqlite */,
 				B379D20E2293ABA70080BCED /* images.swift */,
 				B34E11D722938C6C00704125 /* sounds.swift */,
 				B3A94067229195AB00F4C282 /* textDefaults.swift */,
@@ -225,10 +225,10 @@
 				B3E47BE522964ABA00126BC3 /* PlayViewController.swift */,
 				B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */,
 				B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */,
+				B3E47BD42295B8DA00126BC3 /* NotesViewController.swift */,
 				B3D8044A229777F7005BEA77 /* DictionaryViewController.swift */,
 				B3D8044C229777FF005BEA77 /* DefinitionViewController.swift */,
 				B3EE12802292FE6400A3BE4C /* NumbersOptionsViewController.swift */,
-				B3E47BD42295B8DA00126BC3 /* NotesViewController.swift */,
 			);
 			path = UIViewControllers;
 			sourceTree = "<group>";

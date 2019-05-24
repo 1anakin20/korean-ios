@@ -145,7 +145,6 @@
         <!--Numbers-->
         <scene sceneID="9VN-uO-ynB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A93-fI-kL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="NumbersViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="871-3F-XkK" customClass="NumbersViewController" customModule="Korean_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pwE-rZ-zbt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -198,6 +197,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A93-fI-kL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-9.375" y="-815.49295774647885"/>
         </scene>
