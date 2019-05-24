@@ -24,8 +24,11 @@ class NumbersOptionsViewController: UIViewController {
 		showUserSettingsTextFields()
 	}
 	
-	@IBAction func backButton(_ sender: Any) {
-		userDefaults.saveMaxMin(maxTextField: maxTextField, minTextField: minTextField)
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+		
+		// Save user preferences
+		saveUserPreferences()
 	}
 	
 	func showUserSettingsTextFields() {
@@ -36,6 +39,10 @@ class NumbersOptionsViewController: UIViewController {
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		maxTextField.resignFirstResponder()
 		minTextField.resignFirstResponder()
+		saveUserPreferences()
+	}
+	
+	func saveUserPreferences() {
 		userDefaults.saveMaxMin(maxTextField: maxTextField, minTextField: minTextField)
 	}
 }
