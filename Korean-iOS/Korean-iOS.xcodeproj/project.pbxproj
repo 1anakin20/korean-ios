@@ -10,6 +10,10 @@
 		B306ADC2229045A100F1E8C1 /* numbersCreatorFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306ADC1229045A100F1E8C1 /* numbersCreatorFunctions.swift */; };
 		B318B3BD22943DC50087231C /* grayBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B318B3BC22943DC50087231C /* grayBackground.png */; };
 		B318B3BF229442150087231C /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = B318B3BE229442140087231C /* correct.wav */; };
+		B32D823022987F6700B2A2C1 /* Round_rectangle_Green_shadows.png in Resources */ = {isa = PBXBuildFile; fileRef = B32D822F22987F6700B2A2C1 /* Round_rectangle_Green_shadows.png */; };
+		B32D8234229882E700B2A2C1 /* Round_rectangle_bleu_shadows.png in Resources */ = {isa = PBXBuildFile; fileRef = B32D8233229882E600B2A2C1 /* Round_rectangle_bleu_shadows.png */; };
+		B32D8236229883F800B2A2C1 /* purple_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = B32D8235229883F800B2A2C1 /* purple_shadow.png */; };
+		B32D823C2298D3FC00B2A2C1 /* Rectangle_light_purple_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = B32D823B2298D3FC00B2A2C1 /* Rectangle_light_purple_shadow.png */; };
 		B34B386C229452EF000BF459 /* media-offline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B34B386B229452EF000BF459 /* media-offline.jpg */; };
 		B34E11D822938C6C00704125 /* sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34E11D722938C6C00704125 /* sounds.swift */; };
 		B34E11DD2293935A00704125 /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = B34E11DC2293935A00704125 /* incorrect.wav */; };
@@ -38,6 +42,7 @@
 		B3DC6B46228F3F4800856252 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B44228F3F4800856252 /* Text.swift */; };
 		B3DC6B48228FA18400856252 /* KoreanToNumberUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */; };
 		B3DC6B4A228FA1A300856252 /* NumberToKoreanUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */; };
+		B3E34A052298718B00D9C602 /* Korea_flag.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E34A042298718B00D9C602 /* Korea_flag.png */; };
 		B3E47BD52295B8DA00126BC3 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E47BD42295B8DA00126BC3 /* NotesViewController.swift */; };
 		B3E47BD92295BA3500126BC3 /* notes.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BD82295BA3500126BC3 /* notes.png */; };
 		B3E47BE12295BB5700126BC3 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BE02295BB5700126BC3 /* settings.png */; };
@@ -53,6 +58,10 @@
 		B306ADC1229045A100F1E8C1 /* numbersCreatorFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numbersCreatorFunctions.swift; sourceTree = "<group>"; };
 		B318B3BC22943DC50087231C /* grayBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayBackground.png; sourceTree = "<group>"; };
 		B318B3BE229442140087231C /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
+		B32D822F22987F6700B2A2C1 /* Round_rectangle_Green_shadows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Round_rectangle_Green_shadows.png; path = ../../../../../../../../Sketch/Round_rectangle_Green_shadows.png; sourceTree = "<group>"; };
+		B32D8233229882E600B2A2C1 /* Round_rectangle_bleu_shadows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round_rectangle_bleu_shadows.png; sourceTree = "<group>"; };
+		B32D8235229883F800B2A2C1 /* purple_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple_shadow.png; sourceTree = "<group>"; };
+		B32D823B2298D3FC00B2A2C1 /* Rectangle_light_purple_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rectangle_light_purple_shadow.png; path = ../../../../Sketch/Rectangle_light_purple_shadow.png; sourceTree = "<group>"; };
 		B34B386B229452EF000BF459 /* media-offline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "media-offline.jpg"; sourceTree = "<group>"; };
 		B34E11D722938C6C00704125 /* sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sounds.swift; sourceTree = "<group>"; };
 		B34E11DC2293935A00704125 /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incorrect.wav; sourceTree = "<group>"; };
@@ -83,6 +92,7 @@
 		B3DC6B44228F3F4800856252 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToNumberUIViewController.swift; sourceTree = "<group>"; };
 		B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberToKoreanUIViewController.swift; sourceTree = "<group>"; };
+		B3E34A042298718B00D9C602 /* Korea_flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Korea_flag.png; sourceTree = "<group>"; };
 		B3E47BD42295B8DA00126BC3 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		B3E47BD82295BA3500126BC3 /* notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notes.png; sourceTree = "<group>"; };
 		B3E47BE02295BB5700126BC3 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
@@ -108,6 +118,10 @@
 		B318B3B922943A560087231C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B32D823B2298D3FC00B2A2C1 /* Rectangle_light_purple_shadow.png */,
+				B32D8235229883F800B2A2C1 /* purple_shadow.png */,
+				B32D8233229882E600B2A2C1 /* Round_rectangle_bleu_shadows.png */,
+				B32D822F22987F6700B2A2C1 /* Round_rectangle_Green_shadows.png */,
 				B3E47BEB22970BD100126BC3 /* Bleu_rounded_rectangle.png */,
 				B3E47BE722970A3D00126BC3 /* Purpe_rounded_rectangle.png */,
 				B318B3BC22943DC50087231C /* grayBackground.png */,
@@ -115,6 +129,7 @@
 				B3D8045A22977AD8005BEA77 /* dictionary.png */,
 				B3E47BD82295BA3500126BC3 /* notes.png */,
 				B3E47BE02295BB5700126BC3 /* settings.png */,
+				B3E34A042298718B00D9C602 /* Korea_flag.png */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -291,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32D823022987F6700B2A2C1 /* Round_rectangle_Green_shadows.png in Resources */,
 				B3E47BD92295BA3500126BC3 /* notes.png in Resources */,
 				B318B3BD22943DC50087231C /* grayBackground.png in Resources */,
 				B3DC6B3C228F25D700856252 /* LaunchScreen.storyboard in Resources */,
@@ -298,12 +314,16 @@
 				B3E47BE12295BB5700126BC3 /* settings.png in Resources */,
 				B36E9D592294DEEE006F5DC1 /* grandma4.png in Resources */,
 				B36E9D602294DF7D006F5DC1 /* grandpa2.png in Resources */,
+				B32D8236229883F800B2A2C1 /* purple_shadow.png in Resources */,
 				B3E47BE822970A3D00126BC3 /* Purpe_rounded_rectangle.png in Resources */,
 				B3E47BE4229649BE00126BC3 /* Numbers.storyboard in Resources */,
+				B3E34A052298718B00D9C602 /* Korea_flag.png in Resources */,
 				B3D80451229778D9005BEA77 /* korEngDict.sqlite in Resources */,
 				B36E9D5A2294DEEE006F5DC1 /* grandma3.png in Resources */,
 				B36E9D5F2294DF7D006F5DC1 /* grandpa1.png in Resources */,
+				B32D8234229882E700B2A2C1 /* Round_rectangle_bleu_shadows.png in Resources */,
 				B318B3BF229442150087231C /* correct.wav in Resources */,
+				B32D823C2298D3FC00B2A2C1 /* Rectangle_light_purple_shadow.png in Resources */,
 				B34B386C229452EF000BF459 /* media-offline.jpg in Resources */,
 				B3D8045722977A70005BEA77 /* play.png in Resources */,
 				B3DC6B39228F25D700856252 /* Assets.xcassets in Resources */,

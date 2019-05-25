@@ -18,24 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Korean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33m-QE-i6T">
-                                <rect key="frame" x="126.5" y="167" width="67" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUX-Jq-bfU">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Play" image="play.png" id="Gda-Dz-Hgr"/>
+                                    <tabBarItem title="Notes" image="notes.png" id="AQc-pC-1Ut"/>
+                                    <tabBarItem title="Dictionary" image="dictionary.png" id="h5a-gd-hUG"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="33m-QE-i6T" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LQM-Gd-5qO"/>
-                            <constraint firstItem="33m-QE-i6T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="jDi-mN-v5Z"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dictionary.png" width="22.5" height="22.5"/>
+        <image name="notes.png" width="18.75" height="18.75"/>
+        <image name="play.png" width="18.75" height="18.75"/>
+    </resources>
 </document>

@@ -155,7 +155,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="NEZ-hf-q2F"/>
                                 </constraints>
-                                <state key="normal" title="Number to Korean" backgroundImage="Bleu_rounded_rectangle.png">
+                                <state key="normal" title="Number to Korean" backgroundImage="Rectangle_light_purple_shadow.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -167,7 +167,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="NgH-u7-ONe"/>
                                 </constraints>
-                                <state key="normal" title="Korean to Number" backgroundImage="Bleu_rounded_rectangle.png">
+                                <state key="normal" title="Korean to Number" backgroundImage="Rectangle_light_purple_shadow.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -269,7 +269,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Bleu_rounded_rectangle.png" width="142" height="102"/>
+        <image name="Rectangle_light_purple_shadow.png" width="296" height="68"/>
         <image name="grandma1.png" width="489" height="485"/>
         <image name="play.png" width="18.75" height="18.75"/>
         <image name="settings.png" width="22.5" height="22.5"/>

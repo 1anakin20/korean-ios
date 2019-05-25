@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="2368.125" y="-7.394366197183099"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Notes View Controller-->
         <scene sceneID="zXi-Aq-G3B">
             <objects>
-                <tableViewController id="6dU-vb-g7k" sceneMemberID="viewController">
+                <tableViewController id="6dU-vb-g7k" customClass="NotesViewController" customModule="Korean_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="EAC-nu-GOE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -79,7 +79,7 @@
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
-                                <mutableString key="text">Sino-Korean numbers
+                                <string key="text">Sino-Korean numbers
 Sino means based on the Chinese language.
 0: 영 or 공
 1: 일
@@ -97,7 +97,7 @@ Sino means based on the Chinese language.
 
 In Korean, if you want to say 11, you just say TEN (= 십) + ONE (= 일). If you want to say 33, you just say THREE (= 삼) + TEN (= 십) + THREE (= 삼). If you want to say 99, you say NINE (= 구) + TEN (= 십) + NINE (= 구). 
 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -138,63 +138,40 @@ In Korean, if you want to say 11, you just say TEN (= 십) + ONE (= 일). If you
             <objects>
                 <viewController storyboardIdentifier="PlayViewControllerID" id="wgt-cu-Fxe" customClass="PlayViewController" customModule="Korean_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aOi-c4-1kc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ul-f2-c96">
-                                <rect key="frame" x="0.0" y="64" width="320" height="487"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uY8-GL-QEU">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAn-iq-IUG">
-                                                <rect key="frame" x="38" y="33" width="136" height="99"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" backgroundImage="Bleu_rounded_rectangle.png">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="Sino-Korean numbers">
-                                                            <attributes>
-                                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <font key="NSFont" size="18" name=".AppleSDGothicNeoI-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="Pux-pX-V3H" kind="show" id="1Kx-8R-Vpe"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="uY8-GL-QEU" secondAttribute="trailing" id="3Vc-Ik-Ggp"/>
-                                    <constraint firstItem="uY8-GL-QEU" firstAttribute="leading" secondItem="0Ul-f2-c96" secondAttribute="leading" id="HLb-Lq-sHF"/>
-                                    <constraint firstItem="uY8-GL-QEU" firstAttribute="centerX" secondItem="0Ul-f2-c96" secondAttribute="centerX" id="MfC-V8-BjJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="uY8-GL-QEU" secondAttribute="bottom" constant="-27" id="lqC-kO-ktG"/>
-                                    <constraint firstItem="uY8-GL-QEU" firstAttribute="top" secondItem="0Ul-f2-c96" secondAttribute="top" id="v9z-JE-4TV"/>
-                                </constraints>
-                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAn-iq-IUG">
+                                <rect key="frame" x="82" y="200" width="156" height="108"/>
+                                <state key="normal" backgroundImage="purple_shadow.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sino-Korean numbers">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name=".AppleSDGothicNeoI-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="Pux-pX-V3H" kind="show" id="1Kx-8R-Vpe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="0Ul-f2-c96" firstAttribute="top" secondItem="O0Q-3u-QGX" secondAttribute="top" id="7Of-Zv-871"/>
-                            <constraint firstAttribute="width" secondItem="0Ul-f2-c96" secondAttribute="width" id="JrT-91-Pq8"/>
-                            <constraint firstItem="0Ul-f2-c96" firstAttribute="leading" secondItem="O0Q-3u-QGX" secondAttribute="leading" id="RNP-vm-zc1"/>
-                            <constraint firstItem="0Ul-f2-c96" firstAttribute="trailing" secondItem="O0Q-3u-QGX" secondAttribute="trailing" id="feG-Mf-Vkt"/>
-                            <constraint firstItem="uY8-GL-QEU" firstAttribute="height" secondItem="aOi-c4-1kc" secondAttribute="height" constant="-100" id="gC4-W4-kZo"/>
-                            <constraint firstItem="0Ul-f2-c96" firstAttribute="bottom" secondItem="O0Q-3u-QGX" secondAttribute="bottom" id="lKS-Sk-1Rv"/>
+                            <constraint firstItem="lAn-iq-IUG" firstAttribute="leading" secondItem="O0Q-3u-QGX" secondAttribute="leading" constant="82" id="0pF-KI-ei7"/>
+                            <constraint firstItem="lAn-iq-IUG" firstAttribute="centerY" secondItem="aOi-c4-1kc" secondAttribute="centerY" constant="-30" id="5IZ-BE-QHd"/>
+                            <constraint firstItem="lAn-iq-IUG" firstAttribute="centerX" secondItem="aOi-c4-1kc" secondAttribute="centerX" id="bPs-wE-KEK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O0Q-3u-QGX"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0ey-p7-g7m"/>
-                    <size key="freeformSize" width="320" height="600"/>
+                    <navigationItem key="navigationItem" id="yEw-qk-p3o"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dg2-Fa-vhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1590" y="-7.394366197183099"/>
+            <point key="canvasLocation" x="1589.8550724637682" y="-8.0357142857142847"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d2w-62-gwC">
@@ -205,6 +182,14 @@ In Korean, if you want to say 11, you just say TEN (= 십) + ONE (= 일). If you
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.38431372549019605" green="0.37647058823529411" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" white="0.55544520547945209" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="XXq-JX-pim" kind="relationship" relationship="viewControllers" id="f3z-S9-r1w"/>
@@ -359,9 +344,9 @@ In Korean, if you want to say 11, you just say TEN (= 십) + ONE (= 일). If you
         </scene>
     </scenes>
     <resources>
-        <image name="Bleu_rounded_rectangle.png" width="142" height="102"/>
         <image name="dictionary.png" width="22.5" height="22.5"/>
         <image name="notes.png" width="18.75" height="18.75"/>
         <image name="play.png" width="18.75" height="18.75"/>
+        <image name="purple_shadow.png" width="148" height="108"/>
     </resources>
 </document>

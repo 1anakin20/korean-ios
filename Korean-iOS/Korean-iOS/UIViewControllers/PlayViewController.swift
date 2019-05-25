@@ -18,11 +18,11 @@ class PlayViewController: UIViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		self.navigationController?.setNavigationBarHidden(true, animated: true)
+		self.navigationController?.setNavigationBarHidden(true, animated: false)
 	}
 	
 	override func viewWillDisappear(_ animated: Bool) {
 		super.viewWillDisappear(animated)
-		self.navigationController?.setNavigationBarHidden(false, animated: true)
+		self.navigationController?.setNavigationBarHidden(false, animated: false)
 	}
 }
