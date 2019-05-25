@@ -222,7 +222,7 @@
 				B3DC6B35228F25D500856252 /* Main.storyboard */,
 				B3E47BE2229649BE00126BC3 /* Numbers.storyboard */,
 				B3DC6B3A228F25D700856252 /* LaunchScreen.storyboard */,
-				B3E47BD32295B89300126BC3 /* UIViewControllers */,
+				B3E47BD32295B89300126BC3 /* Controllers */,
 				B3A94069229195B000F4C282 /* classes */,
 				B34E11DB229391EF00704125 /* sounds */,
 				B379D2052293A58A0080BCED /* images */,
@@ -233,7 +233,7 @@
 			path = "Korean-iOS";
 			sourceTree = "<group>";
 		};
-		B3E47BD32295B89300126BC3 /* UIViewControllers */ = {
+		B3E47BD32295B89300126BC3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				B3DC6B33228F25D500856252 /* NumbersViewController.swift */,
@@ -245,7 +245,7 @@
 				B3D8044C229777FF005BEA77 /* DefinitionViewController.swift */,
 				B3EE12802292FE6400A3BE4C /* NumbersOptionsViewController.swift */,
 			);
-			path = UIViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
