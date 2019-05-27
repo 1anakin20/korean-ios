@@ -23,9 +23,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem title="" image="play.png" id="Gda-Dz-Hgr"/>
-                                    <tabBarItem title="" image="notes.png" id="AQc-pC-1Ut"/>
-                                    <tabBarItem title="" image="dictionary.png" id="h5a-gd-hUG"/>
+                                    <tabBarItem title="Play" image="play.png" id="Gda-Dz-Hgr"/>
+                                    <tabBarItem title="Notes" image="notes.png" id="AQc-pC-1Ut"/>
+                                    <tabBarItem title="Dictionary" image="dictionary.png" id="h5a-gd-hUG"/>
                                 </items>
                             </tabBar>
                         </subviews>

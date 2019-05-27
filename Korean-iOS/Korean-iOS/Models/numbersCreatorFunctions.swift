@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SinoNumbersCreatorFunctions: NSObject {
+class numbersCreatorFunctions: NSObject {
 	// Functions values
 	let intMax = UserSettingsDefaults().checkMax()
 	let intMin = UserSettingsDefaults().checkMin()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SinoNumbersOptionsViewController: UIViewController {
+class NumbersOptionsViewController: UIViewController {
 	@IBOutlet weak var maxTextField: UITextField!
 	@IBOutlet weak var minTextField: UITextField!
 	

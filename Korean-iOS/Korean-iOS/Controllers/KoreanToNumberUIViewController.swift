@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SinoKoreanToNumberUIViewController: UIViewController {
+class KoreanToNumberUIViewController: UIViewController {
 	@IBOutlet weak var outputLabelNumber: UILabel!
 	@IBOutlet weak var inputFieldNumber: UITextField!
 	@IBOutlet weak var acceptButtonNumber: UIButton!
@@ -43,7 +43,7 @@ class SinoKoreanToNumberUIViewController: UIViewController {
 	}
 	
 	func showKoreanRandomNum() {
-		let numbersCreator = SinoNumbersCreatorFunctions()
+		let numbersCreator = numbersCreatorFunctions()
 		let randNumber = numbersCreator.randomNumber()
 		let koNumber = numbersCreator.numberDecimaltoStringKorean(decimalNumber: randNumber)
 		outputLabelNumber.text = koNumber
@@ -52,7 +52,7 @@ class SinoKoreanToNumberUIViewController: UIViewController {
 	
 	func checkAnswerKoreanToNumber(choice: String, randKoNumber: String) {
 		// Check if Korean matchs English number
-		let numbersCreator = SinoNumbersCreatorFunctions()
+		let numbersCreator = numbersCreatorFunctions()
 		let koNumber = numbersCreator.numberDecimaltoStringKorean(decimalNumber: randIntNumber)
 		if(choice == randKoNumber) {
 			answerReaction.goodAnswer(outputLabel: outputLabelNumber, acceptButton: acceptButtonNumber, image: imageView)
