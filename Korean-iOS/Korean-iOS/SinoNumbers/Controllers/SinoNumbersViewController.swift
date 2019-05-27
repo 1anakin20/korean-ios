@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NumbersViewController: UIViewController {
+class SinoNumbersViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
