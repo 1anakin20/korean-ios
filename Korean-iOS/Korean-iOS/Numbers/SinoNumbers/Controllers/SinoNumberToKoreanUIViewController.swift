@@ -8,13 +8,14 @@
 
 import UIKit
 
-class NumberToKoreanUIViewController: UIViewController {
+class SinoNumberToKoreanUIViewController: UIViewController {
 	@IBOutlet weak var outputLabel: UILabel!
 	@IBOutlet weak var inputTextFieldNumberToKorean: UITextField!
 	@IBOutlet weak var acceptButton: UIButton!
 	@IBOutlet weak var imageView: UIImageView!
 	
-	private var randIntNumber: Int = 666 //Default value for randIntNumber is 666
+	//Default value for randIntNumber is 666
+	private var randIntNumber: Int = 666
 	private var acceptButtonStateContinue = false
 	
 	// Objects
@@ -26,7 +27,7 @@ class NumberToKoreanUIViewController: UIViewController {
 		
 		// Do any additional setup after loading the view.
 		//Make view to defaults
-		resetToDefaultState()
+		acceptButtonStateContinue = answerReaction.resetToDefaultState(acceptButton: acceptButton, outputLabel: outputLabel, inputTextFieldNumber: inputTextFieldNumberToKorean, imageView: imageView)
 		showKoreanRandomNum()
 		inputTextFieldNumberToKorean.delegate = self
 	}
@@ -35,7 +36,7 @@ class NumberToKoreanUIViewController: UIViewController {
 		let inputText = inputTextFieldNumberToKorean.text!
 		// Check if variable acceptButtonStateContinue is true to continue
 		if(acceptButtonStateContinue) {
-			resetToDefaultState()
+			acceptButtonStateContinue = answerReaction.resetToDefaultState(acceptButton: acceptButton, outputLabel: outputLabel, inputTextFieldNumber: inputTextFieldNumberToKorean, imageView: imageView)
 			showKoreanRandomNum()
 		} else {
 			checkAnswerNumberToKorean(randNumber: randIntNumber, choice: inputText)
@@ -43,7 +44,7 @@ class NumberToKoreanUIViewController: UIViewController {
 	}
 	
 	func showKoreanRandomNum() {
-		let numbersCreator = numbersCreatorFunctions()
+		let numbersCreator = SinoNumbersCreatorFunctions()
 		let randNumber = numbersCreator.randomNumber()
 		outputLabel.text = String(randNumber)
 		randIntNumber = randNumber
@@ -51,7 +52,7 @@ class NumberToKoreanUIViewController: UIViewController {
 	
 	func checkAnswerNumberToKorean(randNumber: Int, choice: String) {
 		// Check if English matchs Korean number
-		let numbersCreator = numbersCreatorFunctions()
+		let numbersCreator = SinoNumbersCreatorFunctions()
 		let koNumber = numbersCreator.numberDecimaltoStringKorean(decimalNumber: randNumber)
 		if(choice == String(koNumber)) {
 			answerReaction.goodAnswer(outputLabel: outputLabel, acceptButton: acceptButton, image: imageView)
@@ -61,22 +62,12 @@ class NumberToKoreanUIViewController: UIViewController {
 		acceptButtonStateContinue = true
 	}
 	
-	func resetToDefaultState() {
-		// Wil reset UI to default state in colors and text
-		acceptButton.setTitle(ObjDefaults.defaultTitleButton, for: .normal)
-		acceptButton.setTitleColor(ObjDefaults.defaultTextColor, for: .normal)
-		outputLabel.textColor = ObjDefaults.defaultTextColor
-		inputTextFieldNumberToKorean.text = ""
-		imageView.isHidden = true
-		acceptButtonStateContinue = false
-	}
-	
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		inputTextFieldNumberToKorean.resignFirstResponder()
 	}
 }
 
-extension NumberToKoreanUIViewController : UITextFieldDelegate {
+extension SinoNumberToKoreanUIViewController : UITextFieldDelegate {
 	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 		acceptEnteredText(self)
 		return true

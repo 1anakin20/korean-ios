@@ -34,6 +34,7 @@ class correctOrWrong: NSObject {
 		image.isHidden = false
 		playSounds.playIncorrectSound()
 	}
+	
 	func resetToDefaultState(acceptButton: UIButton, outputLabel: UILabel, inputTextFieldNumber: UITextField, imageView: UIImageView) -> Bool {
 		// Wil reset UI to default state in colors and text
 		acceptButton.setTitle(ObjDefaults.defaultTitleButton, for: .normal)

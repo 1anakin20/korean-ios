@@ -8,7 +8,7 @@
 
 import UIKit
 
-class numbersCreatorFunctions: NSObject {
+class SinoNumbersCreatorFunctions: NSObject {
 	// Functions values
 	let intMax = UserSettingsDefaults().checkMax()
 	let intMin = UserSettingsDefaults().checkMin()
@@ -28,7 +28,7 @@ class numbersCreatorFunctions: NSObject {
 
 	
 	func randomNumber() -> Int {
-		let randomNum = Int.random(in: intMin...intMax) // 100 for debuggin purposes
+		let randomNum = Int.random(in: intMin...intMax)
 		return randomNum
 	}
 	

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B306ADC2229045A100F1E8C1 /* numbersCreatorFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306ADC1229045A100F1E8C1 /* numbersCreatorFunctions.swift */; };
+		B3006288229C91DD00299DC1 /* NativeUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3006287229C91DD00299DC1 /* NativeUserDefaults.swift */; };
+		B306ADC2229045A100F1E8C1 /* SinoNumbersCreatorFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306ADC1229045A100F1E8C1 /* SinoNumbersCreatorFunctions.swift */; };
 		B318B3BD22943DC50087231C /* grayBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B318B3BC22943DC50087231C /* grayBackground.png */; };
 		B318B3BF229442150087231C /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = B318B3BE229442140087231C /* correct.wav */; };
 		B32D823022987F6700B2A2C1 /* Round_rectangle_Green_shadows.png in Resources */ = {isa = PBXBuildFile; fileRef = B32D822F22987F6700B2A2C1 /* Round_rectangle_Green_shadows.png */; };
@@ -27,6 +28,14 @@
 		B36E9D612294DF7D006F5DC1 /* grandpa3.png in Resources */ = {isa = PBXBuildFile; fileRef = B36E9D5E2294DF7D006F5DC1 /* grandpa3.png */; };
 		B379D20F2293ABA70080BCED /* images.swift in Sources */ = {isa = PBXBuildFile; fileRef = B379D20E2293ABA70080BCED /* images.swift */; };
 		B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A94067229195AB00F4C282 /* textDefaults.swift */; };
+		B3A9534F229B1F5800072420 /* Square_Bleu_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9534E229B1F5800072420 /* Square_Bleu_Button.png */; };
+		B3A95351229B206700072420 /* NativeNumbers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A95350229B206700072420 /* NativeNumbers.storyboard */; };
+		B3A95356229B211F00072420 /* NativeNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A95355229B211F00072420 /* NativeNumbersViewController.swift */; };
+		B3A95358229B242500072420 /* Rectangle_bleu_light.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A95357229B242500072420 /* Rectangle_bleu_light.png */; };
+		B3A9535A229B364200072420 /* NativeNumberToKoreanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A95359229B364200072420 /* NativeNumberToKoreanViewController.swift */; };
+		B3A9535C229B365000072420 /* NativeKoreanToNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9535B229B365000072420 /* NativeKoreanToNumberViewController.swift */; };
+		B3A9535E229B366400072420 /* NativeOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9535D229B366400072420 /* NativeOptionsViewController.swift */; };
+		B3A95360229B388900072420 /* NativeNumbersCreatorFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9535F229B388900072420 /* NativeNumbersCreatorFunctions.swift */; };
 		B3D8044B229777F7005BEA77 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D8044A229777F7005BEA77 /* DictionaryViewController.swift */; };
 		B3D8044D229777FF005BEA77 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D8044C229777FF005BEA77 /* DefinitionViewController.swift */; };
 		B3D80450229778D9005BEA77 /* KorEngDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D8044E229778D9005BEA77 /* KorEngDict.swift */; };
@@ -34,28 +43,29 @@
 		B3D8045722977A70005BEA77 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D8045622977A70005BEA77 /* play.png */; };
 		B3D8045B22977AD9005BEA77 /* dictionary.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D8045A22977AD8005BEA77 /* dictionary.png */; };
 		B3DC6B32228F25D500856252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B31228F25D500856252 /* AppDelegate.swift */; };
-		B3DC6B34228F25D500856252 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B33228F25D500856252 /* NumbersViewController.swift */; };
+		B3DC6B34228F25D500856252 /* SinoNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B33228F25D500856252 /* SinoNumbersViewController.swift */; };
 		B3DC6B37228F25D500856252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DC6B35228F25D500856252 /* Main.storyboard */; };
 		B3DC6B39228F25D700856252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DC6B38228F25D700856252 /* Assets.xcassets */; };
 		B3DC6B3C228F25D700856252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DC6B3A228F25D700856252 /* LaunchScreen.storyboard */; };
 		B3DC6B45228F3F4800856252 /* numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B43228F3F4800856252 /* numbers.swift */; };
 		B3DC6B46228F3F4800856252 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B44228F3F4800856252 /* Text.swift */; };
-		B3DC6B48228FA18400856252 /* KoreanToNumberUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */; };
-		B3DC6B4A228FA1A300856252 /* NumberToKoreanUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */; };
+		B3DC6B48228FA18400856252 /* SinoKoreanToNumberUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B47228FA18400856252 /* SinoKoreanToNumberUIViewController.swift */; };
+		B3DC6B4A228FA1A300856252 /* SinoNumberToKoreanUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC6B49228FA1A300856252 /* SinoNumberToKoreanUIViewController.swift */; };
 		B3E34A052298718B00D9C602 /* Korea_flag.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E34A042298718B00D9C602 /* Korea_flag.png */; };
 		B3E47BD52295B8DA00126BC3 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E47BD42295B8DA00126BC3 /* NotesViewController.swift */; };
 		B3E47BD92295BA3500126BC3 /* notes.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BD82295BA3500126BC3 /* notes.png */; };
 		B3E47BE12295BB5700126BC3 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BE02295BB5700126BC3 /* settings.png */; };
-		B3E47BE4229649BE00126BC3 /* Numbers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BE2229649BE00126BC3 /* Numbers.storyboard */; };
+		B3E47BE4229649BE00126BC3 /* SinoNumbers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BE2229649BE00126BC3 /* SinoNumbers.storyboard */; };
 		B3E47BE622964ABA00126BC3 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E47BE522964ABA00126BC3 /* PlayViewController.swift */; };
 		B3E47BE822970A3D00126BC3 /* Purpe_rounded_rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BE722970A3D00126BC3 /* Purpe_rounded_rectangle.png */; };
 		B3E47BEC22970BD100126BC3 /* Bleu_rounded_rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E47BEB22970BD100126BC3 /* Bleu_rounded_rectangle.png */; };
 		B3EE127F2292FDE700A3BE4C /* UserSettingsDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE127E2292FDE700A3BE4C /* UserSettingsDefaults.swift */; };
-		B3EE12812292FE6400A3BE4C /* NumbersOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE12802292FE6400A3BE4C /* NumbersOptionsViewController.swift */; };
+		B3EE12812292FE6400A3BE4C /* SinoNumbersOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE12802292FE6400A3BE4C /* SinoNumbersOptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B306ADC1229045A100F1E8C1 /* numbersCreatorFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numbersCreatorFunctions.swift; sourceTree = "<group>"; };
+		B3006287229C91DD00299DC1 /* NativeUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeUserDefaults.swift; sourceTree = "<group>"; };
+		B306ADC1229045A100F1E8C1 /* SinoNumbersCreatorFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinoNumbersCreatorFunctions.swift; sourceTree = "<group>"; };
 		B318B3BC22943DC50087231C /* grayBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayBackground.png; sourceTree = "<group>"; };
 		B318B3BE229442140087231C /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
 		B32D822F22987F6700B2A2C1 /* Round_rectangle_Green_shadows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Round_rectangle_Green_shadows.png; path = ../../../../../../../../Sketch/Round_rectangle_Green_shadows.png; sourceTree = "<group>"; };
@@ -75,6 +85,14 @@
 		B36E9D5E2294DF7D006F5DC1 /* grandpa3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grandpa3.png; sourceTree = "<group>"; };
 		B379D20E2293ABA70080BCED /* images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = images.swift; sourceTree = "<group>"; };
 		B3A94067229195AB00F4C282 /* textDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textDefaults.swift; sourceTree = "<group>"; };
+		B3A9534E229B1F5800072420 /* Square_Bleu_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Square_Bleu_Button.png; path = ../../../../Sketch/Square_Bleu_Button.png; sourceTree = "<group>"; };
+		B3A95350229B206700072420 /* NativeNumbers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NativeNumbers.storyboard; sourceTree = "<group>"; };
+		B3A95355229B211F00072420 /* NativeNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNumbersViewController.swift; sourceTree = "<group>"; };
+		B3A95357229B242500072420 /* Rectangle_bleu_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rectangle_bleu_light.png; path = ../../../../Sketch/Rectangle_bleu_light.png; sourceTree = "<group>"; };
+		B3A95359229B364200072420 /* NativeNumberToKoreanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNumberToKoreanViewController.swift; sourceTree = "<group>"; };
+		B3A9535B229B365000072420 /* NativeKoreanToNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeKoreanToNumberViewController.swift; sourceTree = "<group>"; };
+		B3A9535D229B366400072420 /* NativeOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeOptionsViewController.swift; sourceTree = "<group>"; };
+		B3A9535F229B388900072420 /* NativeNumbersCreatorFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNumbersCreatorFunctions.swift; sourceTree = "<group>"; };
 		B3D8044A229777F7005BEA77 /* DictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
 		B3D8044C229777FF005BEA77 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		B3D8044E229778D9005BEA77 /* KorEngDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KorEngDict.swift; sourceTree = "<group>"; };
@@ -83,25 +101,25 @@
 		B3D8045A22977AD8005BEA77 /* dictionary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dictionary.png; sourceTree = "<group>"; };
 		B3DC6B2E228F25D500856252 /* Korean-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Korean-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DC6B31228F25D500856252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3DC6B33228F25D500856252 /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
+		B3DC6B33228F25D500856252 /* SinoNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinoNumbersViewController.swift; sourceTree = "<group>"; };
 		B3DC6B36228F25D500856252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3DC6B38228F25D700856252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3DC6B3B228F25D700856252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3DC6B3D228F25D700856252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3DC6B43228F3F4800856252 /* numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = numbers.swift; sourceTree = "<group>"; };
 		B3DC6B44228F3F4800856252 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
-		B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToNumberUIViewController.swift; sourceTree = "<group>"; };
-		B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberToKoreanUIViewController.swift; sourceTree = "<group>"; };
+		B3DC6B47228FA18400856252 /* SinoKoreanToNumberUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinoKoreanToNumberUIViewController.swift; sourceTree = "<group>"; };
+		B3DC6B49228FA1A300856252 /* SinoNumberToKoreanUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinoNumberToKoreanUIViewController.swift; sourceTree = "<group>"; };
 		B3E34A042298718B00D9C602 /* Korea_flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Korea_flag.png; sourceTree = "<group>"; };
 		B3E47BD42295B8DA00126BC3 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		B3E47BD82295BA3500126BC3 /* notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notes.png; sourceTree = "<group>"; };
 		B3E47BE02295BB5700126BC3 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
-		B3E47BE3229649BE00126BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Korean-iOS/Base.lproj/Numbers.storyboard"; sourceTree = "<group>"; };
+		B3E47BE3229649BE00126BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Korean-iOS/Base.lproj/SinoNumbers.storyboard"; sourceTree = "<group>"; };
 		B3E47BE522964ABA00126BC3 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		B3E47BE722970A3D00126BC3 /* Purpe_rounded_rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Purpe_rounded_rectangle.png; sourceTree = "<group>"; };
 		B3E47BEB22970BD100126BC3 /* Bleu_rounded_rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bleu_rounded_rectangle.png; sourceTree = "<group>"; };
 		B3EE127E2292FDE700A3BE4C /* UserSettingsDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsDefaults.swift; sourceTree = "<group>"; };
-		B3EE12802292FE6400A3BE4C /* NumbersOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersOptionsViewController.swift; sourceTree = "<group>"; };
+		B3EE12802292FE6400A3BE4C /* SinoNumbersOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinoNumbersOptionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +133,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B300628A229C97AC00299DC1 /* Numbers */ = {
+			isa = PBXGroup;
+			children = (
+				B34E11E0229395CD00704125 /* correctOrWrong.swift */,
+				B3A95348229B1A7D00072420 /* SinoNumbers */,
+				B3A95352229B209E00072420 /* NativeNumbers */,
+			);
+			path = Numbers;
+			sourceTree = "<group>";
+		};
 		B318B3B922943A560087231C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B3A95357229B242500072420 /* Rectangle_bleu_light.png */,
+				B3A9534E229B1F5800072420 /* Square_Bleu_Button.png */,
 				B32D823B2298D3FC00B2A2C1 /* Rectangle_light_purple_shadow.png */,
 				B32D8235229883F800B2A2C1 /* purple_shadow.png */,
 				B32D8233229882E600B2A2C1 /* Round_rectangle_bleu_shadows.png */,
@@ -188,14 +218,94 @@
 		B3A94069229195B000F4C282 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B306ADC1229045A100F1E8C1 /* numbersCreatorFunctions.swift */,
-				B34E11E0229395CD00704125 /* correctOrWrong.swift */,
-				B3D8044E229778D9005BEA77 /* KorEngDict.swift */,
-				B3D8044F229778D9005BEA77 /* korEngDict.sqlite */,
+				B3A94067229195AB00F4C282 /* textDefaults.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3A95348229B1A7D00072420 /* SinoNumbers */ = {
+			isa = PBXGroup;
+			children = (
+				B3A95349229B1A9A00072420 /* Controllers */,
+				B3A9534A229B1AA100072420 /* Models */,
+			);
+			path = SinoNumbers;
+			sourceTree = "<group>";
+		};
+		B3A95349229B1A9A00072420 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC6B33228F25D500856252 /* SinoNumbersViewController.swift */,
+				B3DC6B49228FA1A300856252 /* SinoNumberToKoreanUIViewController.swift */,
+				B3DC6B47228FA18400856252 /* SinoKoreanToNumberUIViewController.swift */,
+				B3EE12802292FE6400A3BE4C /* SinoNumbersOptionsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B3A9534A229B1AA100072420 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B306ADC1229045A100F1E8C1 /* SinoNumbersCreatorFunctions.swift */,
 				B379D20E2293ABA70080BCED /* images.swift */,
 				B34E11D722938C6C00704125 /* sounds.swift */,
-				B3A94067229195AB00F4C282 /* textDefaults.swift */,
 				B3EE127E2292FDE700A3BE4C /* UserSettingsDefaults.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3A9534B229B1B9700072420 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				B3A9534C229B1BA200072420 /* Controllers */,
+				B3A9534D229B1BAA00072420 /* Models */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		B3A9534C229B1BA200072420 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3D8044A229777F7005BEA77 /* DictionaryViewController.swift */,
+				B3D8044C229777FF005BEA77 /* DefinitionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B3A9534D229B1BAA00072420 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3D8044E229778D9005BEA77 /* KorEngDict.swift */,
+				B3D8044F229778D9005BEA77 /* korEngDict.sqlite */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3A95352229B209E00072420 /* NativeNumbers */ = {
+			isa = PBXGroup;
+			children = (
+				B3A95353229B20BF00072420 /* Controllers */,
+				B3A95354229B20CD00072420 /* Models */,
+			);
+			path = NativeNumbers;
+			sourceTree = "<group>";
+		};
+		B3A95353229B20BF00072420 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3A95355229B211F00072420 /* NativeNumbersViewController.swift */,
+				B3A95359229B364200072420 /* NativeNumberToKoreanViewController.swift */,
+				B3A9535B229B365000072420 /* NativeKoreanToNumberViewController.swift */,
+				B3A9535D229B366400072420 /* NativeOptionsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B3A95354229B20CD00072420 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3A9535F229B388900072420 /* NativeNumbersCreatorFunctions.swift */,
+				B3006287229C91DD00299DC1 /* NativeUserDefaults.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,10 +331,13 @@
 			children = (
 				B3DC6B31228F25D500856252 /* AppDelegate.swift */,
 				B3DC6B35228F25D500856252 /* Main.storyboard */,
-				B3E47BE2229649BE00126BC3 /* Numbers.storyboard */,
+				B3E47BE2229649BE00126BC3 /* SinoNumbers.storyboard */,
+				B3A95350229B206700072420 /* NativeNumbers.storyboard */,
 				B3DC6B3A228F25D700856252 /* LaunchScreen.storyboard */,
 				B3E47BD32295B89300126BC3 /* Controllers */,
 				B3A94069229195B000F4C282 /* Models */,
+				B300628A229C97AC00299DC1 /* Numbers */,
+				B3A9534B229B1B9700072420 /* Dictionary */,
 				B379D2052293A58A0080BCED /* Assets */,
 				B323DDF922939E8A00BA7AAC /* original source code */,
 				B3DC6B38228F25D700856252 /* Assets.xcassets */,
@@ -236,14 +349,8 @@
 		B3E47BD32295B89300126BC3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B3DC6B33228F25D500856252 /* NumbersViewController.swift */,
 				B3E47BE522964ABA00126BC3 /* PlayViewController.swift */,
-				B3DC6B49228FA1A300856252 /* NumberToKoreanUIViewController.swift */,
-				B3DC6B47228FA18400856252 /* KoreanToNumberUIViewController.swift */,
 				B3E47BD42295B8DA00126BC3 /* NotesViewController.swift */,
-				B3D8044A229777F7005BEA77 /* DictionaryViewController.swift */,
-				B3D8044C229777FF005BEA77 /* DefinitionViewController.swift */,
-				B3EE12802292FE6400A3BE4C /* NumbersOptionsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -313,11 +420,13 @@
 				B34E11DD2293935A00704125 /* incorrect.wav in Resources */,
 				B3E47BE12295BB5700126BC3 /* settings.png in Resources */,
 				B36E9D592294DEEE006F5DC1 /* grandma4.png in Resources */,
+				B3A95351229B206700072420 /* NativeNumbers.storyboard in Resources */,
 				B36E9D602294DF7D006F5DC1 /* grandpa2.png in Resources */,
 				B32D8236229883F800B2A2C1 /* purple_shadow.png in Resources */,
 				B3E47BE822970A3D00126BC3 /* Purpe_rounded_rectangle.png in Resources */,
-				B3E47BE4229649BE00126BC3 /* Numbers.storyboard in Resources */,
+				B3E47BE4229649BE00126BC3 /* SinoNumbers.storyboard in Resources */,
 				B3E34A052298718B00D9C602 /* Korea_flag.png in Resources */,
+				B3A9534F229B1F5800072420 /* Square_Bleu_Button.png in Resources */,
 				B3D80451229778D9005BEA77 /* korEngDict.sqlite in Resources */,
 				B36E9D5A2294DEEE006F5DC1 /* grandma3.png in Resources */,
 				B36E9D5F2294DF7D006F5DC1 /* grandpa1.png in Resources */,
@@ -332,6 +441,7 @@
 				B36E9D572294DEEE006F5DC1 /* grandma2.png in Resources */,
 				B3E47BEC22970BD100126BC3 /* Bleu_rounded_rectangle.png in Resources */,
 				B3D8045B22977AD9005BEA77 /* dictionary.png in Resources */,
+				B3A95358229B242500072420 /* Rectangle_bleu_light.png in Resources */,
 				B36E9D612294DF7D006F5DC1 /* grandpa3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,21 +453,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3DC6B48228FA18400856252 /* KoreanToNumberUIViewController.swift in Sources */,
+				B3A9535A229B364200072420 /* NativeNumberToKoreanViewController.swift in Sources */,
+				B3DC6B48228FA18400856252 /* SinoKoreanToNumberUIViewController.swift in Sources */,
 				B3E47BE622964ABA00126BC3 /* PlayViewController.swift in Sources */,
 				B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */,
 				B3DC6B45228F3F4800856252 /* numbers.swift in Sources */,
-				B3EE12812292FE6400A3BE4C /* NumbersOptionsViewController.swift in Sources */,
+				B3EE12812292FE6400A3BE4C /* SinoNumbersOptionsViewController.swift in Sources */,
+				B3A95360229B388900072420 /* NativeNumbersCreatorFunctions.swift in Sources */,
 				B3D80450229778D9005BEA77 /* KorEngDict.swift in Sources */,
 				B379D20F2293ABA70080BCED /* images.swift in Sources */,
+				B3006288229C91DD00299DC1 /* NativeUserDefaults.swift in Sources */,
 				B34E11D822938C6C00704125 /* sounds.swift in Sources */,
-				B306ADC2229045A100F1E8C1 /* numbersCreatorFunctions.swift in Sources */,
-				B3DC6B4A228FA1A300856252 /* NumberToKoreanUIViewController.swift in Sources */,
-				B3DC6B34228F25D500856252 /* NumbersViewController.swift in Sources */,
+				B306ADC2229045A100F1E8C1 /* SinoNumbersCreatorFunctions.swift in Sources */,
+				B3DC6B4A228FA1A300856252 /* SinoNumberToKoreanUIViewController.swift in Sources */,
+				B3DC6B34228F25D500856252 /* SinoNumbersViewController.swift in Sources */,
 				B3DC6B46228F3F4800856252 /* Text.swift in Sources */,
 				B3E47BD52295B8DA00126BC3 /* NotesViewController.swift in Sources */,
 				B3EE127F2292FDE700A3BE4C /* UserSettingsDefaults.swift in Sources */,
+				B3A9535C229B365000072420 /* NativeKoreanToNumberViewController.swift in Sources */,
+				B3A95356229B211F00072420 /* NativeNumbersViewController.swift in Sources */,
 				B3DC6B32228F25D500856252 /* AppDelegate.swift in Sources */,
+				B3A9535E229B366400072420 /* NativeOptionsViewController.swift in Sources */,
 				B3D8044D229777FF005BEA77 /* DefinitionViewController.swift in Sources */,
 				B3D8044B229777F7005BEA77 /* DictionaryViewController.swift in Sources */,
 				B34E11E1229395CD00704125 /* correctOrWrong.swift in Sources */,
@@ -383,12 +499,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		B3E47BE2229649BE00126BC3 /* Numbers.storyboard */ = {
+		B3E47BE2229649BE00126BC3 /* SinoNumbers.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B3E47BE3229649BE00126BC3 /* Base */,
 			);
-			name = Numbers.storyboard;
+			name = SinoNumbers.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
