@@ -26,7 +26,8 @@ class NativeNumbersCreatorFunctions: NSObject {
 							100:"온",
 		] as [Int : String]
 	
-	let nativeTenNames = [2:"스물",
+	let nativeTenNames = [1:"열",
+						  2:"스물",
 						  3:"서른",
 						  4:"마흔",
 						  5:"쉰",
@@ -37,13 +38,16 @@ class NativeNumbersCreatorFunctions: NSObject {
 		] as [Int : String]
 	
 	func native(number: Int) -> String {
-		let ten = number/10
+		let ten: Float = Float(number)/10
 		if(number == 100) {
 			return koreanDigitNames[100]!
+		} else if(ten.truncatingRemainder(dividingBy: 1) == 0) {
+			let tenNumber = number/10
+			return nativeTenNames[tenNumber] ?? "Default value nativeTenNames"
 		} else if(ten > 1) {
 			let modulusNumber = number % 10
 			let lastDigit = koreanDigitNames[modulusNumber] ?? "Default lastDigit value"
-			let firstDigit = nativeTenNames[ten] ?? "Default firstDigit value"
+			let firstDigit = nativeTenNames[Int(ten)] ?? "Default firstDigit value"
 			let composedNumber: String = firstDigit + lastDigit
 			return composedNumber
 		} else {
