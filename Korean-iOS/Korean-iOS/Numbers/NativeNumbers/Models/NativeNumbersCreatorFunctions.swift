@@ -10,8 +10,8 @@ import UIKit
 
 class NativeNumbersCreatorFunctions: NSObject {
 	// Functions values
-	let intMax = UserSettingsDefaults().checkMax()
-	let intMin = UserSettingsDefaults().checkMin()
+	let nativeIntMax = NativeUserDefaults().nativeCheckMin()
+	let nativeIntMin = NativeUserDefaults().nativeCheckMax()
 	
 	let koreanDigitNames = [0:"영",
 							1:"하나",
@@ -53,5 +53,10 @@ class NativeNumbersCreatorFunctions: NSObject {
 		} else {
 			return koreanDigitNames[number]!
 		}
+	}
+	
+	func nativeRandomNumber() -> Int {
+		let randomNum = Int.random(in: nativeIntMax...nativeIntMin)
+		return randomNum
 	}
 }
