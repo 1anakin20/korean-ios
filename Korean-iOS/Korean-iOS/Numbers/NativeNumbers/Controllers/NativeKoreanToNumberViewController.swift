@@ -58,7 +58,7 @@ class NativeKoreanToNumberViewController: UIViewController {
 		if(choice == randKoNumber) {
 			answerReaction.goodAnswer(outputLabel: nativeNumberLabel, acceptButton: nativeAcceptButtonNumber, image: nativeNumberImage)
 		} else {
-			answerReaction.wrongAnswer(outputLabel: nativeNumberLabel, acceptButton: nativeAcceptButtonNumber, randNumber: randIntNumber, koNumber: koNumber, image: nativeNumberImage)
+			answerReaction.wrongAnswer(outputLabel: nativeNumberLabel, acceptButton: nativeAcceptButtonNumber, firstOutput: String(koNumber), secondOutput: String(randIntNumber), image: nativeNumberImage)
 		}
 		acceptButtonNumberStateContinue = true
 	}

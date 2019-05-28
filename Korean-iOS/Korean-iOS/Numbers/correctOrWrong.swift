@@ -23,9 +23,10 @@ class correctOrWrong: NSObject {
 		image.isHidden = false
 		playSounds.playCorrectSound()
 	}
-	
-	func wrongAnswer(outputLabel: UILabel, acceptButton: UIButton, randNumber: Int, koNumber: String, image: UIImageView) {
-		let returnWrongAnswer: String = "The good answer for \(randNumber) was \(koNumber)"
+
+	func wrongAnswer(outputLabel: UILabel, acceptButton: UIButton, firstOutput: String, secondOutput: String, image: UIImageView) {
+		
+		let returnWrongAnswer: String = "The good answer for \(firstOutput) was \(secondOutput)"
 		outputLabel.text = returnWrongAnswer
 		outputLabel.textColor = ObjDefaults.textColorWrong
 		acceptButton.setTitleColor(ObjDefaults.textColorWrong, for: .normal)

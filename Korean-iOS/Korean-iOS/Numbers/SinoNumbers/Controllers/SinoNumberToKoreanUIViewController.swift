@@ -57,7 +57,7 @@ class SinoNumberToKoreanUIViewController: UIViewController {
 		if(choice == String(koNumber)) {
 			answerReaction.goodAnswer(outputLabel: outputLabel, acceptButton: acceptButton, image: imageView)
 		} else {
-			answerReaction.wrongAnswer(outputLabel: outputLabel, acceptButton: acceptButton, randNumber: randNumber, koNumber: String(koNumber), image: imageView)
+			answerReaction.wrongAnswer(outputLabel: outputLabel, acceptButton: acceptButton, firstOutput: String(randNumber), secondOutput: koNumber, image: imageView)
 		}
 		acceptButtonStateContinue = true
 	}

@@ -29,7 +29,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFO-cz-vw9">
                                 <rect key="frame" x="16" y="272" width="288" height="68"/>
-                                <state key="normal" title="Button" backgroundImage="Rectangle_bleu_light.png">
+                                <state key="normal" title="Korean To Number" backgroundImage="Rectangle_bleu_light.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
