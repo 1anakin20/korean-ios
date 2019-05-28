@@ -115,7 +115,6 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Accept"/>
                                 <connections>
-                                    <action selector="acceptEnteredText:" destination="5Yj-MW-Dhj" eventType="touchUpInside" id="62C-yN-0bm"/>
                                     <action selector="nativeAcceptButton:" destination="5Yj-MW-Dhj" eventType="touchUpInside" id="XJf-aZ-ULy"/>
                                 </connections>
                             </button>
