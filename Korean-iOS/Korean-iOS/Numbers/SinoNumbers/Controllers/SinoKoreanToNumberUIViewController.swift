@@ -15,19 +15,19 @@ class SinoKoreanToNumberUIViewController: UIViewController {
 	@IBOutlet weak var imageView: UIImageView!
 	
 	//Private variables
-	private var randIntNumber = 777 //Default value
+	//Default value
+	private var randIntNumber = 777
 	private var acceptButtonNumberStateContinue = false
 	
 	// Object
 	let answerReaction = correctOrWrong()
 	let ObjDefaults = textDefaults()
-	let playSounds = sounds()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
 		// Do any additional setup after loading the view.
-		resetToDefaultState()
+		acceptButtonNumberStateContinue = answerReaction.resetToDefaultState(acceptButton: acceptButtonNumber, outputLabel: outputLabelNumber, inputTextFieldNumber: inputFieldNumber, imageView: imageView)
 		showKoreanRandomNum()
 	}
 	
@@ -35,7 +35,7 @@ class SinoKoreanToNumberUIViewController: UIViewController {
 		let inputText = inputFieldNumber.text!
 		// Check is variable acceptButtonNumberStateContinue is true to continue
 		if(acceptButtonNumberStateContinue) {
-			resetToDefaultState()
+			acceptButtonNumberStateContinue = answerReaction.resetToDefaultState(acceptButton: acceptButtonNumber, outputLabel: outputLabelNumber, inputTextFieldNumber: inputFieldNumber, imageView: imageView)
 			showKoreanRandomNum()
 		} else {
 			checkAnswerKoreanToNumber(choice: inputText, randKoNumber: String(randIntNumber))
@@ -60,16 +60,6 @@ class SinoKoreanToNumberUIViewController: UIViewController {
 			answerReaction.wrongAnswer(outputLabel: outputLabelNumber, acceptButton: acceptButtonNumber, randNumber: randIntNumber, koNumber: koNumber, image: imageView)
 		}
 		acceptButtonNumberStateContinue = true
-	}
-	
-	func resetToDefaultState() {
-		// Wil reset UI to default state in colors and text
-		acceptButtonNumber.setTitle(ObjDefaults.defaultTitleButton, for: .normal)
-		acceptButtonNumber.setTitleColor(ObjDefaults.defaultTextColor, for: .normal)
-		outputLabelNumber.textColor = ObjDefaults.defaultTextColor
-		inputFieldNumber.text = ""
-		imageView.isHidden = true
-		acceptButtonNumberStateContinue = false
 	}
 	
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

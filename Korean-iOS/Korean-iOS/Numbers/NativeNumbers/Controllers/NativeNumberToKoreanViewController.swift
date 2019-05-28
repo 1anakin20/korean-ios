@@ -27,7 +27,7 @@ class NativeNumberToKoreanViewController: UIViewController {
 		
 		// Do any additional setup after loading the view.
 		acceptButtonStateContinue = answerReactions.resetToDefaultState(acceptButton: nativeAcceptButton, outputLabel: nativeAnswerLabel, inputTextFieldNumber: nativeFieldText, imageView: nativeImage)
-		showKoreanRandomNum()
+		showNativeKoreanRandomNum()
 		
 	}
 	@IBAction func nativeAcceptButton(_ sender: Any) {
@@ -35,13 +35,13 @@ class NativeNumberToKoreanViewController: UIViewController {
 		// Check if variable acceptButtonStateContinue is true to continue
 		if(acceptButtonStateContinue) {
 			acceptButtonStateContinue = answerReactions.resetToDefaultState(acceptButton: nativeAcceptButton, outputLabel: nativeAnswerLabel, inputTextFieldNumber: nativeFieldText, imageView: nativeImage)
-			showKoreanRandomNum()
+			showNativeKoreanRandomNum()
 		} else {
 			checkAnswerNativeNumberToKorean(randNumber: randIntNumber, choice: inputText)
 		}
 	}
 	
-	func showKoreanRandomNum() {
+	func showNativeKoreanRandomNum() {
 		let numbersCreator = NativeNumbersCreatorFunctions()
 		let randNumber = numbersCreator.nativeRandomNumber()
 		nativeAnswerLabel.text = String(randNumber)
