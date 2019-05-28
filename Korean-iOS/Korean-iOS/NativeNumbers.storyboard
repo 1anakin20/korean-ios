@@ -129,20 +129,63 @@
             </objects>
             <point key="canvasLocation" x="975" y="86"/>
         </scene>
-        <!--View Controller-->
+        <!--Native Options View Controller-->
         <scene sceneID="ucx-Ot-1oD">
             <objects>
-                <viewController id="4bf-4o-xPp" sceneMemberID="viewController">
+                <viewController id="4bf-4o-xPp" customClass="NativeOptionsViewController" customModule="Korean_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nXn-ap-nM2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" placeholder="Max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2n7-DG-Erb">
+                                <rect key="frame" x="136" y="172" width="48" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F20-Ru-3SL">
+                                <rect key="frame" x="144" y="143" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDU-5i-dul">
+                                <rect key="frame" x="146" y="234" width="28" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="Min" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="46L-WC-qkD">
+                                <rect key="frame" x="137.5" y="263" width="45" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F20-Ru-3SL" firstAttribute="top" secondItem="1UK-IH-VgE" secondAttribute="top" constant="79" id="0sm-UH-eau"/>
+                            <constraint firstItem="2n7-DG-Erb" firstAttribute="centerX" secondItem="nXn-ap-nM2" secondAttribute="centerX" id="4gA-PR-h3i"/>
+                            <constraint firstItem="46L-WC-qkD" firstAttribute="centerX" secondItem="nXn-ap-nM2" secondAttribute="centerX" id="AcV-pd-Jf4"/>
+                            <constraint firstItem="2n7-DG-Erb" firstAttribute="top" secondItem="F20-Ru-3SL" secondAttribute="bottom" constant="8" symbolic="YES" id="BMS-bC-bAW"/>
+                            <constraint firstItem="F20-Ru-3SL" firstAttribute="centerX" secondItem="nXn-ap-nM2" secondAttribute="centerX" id="K41-0Z-RFU"/>
+                            <constraint firstItem="46L-WC-qkD" firstAttribute="top" secondItem="DDU-5i-dul" secondAttribute="bottom" constant="8" symbolic="YES" id="TMc-tN-aJm"/>
+                            <constraint firstItem="DDU-5i-dul" firstAttribute="centerX" secondItem="2n7-DG-Erb" secondAttribute="centerX" id="eAl-iL-S59"/>
+                            <constraint firstItem="DDU-5i-dul" firstAttribute="centerX" secondItem="nXn-ap-nM2" secondAttribute="centerX" id="nl1-Cw-s7O"/>
+                            <constraint firstItem="DDU-5i-dul" firstAttribute="top" secondItem="2n7-DG-Erb" secondAttribute="bottom" constant="32" id="oEo-S6-CfT"/>
+                            <constraint firstItem="46L-WC-qkD" firstAttribute="centerX" secondItem="DDU-5i-dul" secondAttribute="centerX" id="y7c-8c-3YU"/>
+                            <constraint firstItem="F20-Ru-3SL" firstAttribute="centerX" secondItem="2n7-DG-Erb" secondAttribute="centerX" id="zZ2-Yl-2yp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1UK-IH-VgE"/>
                     </view>
+                    <connections>
+                        <outlet property="nativeMaxTextField" destination="2n7-DG-Erb" id="MHJ-YN-Qg0"/>
+                        <outlet property="nativeMinTextField" destination="46L-WC-qkD" id="TgR-7W-dbm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5f-XP-Thg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="820"/>
+            <point key="canvasLocation" x="975" y="835"/>
         </scene>
         <!--Native Number To Korean View Controller-->
         <scene sceneID="cQa-7g-IgJ">

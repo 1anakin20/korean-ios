@@ -26,7 +26,6 @@ class SinoNumbersOptionsViewController: UIViewController {
 	
 	override func viewWillDisappear(_ animated: Bool) {
 		super.viewWillDisappear(animated)
-		
 		// Save user preferences
 		saveUserPreferences()
 	}

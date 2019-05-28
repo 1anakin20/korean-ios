@@ -54,7 +54,7 @@ class PlayViewController: UIViewController {
 			let nativeMaxKey = nativeUserSettings.nativeMaxKey
 			let nativeMinKey = nativeUserSettings.nativeMinKey
 			// Set default values
-			NativeUserDefaults().defaults.set(100, forKey: nativeMaxKey)
+			NativeUserDefaults().defaults.set(99, forKey: nativeMaxKey)
 			NativeUserDefaults().defaults.set(1, forKey: nativeMinKey)
 		}
 	}
