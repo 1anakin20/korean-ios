@@ -150,7 +150,7 @@ In Korean, if you want to say 11, you just say TEN (= 십) + ONE (= 일). If you
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAn-iq-IUG">
-                                <rect key="frame" x="82" y="172" width="156" height="108"/>
+                                <rect key="frame" x="82" y="156" width="156" height="108"/>
                                 <state key="normal" backgroundImage="purple_shadow.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Sino-Korean numbers">
@@ -167,7 +167,7 @@ In Korean, if you want to say 11, you just say TEN (= 십) + ONE (= 일). If you
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VhZ-o1-pIT">
-                                <rect key="frame" x="82" y="288" width="156" height="108"/>
+                                <rect key="frame" x="82" y="272" width="156" height="108"/>
                                 <state key="normal" backgroundImage="Round_rectangle_bleu_shadows.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Native Korean numbers">
@@ -187,7 +187,7 @@ In Korean, if you want to say 11, you just say TEN (= 십) + ONE (= 일). If you
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lAn-iq-IUG" firstAttribute="leading" secondItem="O0Q-3u-QGX" secondAttribute="leading" constant="82" id="0pF-KI-ei7"/>
-                            <constraint firstItem="lAn-iq-IUG" firstAttribute="centerY" secondItem="aOi-c4-1kc" secondAttribute="centerY" constant="-58" id="5IZ-BE-QHd"/>
+                            <constraint firstItem="lAn-iq-IUG" firstAttribute="centerY" secondItem="aOi-c4-1kc" secondAttribute="centerY" constant="-74" id="5IZ-BE-QHd"/>
                             <constraint firstItem="VhZ-o1-pIT" firstAttribute="top" secondItem="lAn-iq-IUG" secondAttribute="bottom" constant="8" symbolic="YES" id="BpB-cd-eqM"/>
                             <constraint firstItem="VhZ-o1-pIT" firstAttribute="leading" secondItem="lAn-iq-IUG" secondAttribute="leading" id="D6v-SO-etZ"/>
                             <constraint firstItem="VhZ-o1-pIT" firstAttribute="trailing" secondItem="lAn-iq-IUG" secondAttribute="trailing" id="GCx-Z7-QyS"/>
@@ -196,6 +196,7 @@ In Korean, if you want to say 11, you just say TEN (= 십) + ONE (= 일). If you
                         <viewLayoutGuide key="safeArea" id="O0Q-3u-QGX"/>
                     </view>
                     <navigationItem key="navigationItem" id="yEw-qk-p3o"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dg2-Fa-vhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
