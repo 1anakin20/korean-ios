@@ -18,7 +18,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMp-7l-CiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2490" y="-38"/>
+            <point key="canvasLocation" x="2490" y="-64"/>
         </scene>
         <!--NativeNumbersViewControllerID-->
         <scene sceneID="giE-gj-7Vf">
@@ -26,7 +26,15 @@
                 <viewControllerPlaceholder storyboardName="NativeNumbers" referencedIdentifier="NativeNumbersViewControllerID" id="U0V-UW-oey" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0W-FX-7k2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2490" y="20"/>
+            <point key="canvasLocation" x="2490" y="-7"/>
+        </scene>
+        <!--VocabularyViewControllerID-->
+        <scene sceneID="sK8-s4-4gR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Vocabulary" referencedIdentifier="VocabularyViewControllerID" id="aYg-wl-B3V" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I41-z0-7xO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2491" y="51"/>
         </scene>
         <!--Notes View Controller-->
         <scene sceneID="zXi-Aq-G3B">
@@ -150,7 +158,7 @@ In Korean, if you want to say 11, you just say TEN (= 십) + ONE (= 일). If you
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAn-iq-IUG">
-                                <rect key="frame" x="82" y="156" width="156" height="108"/>
+                                <rect key="frame" x="82" y="114" width="156" height="108"/>
                                 <state key="normal" backgroundImage="purple_shadow.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Sino-Korean numbers">
@@ -167,7 +175,7 @@ In Korean, if you want to say 11, you just say TEN (= 십) + ONE (= 일). If you
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VhZ-o1-pIT">
-                                <rect key="frame" x="82" y="272" width="156" height="108"/>
+                                <rect key="frame" x="82" y="230" width="156" height="108"/>
                                 <state key="normal" backgroundImage="Round_rectangle_bleu_shadows.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Native Korean numbers">
@@ -183,15 +191,37 @@ In Korean, if you want to say 11, you just say TEN (= 십) + ONE (= 일). If you
                                     <segue destination="U0V-UW-oey" kind="show" id="55H-VB-e5d"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3GF-PE-V7P">
+                                <rect key="frame" x="82" y="346" width="156" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="kMN-98-hKl"/>
+                                </constraints>
+                                <state key="normal" title="Vocabulary" backgroundImage="Rectangle_green.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Vocabulary">
+                                            <attributes>
+                                                <color key="NSColor" white="0.013725385273972603" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="aYg-wl-B3V" kind="show" id="ykR-bs-RZ6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lAn-iq-IUG" firstAttribute="leading" secondItem="O0Q-3u-QGX" secondAttribute="leading" constant="82" id="0pF-KI-ei7"/>
-                            <constraint firstItem="lAn-iq-IUG" firstAttribute="centerY" secondItem="aOi-c4-1kc" secondAttribute="centerY" constant="-74" id="5IZ-BE-QHd"/>
+                            <constraint firstItem="lAn-iq-IUG" firstAttribute="centerY" secondItem="aOi-c4-1kc" secondAttribute="centerY" constant="-116" id="5IZ-BE-QHd"/>
+                            <constraint firstItem="3GF-PE-V7P" firstAttribute="top" secondItem="VhZ-o1-pIT" secondAttribute="bottom" constant="8" id="6Xo-qI-XO0"/>
                             <constraint firstItem="VhZ-o1-pIT" firstAttribute="top" secondItem="lAn-iq-IUG" secondAttribute="bottom" constant="8" symbolic="YES" id="BpB-cd-eqM"/>
                             <constraint firstItem="VhZ-o1-pIT" firstAttribute="leading" secondItem="lAn-iq-IUG" secondAttribute="leading" id="D6v-SO-etZ"/>
                             <constraint firstItem="VhZ-o1-pIT" firstAttribute="trailing" secondItem="lAn-iq-IUG" secondAttribute="trailing" id="GCx-Z7-QyS"/>
                             <constraint firstItem="lAn-iq-IUG" firstAttribute="centerX" secondItem="aOi-c4-1kc" secondAttribute="centerX" id="bPs-wE-KEK"/>
+                            <constraint firstItem="3GF-PE-V7P" firstAttribute="leading" secondItem="VhZ-o1-pIT" secondAttribute="leading" id="njX-MO-Fbe"/>
+                            <constraint firstItem="3GF-PE-V7P" firstAttribute="trailing" secondItem="VhZ-o1-pIT" secondAttribute="trailing" id="uUB-PM-HPX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O0Q-3u-QGX"/>
                     </view>
@@ -373,6 +403,7 @@ In Korean, if you want to say 11, you just say TEN (= 십) + ONE (= 일). If you
         </scene>
     </scenes>
     <resources>
+        <image name="Rectangle_green.png" width="120" height="88"/>
         <image name="Round_rectangle_bleu_shadows.png" width="148" height="108"/>
         <image name="dictionary.png" width="22.5" height="22.5"/>
         <image name="notes.png" width="18.75" height="18.75"/>

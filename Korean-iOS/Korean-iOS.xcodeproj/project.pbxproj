@@ -27,7 +27,7 @@
 		B36E9D602294DF7D006F5DC1 /* grandpa2.png in Resources */ = {isa = PBXBuildFile; fileRef = B36E9D5D2294DF7D006F5DC1 /* grandpa2.png */; };
 		B36E9D612294DF7D006F5DC1 /* grandpa3.png in Resources */ = {isa = PBXBuildFile; fileRef = B36E9D5E2294DF7D006F5DC1 /* grandpa3.png */; };
 		B379D20F2293ABA70080BCED /* images.swift in Sources */ = {isa = PBXBuildFile; fileRef = B379D20E2293ABA70080BCED /* images.swift */; };
-		B39FF0FF229DA3F500F5B1AC /* Korean_Vocabulary_by_Evita.json in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary_by_Evita.json */; };
+		B39FF0FF229DA3F500F5B1AC /* Korean_Vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary.json */; };
 		B39FF100229DA3F500F5B1AC /* lunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE21229DA3F100F5B1AC /* lunch.mp3 */; };
 		B39FF101229DA3F500F5B1AC /* hyung.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE22229DA3F100F5B1AC /* hyung.mp3 */; };
 		B39FF102229DA3F500F5B1AC /* leaf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE23229DA3F100F5B1AC /* leaf.mp3 */; };
@@ -762,6 +762,14 @@
 		B39FF3DB229DA3F600F5B1AC /* collegestudent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39FF0FC229DA3F500F5B1AC /* collegestudent.mp3 */; };
 		B39FF3DC229DA3F600F5B1AC /* toget.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39FF0FD229DA3F500F5B1AC /* toget.mp3 */; };
 		B39FF3DD229DA3F600F5B1AC /* movie.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39FF0FE229DA3F500F5B1AC /* movie.mp3 */; };
+		B39FF3E2229DA69700F5B1AC /* Vocabulary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39FF3E1229DA69700F5B1AC /* Vocabulary.storyboard */; };
+		B39FF3E6229DA6F300F5B1AC /* VocabularyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39FF3E5229DA6F300F5B1AC /* VocabularyViewController.swift */; };
+		B39FF3EA229DB15900F5B1AC /* Rectangle_green_light.png in Resources */ = {isa = PBXBuildFile; fileRef = B39FF3E9229DB15900F5B1AC /* Rectangle_green_light.png */; };
+		B39FF3EC229DB18600F5B1AC /* Rectangle_green.png in Resources */ = {isa = PBXBuildFile; fileRef = B39FF3EB229DB18500F5B1AC /* Rectangle_green.png */; };
+		B39FF3EE229DB30700F5B1AC /* EnglishToKoreanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39FF3ED229DB30700F5B1AC /* EnglishToKoreanViewController.swift */; };
+		B39FF3F0229DB31700F5B1AC /* KoreanToEnglishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39FF3EF229DB31700F5B1AC /* KoreanToEnglishViewController.swift */; };
+		B39FF3FC229DB5F100F5B1AC /* sound.png in Resources */ = {isa = PBXBuildFile; fileRef = B39FF3FB229DB5F100F5B1AC /* sound.png */; };
+		B39FF3FE229DB64100F5B1AC /* jsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39FF3FD229DB64100F5B1AC /* jsonParser.swift */; };
 		B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A94067229195AB00F4C282 /* textDefaults.swift */; };
 		B3A9534F229B1F5800072420 /* Square_Bleu_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9534E229B1F5800072420 /* Square_Bleu_Button.png */; };
 		B3A95351229B206700072420 /* NativeNumbers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A95350229B206700072420 /* NativeNumbers.storyboard */; };
@@ -819,7 +827,7 @@
 		B36E9D5D2294DF7D006F5DC1 /* grandpa2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grandpa2.png; sourceTree = "<group>"; };
 		B36E9D5E2294DF7D006F5DC1 /* grandpa3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grandpa3.png; sourceTree = "<group>"; };
 		B379D20E2293ABA70080BCED /* images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = images.swift; sourceTree = "<group>"; };
-		B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary_by_Evita.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Korean_Vocabulary_by_Evita.json; sourceTree = "<group>"; };
+		B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Korean_Vocabulary.json; sourceTree = "<group>"; };
 		B39FEE21229DA3F100F5B1AC /* lunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lunch.mp3; sourceTree = "<group>"; };
 		B39FEE22229DA3F100F5B1AC /* hyung.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hyung.mp3; sourceTree = "<group>"; };
 		B39FEE23229DA3F100F5B1AC /* leaf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = leaf.mp3; sourceTree = "<group>"; };
@@ -1554,6 +1562,14 @@
 		B39FF0FC229DA3F500F5B1AC /* collegestudent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = collegestudent.mp3; sourceTree = "<group>"; };
 		B39FF0FD229DA3F500F5B1AC /* toget.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = toget.mp3; sourceTree = "<group>"; };
 		B39FF0FE229DA3F500F5B1AC /* movie.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie.mp3; sourceTree = "<group>"; };
+		B39FF3E1229DA69700F5B1AC /* Vocabulary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vocabulary.storyboard; sourceTree = "<group>"; };
+		B39FF3E5229DA6F300F5B1AC /* VocabularyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyViewController.swift; sourceTree = "<group>"; };
+		B39FF3E9229DB15900F5B1AC /* Rectangle_green_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rectangle_green_light.png; path = ../../../../Sketch/Rectangle_green_light.png; sourceTree = "<group>"; };
+		B39FF3EB229DB18500F5B1AC /* Rectangle_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle_green.png; sourceTree = "<group>"; };
+		B39FF3ED229DB30700F5B1AC /* EnglishToKoreanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishToKoreanViewController.swift; sourceTree = "<group>"; };
+		B39FF3EF229DB31700F5B1AC /* KoreanToEnglishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToEnglishViewController.swift; sourceTree = "<group>"; };
+		B39FF3FB229DB5F100F5B1AC /* sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sound.png; path = ../../../../Sketch/sound.png; sourceTree = "<group>"; };
+		B39FF3FD229DB64100F5B1AC /* jsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonParser.swift; sourceTree = "<group>"; };
 		B3A94067229195AB00F4C282 /* textDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textDefaults.swift; sourceTree = "<group>"; };
 		B3A9534E229B1F5800072420 /* Square_Bleu_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Square_Bleu_Button.png; path = ../../../../Sketch/Square_Bleu_Button.png; sourceTree = "<group>"; };
 		B3A95350229B206700072420 /* NativeNumbers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NativeNumbers.storyboard; sourceTree = "<group>"; };
@@ -1616,6 +1632,9 @@
 		B318B3B922943A560087231C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B39FF3FB229DB5F100F5B1AC /* sound.png */,
+				B39FF3E9229DB15900F5B1AC /* Rectangle_green_light.png */,
+				B39FF3EB229DB18500F5B1AC /* Rectangle_green.png */,
 				B3A95357229B242500072420 /* Rectangle_bleu_light.png */,
 				B3A9534E229B1F5800072420 /* Square_Bleu_Button.png */,
 				B32D823B2298D3FC00B2A2C1 /* Rectangle_light_purple_shadow.png */,
@@ -1688,7 +1707,7 @@
 		B39FEE1E229DA3F100F5B1AC /* Korean_Vocabulary_by_Evita */ = {
 			isa = PBXGroup;
 			children = (
-				B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary_by_Evita.json */,
+				B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary.json */,
 				B39FEE20229DA3F100F5B1AC /* media */,
 			);
 			path = Korean_Vocabulary_by_Evita;
@@ -2438,9 +2457,29 @@
 		B39FF3DE229DA43900F5B1AC /* Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				B39FF3E3229DA6CC00F5B1AC /* Controllers */,
+				B39FF3E4229DA6D300F5B1AC /* Models */,
 				B39FEE1E229DA3F100F5B1AC /* Korean_Vocabulary_by_Evita */,
 			);
 			path = Vocabulary;
+			sourceTree = "<group>";
+		};
+		B39FF3E3229DA6CC00F5B1AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B39FF3E5229DA6F300F5B1AC /* VocabularyViewController.swift */,
+				B39FF3EF229DB31700F5B1AC /* KoreanToEnglishViewController.swift */,
+				B39FF3ED229DB30700F5B1AC /* EnglishToKoreanViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B39FF3E4229DA6D300F5B1AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B39FF3FD229DB64100F5B1AC /* jsonParser.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B3A94069229195B000F4C282 /* Models */ = {
@@ -2561,6 +2600,7 @@
 				B3DC6B35228F25D500856252 /* Main.storyboard */,
 				B3E47BE2229649BE00126BC3 /* SinoNumbers.storyboard */,
 				B3A95350229B206700072420 /* NativeNumbers.storyboard */,
+				B39FF3E1229DA69700F5B1AC /* Vocabulary.storyboard */,
 				B3DC6B3A228F25D700856252 /* LaunchScreen.storyboard */,
 				B3E47BD32295B89300126BC3 /* Controllers */,
 				B3A94069229195B000F4C282 /* Models */,
@@ -2733,6 +2773,7 @@
 				B39FF29B229DA3F600F5B1AC /* notparticularly.mp3 in Resources */,
 				B39FF220229DA3F600F5B1AC /* tolose.mp3 in Resources */,
 				B39FF38E229DA3F600F5B1AC /* tobewhite.mp3 in Resources */,
+				B39FF3EC229DB18600F5B1AC /* Rectangle_green.png in Resources */,
 				B318B3BD22943DC50087231C /* grayBackground.png in Resources */,
 				B39FF2BD229DA3F600F5B1AC /* tofry.mp3 in Resources */,
 				B39FF1AE229DA3F600F5B1AC /* police.mp3 in Resources */,
@@ -2827,6 +2868,7 @@
 				B39FF217229DA3F600F5B1AC /* cathedral.mp3 in Resources */,
 				B39FF10C229DA3F500F5B1AC /* preparation.mp3 in Resources */,
 				B39FF118229DA3F500F5B1AC /* torotate.mp3 in Resources */,
+				B39FF3EA229DB15900F5B1AC /* Rectangle_green_light.png in Resources */,
 				B39FF158229DA3F500F5B1AC /* miss.mp3 in Resources */,
 				B39FF362229DA3F600F5B1AC /* toride.mp3 in Resources */,
 				B39FF348229DA3F600F5B1AC /* mouth.mp3 in Resources */,
@@ -2879,7 +2921,7 @@
 				B39FF19E229DA3F600F5B1AC /* logic.mp3 in Resources */,
 				B39FF2DF229DA3F600F5B1AC /* tobecomebetter.mp3 in Resources */,
 				B39FF1D0229DA3F600F5B1AC /* context.mp3 in Resources */,
-				B39FF0FF229DA3F500F5B1AC /* Korean_Vocabulary_by_Evita.json in Resources */,
+				B39FF0FF229DA3F500F5B1AC /* Korean_Vocabulary.json in Resources */,
 				B39FF19C229DA3F600F5B1AC /* baby.mp3 in Resources */,
 				B39FF242229DA3F600F5B1AC /* present (1).mp3 in Resources */,
 				B39FF1BC229DA3F600F5B1AC /* tobecheap.mp3 in Resources */,
@@ -2980,6 +3022,7 @@
 				B39FF292229DA3F600F5B1AC /* doctor.mp3 in Resources */,
 				B39FF154229DA3F500F5B1AC /* overthere.mp3 in Resources */,
 				B39FF2B6229DA3F600F5B1AC /* englishlang.mp3 in Resources */,
+				B39FF3E2229DA69700F5B1AC /* Vocabulary.storyboard in Resources */,
 				B39FF3BB229DA3F600F5B1AC /* tonotdo.mp3 in Resources */,
 				B39FF213229DA3F600F5B1AC /* tobeso.mp3 in Resources */,
 				B39FF37F229DA3F600F5B1AC /* granddaughter.mp3 in Resources */,
@@ -3008,6 +3051,7 @@
 				B39FF2DD229DA3F600F5B1AC /* tennis.mp3 in Resources */,
 				B39FF38A229DA3F600F5B1AC /* koreanlanguage.mp3 in Resources */,
 				B39FF302229DA3F600F5B1AC /* friend.mp3 in Resources */,
+				B39FF3FC229DB5F100F5B1AC /* sound.png in Resources */,
 				B39FF2EA229DA3F600F5B1AC /* pharmacist.mp3 in Resources */,
 				B39FF104229DA3F500F5B1AC /* toilet.mp3 in Resources */,
 				B39FF330229DA3F600F5B1AC /* tobelieve.mp3 in Resources */,
@@ -3419,7 +3463,9 @@
 			files = (
 				B3A9535A229B364200072420 /* NativeNumberToKoreanViewController.swift in Sources */,
 				B3DC6B48228FA18400856252 /* SinoKoreanToNumberUIViewController.swift in Sources */,
+				B39FF3FE229DB64100F5B1AC /* jsonParser.swift in Sources */,
 				B3E47BE622964ABA00126BC3 /* PlayViewController.swift in Sources */,
+				B39FF3E6229DA6F300F5B1AC /* VocabularyViewController.swift in Sources */,
 				B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */,
 				B3DC6B45228F3F4800856252 /* numbers.swift in Sources */,
 				B3EE12812292FE6400A3BE4C /* SinoNumbersOptionsViewController.swift in Sources */,
@@ -3434,12 +3480,14 @@
 				B3DC6B46228F3F4800856252 /* Text.swift in Sources */,
 				B3E47BD52295B8DA00126BC3 /* NotesViewController.swift in Sources */,
 				B3EE127F2292FDE700A3BE4C /* UserSettingsDefaults.swift in Sources */,
+				B39FF3EE229DB30700F5B1AC /* EnglishToKoreanViewController.swift in Sources */,
 				B3A9535C229B365000072420 /* NativeKoreanToNumberViewController.swift in Sources */,
 				B3A95356229B211F00072420 /* NativeNumbersViewController.swift in Sources */,
 				B3DC6B32228F25D500856252 /* AppDelegate.swift in Sources */,
 				B3A9535E229B366400072420 /* NativeOptionsViewController.swift in Sources */,
 				B3D8044D229777FF005BEA77 /* DefinitionViewController.swift in Sources */,
 				B3D8044B229777F7005BEA77 /* DictionaryViewController.swift in Sources */,
+				B39FF3F0229DB31700F5B1AC /* KoreanToEnglishViewController.swift in Sources */,
 				B34E11E1229395CD00704125 /* correctOrWrong.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
