@@ -6,7 +6,6 @@
 //  Copyright © 2019 Tomas Daniel Nieto. All rights reserved.
 //
 
-/**
 import UIKit
 
 struct koreanWordsJson {
@@ -48,6 +47,3 @@ class jsonParser: NSObject {
 		return json!
 	}
 }
-
-
-*/
