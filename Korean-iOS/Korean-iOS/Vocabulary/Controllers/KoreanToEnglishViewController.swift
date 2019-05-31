@@ -12,17 +12,13 @@ class KoreanToEnglishViewController: UIViewController {
 	@IBOutlet weak var acceptButton: UIButton!
 	@IBOutlet weak var showAnswerLabel: UILabel!
 	
-	// Objects
-	let parser = jsonParser()
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 	@IBAction func acceptButtonPress(_ sender: Any) {
-		// For debuggin purposes
-		print(parser.parseJson())
+		
 	}
 	
 

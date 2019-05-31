@@ -769,7 +769,7 @@
 		B39FF3EE229DB30700F5B1AC /* EnglishToKoreanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39FF3ED229DB30700F5B1AC /* EnglishToKoreanViewController.swift */; };
 		B39FF3F0229DB31700F5B1AC /* KoreanToEnglishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39FF3EF229DB31700F5B1AC /* KoreanToEnglishViewController.swift */; };
 		B39FF3FC229DB5F100F5B1AC /* sound.png in Resources */ = {isa = PBXBuildFile; fileRef = B39FF3FB229DB5F100F5B1AC /* sound.png */; };
-		B39FF3FE229DB64100F5B1AC /* jsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39FF3FD229DB64100F5B1AC /* jsonParser.swift */; };
+		B3A5B941229ED70A005C3389 /* jsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A5B940229ED709005C3389 /* jsonParser.swift */; };
 		B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A94067229195AB00F4C282 /* textDefaults.swift */; };
 		B3A9534F229B1F5800072420 /* Square_Bleu_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9534E229B1F5800072420 /* Square_Bleu_Button.png */; };
 		B3A95351229B206700072420 /* NativeNumbers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A95350229B206700072420 /* NativeNumbers.storyboard */; };
@@ -1569,7 +1569,7 @@
 		B39FF3ED229DB30700F5B1AC /* EnglishToKoreanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishToKoreanViewController.swift; sourceTree = "<group>"; };
 		B39FF3EF229DB31700F5B1AC /* KoreanToEnglishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToEnglishViewController.swift; sourceTree = "<group>"; };
 		B39FF3FB229DB5F100F5B1AC /* sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sound.png; path = ../../../../Sketch/sound.png; sourceTree = "<group>"; };
-		B39FF3FD229DB64100F5B1AC /* jsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonParser.swift; sourceTree = "<group>"; };
+		B3A5B940229ED709005C3389 /* jsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonParser.swift; sourceTree = "<group>"; };
 		B3A94067229195AB00F4C282 /* textDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textDefaults.swift; sourceTree = "<group>"; };
 		B3A9534E229B1F5800072420 /* Square_Bleu_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Square_Bleu_Button.png; path = ../../../../Sketch/Square_Bleu_Button.png; sourceTree = "<group>"; };
 		B3A95350229B206700072420 /* NativeNumbers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NativeNumbers.storyboard; sourceTree = "<group>"; };
@@ -2477,7 +2477,7 @@
 		B39FF3E4229DA6D300F5B1AC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B39FF3FD229DB64100F5B1AC /* jsonParser.swift */,
+				B3A5B940229ED709005C3389 /* jsonParser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -3463,7 +3463,7 @@
 			files = (
 				B3A9535A229B364200072420 /* NativeNumberToKoreanViewController.swift in Sources */,
 				B3DC6B48228FA18400856252 /* SinoKoreanToNumberUIViewController.swift in Sources */,
-				B39FF3FE229DB64100F5B1AC /* jsonParser.swift in Sources */,
+				B3A5B941229ED70A005C3389 /* jsonParser.swift in Sources */,
 				B3E47BE622964ABA00126BC3 /* PlayViewController.swift in Sources */,
 				B39FF3E6229DA6F300F5B1AC /* VocabularyViewController.swift in Sources */,
 				B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */,

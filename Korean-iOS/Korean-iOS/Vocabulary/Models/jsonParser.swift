@@ -6,15 +6,27 @@
 //  Copyright © 2019 Tomas Daniel Nieto. All rights reserved.
 //
 
+/**
 import UIKit
 
-class jsonParser: NSObject {
-	struct koreanWordsJson {
-		let koreanWord: String
-		let englishWord: String
-		let sound: String
-		let position: String
+struct koreanWordsJson {
+	let koreanWord: String
+	let englishWord: String
+	let sound: String
+	let position: String
+}
+
+extension koreanWordsJson {
+	init(json: [String: String]) throws {
+		// Extract fields
+		guard let fieldsDictionary = json["fields"] as? [String] else {
+			print("Error in fieldsDictionary")
+			//return nil
+		}
 	}
+}
+
+class jsonParser: NSObject {
 	
 	func parseJson() -> Any {
 		let koreanJsonURL: String = "Korean_Vocabulary"
@@ -25,8 +37,9 @@ class jsonParser: NSObject {
 			do {
 				let fileUrl = URL(fileURLWithPath: path)
 				// Get data
-				let data = try Data(contentsOf: fileUrl, options: .mappedIfSafe)
-				json = try? JSONSerialization.jsonObject(with: data)
+				var data: Data
+				data = try Data(contentsOf: fileUrl, options: .mappedIfSafe)
+				json = try? JSONSerialization.jsonObject(with: data) as? Data
 			} catch {
 				// Error
 				print("parseJson failed")
@@ -34,11 +47,7 @@ class jsonParser: NSObject {
 		}
 		return json!
 	}
-	
-	func getKorean() {
-		let parsedJson = parseJson()
-		if let koreanWord = parsedJson["fields"] as String {
-			
-		}
-	}
 }
+
+
+*/
