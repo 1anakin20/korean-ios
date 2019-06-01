@@ -52,7 +52,7 @@
                     <navigationItem key="navigationItem" title="Native" id="dFF-c1-u5b">
                         <barButtonItem key="rightBarButtonItem" title="Options" id="X0p-bQ-MDp">
                             <connections>
-                                <segue destination="4bf-4o-xPp" kind="show" id="2NR-qb-bnA"/>
+                                <segue destination="4bf-4o-xPp" kind="show" id="COq-DP-hha"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
