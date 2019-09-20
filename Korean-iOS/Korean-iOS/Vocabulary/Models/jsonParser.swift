@@ -9,10 +9,8 @@
 import UIKit
 
 struct koreanWordsJson {
-	let koreanWord: String
-	let englishWord: String
-	let sound: String
-	let position: String
+	let notes: [Array<Any>]
+	let fields: [Array<Any>]
 }
 
 extension koreanWordsJson {

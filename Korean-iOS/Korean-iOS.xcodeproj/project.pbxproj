@@ -769,7 +769,6 @@
 		B39FF3EE229DB30700F5B1AC /* EnglishToKoreanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39FF3ED229DB30700F5B1AC /* EnglishToKoreanViewController.swift */; };
 		B39FF3F0229DB31700F5B1AC /* KoreanToEnglishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39FF3EF229DB31700F5B1AC /* KoreanToEnglishViewController.swift */; };
 		B39FF3FC229DB5F100F5B1AC /* sound.png in Resources */ = {isa = PBXBuildFile; fileRef = B39FF3FB229DB5F100F5B1AC /* sound.png */; };
-		B3A5B941229ED70A005C3389 /* jsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A5B940229ED709005C3389 /* jsonParser.swift */; };
 		B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A94067229195AB00F4C282 /* textDefaults.swift */; };
 		B3A9534F229B1F5800072420 /* Square_Bleu_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9534E229B1F5800072420 /* Square_Bleu_Button.png */; };
 		B3A95351229B206700072420 /* NativeNumbers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A95350229B206700072420 /* NativeNumbers.storyboard */; };
@@ -779,6 +778,7 @@
 		B3A9535C229B365000072420 /* NativeKoreanToNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9535B229B365000072420 /* NativeKoreanToNumberViewController.swift */; };
 		B3A9535E229B366400072420 /* NativeOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9535D229B366400072420 /* NativeOptionsViewController.swift */; };
 		B3A95360229B388900072420 /* NativeNumbersCreatorFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9535F229B388900072420 /* NativeNumbersCreatorFunctions.swift */; };
+		B3D2C26A2333251A00B331A1 /* jsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D2C2692333251A00B331A1 /* jsonParser.swift */; };
 		B3D8044B229777F7005BEA77 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D8044A229777F7005BEA77 /* DictionaryViewController.swift */; };
 		B3D8044D229777FF005BEA77 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D8044C229777FF005BEA77 /* DefinitionViewController.swift */; };
 		B3D80450229778D9005BEA77 /* KorEngDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D8044E229778D9005BEA77 /* KorEngDict.swift */; };
@@ -1569,7 +1569,6 @@
 		B39FF3ED229DB30700F5B1AC /* EnglishToKoreanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishToKoreanViewController.swift; sourceTree = "<group>"; };
 		B39FF3EF229DB31700F5B1AC /* KoreanToEnglishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToEnglishViewController.swift; sourceTree = "<group>"; };
 		B39FF3FB229DB5F100F5B1AC /* sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sound.png; path = ../../../../Sketch/sound.png; sourceTree = "<group>"; };
-		B3A5B940229ED709005C3389 /* jsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonParser.swift; sourceTree = "<group>"; };
 		B3A94067229195AB00F4C282 /* textDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textDefaults.swift; sourceTree = "<group>"; };
 		B3A9534E229B1F5800072420 /* Square_Bleu_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Square_Bleu_Button.png; path = ../../../../Sketch/Square_Bleu_Button.png; sourceTree = "<group>"; };
 		B3A95350229B206700072420 /* NativeNumbers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NativeNumbers.storyboard; sourceTree = "<group>"; };
@@ -1579,6 +1578,7 @@
 		B3A9535B229B365000072420 /* NativeKoreanToNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeKoreanToNumberViewController.swift; sourceTree = "<group>"; };
 		B3A9535D229B366400072420 /* NativeOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeOptionsViewController.swift; sourceTree = "<group>"; };
 		B3A9535F229B388900072420 /* NativeNumbersCreatorFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNumbersCreatorFunctions.swift; sourceTree = "<group>"; };
+		B3D2C2692333251A00B331A1 /* jsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonParser.swift; sourceTree = "<group>"; };
 		B3D8044A229777F7005BEA77 /* DictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
 		B3D8044C229777FF005BEA77 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		B3D8044E229778D9005BEA77 /* KorEngDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KorEngDict.swift; sourceTree = "<group>"; };
@@ -2477,7 +2477,7 @@
 		B39FF3E4229DA6D300F5B1AC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B3A5B940229ED709005C3389 /* jsonParser.swift */,
+				B3D2C2692333251A00B331A1 /* jsonParser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -3463,7 +3463,7 @@
 			files = (
 				B3A9535A229B364200072420 /* NativeNumberToKoreanViewController.swift in Sources */,
 				B3DC6B48228FA18400856252 /* SinoKoreanToNumberUIViewController.swift in Sources */,
-				B3A5B941229ED70A005C3389 /* jsonParser.swift in Sources */,
+				B3D2C26A2333251A00B331A1 /* jsonParser.swift in Sources */,
 				B3E47BE622964ABA00126BC3 /* PlayViewController.swift in Sources */,
 				B39FF3E6229DA6F300F5B1AC /* VocabularyViewController.swift in Sources */,
 				B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */,
