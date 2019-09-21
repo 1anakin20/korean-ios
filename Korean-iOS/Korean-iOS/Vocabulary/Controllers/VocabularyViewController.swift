@@ -9,11 +9,14 @@
 import UIKit
 
 class VocabularyViewController: UIViewController {
+	// Globar variables
+	var vocabularyList: [koreanWordsJson] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		vocabularyList = parseJson()
     }
     
 

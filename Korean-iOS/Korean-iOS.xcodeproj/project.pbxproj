@@ -27,6 +27,7 @@
 		B36E9D602294DF7D006F5DC1 /* grandpa2.png in Resources */ = {isa = PBXBuildFile; fileRef = B36E9D5D2294DF7D006F5DC1 /* grandpa2.png */; };
 		B36E9D612294DF7D006F5DC1 /* grandpa3.png in Resources */ = {isa = PBXBuildFile; fileRef = B36E9D5E2294DF7D006F5DC1 /* grandpa3.png */; };
 		B379D20F2293ABA70080BCED /* images.swift in Sources */ = {isa = PBXBuildFile; fileRef = B379D20E2293ABA70080BCED /* images.swift */; };
+		B38463682335451800D24D00 /* Korean_Vocabulary shorter.json in Resources */ = {isa = PBXBuildFile; fileRef = B38463672335451800D24D00 /* Korean_Vocabulary shorter.json */; };
 		B39FF0FF229DA3F500F5B1AC /* Korean_Vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary.json */; };
 		B39FF100229DA3F500F5B1AC /* lunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE21229DA3F100F5B1AC /* lunch.mp3 */; };
 		B39FF101229DA3F500F5B1AC /* hyung.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE22229DA3F100F5B1AC /* hyung.mp3 */; };
@@ -827,6 +828,7 @@
 		B36E9D5D2294DF7D006F5DC1 /* grandpa2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grandpa2.png; sourceTree = "<group>"; };
 		B36E9D5E2294DF7D006F5DC1 /* grandpa3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grandpa3.png; sourceTree = "<group>"; };
 		B379D20E2293ABA70080BCED /* images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = images.swift; sourceTree = "<group>"; };
+		B38463672335451800D24D00 /* Korean_Vocabulary shorter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Korean_Vocabulary shorter.json"; path = "../../../../../../Playground/quickTests.playground/Resources/Korean_Vocabulary shorter.json"; sourceTree = "<group>"; };
 		B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Korean_Vocabulary.json; sourceTree = "<group>"; };
 		B39FEE21229DA3F100F5B1AC /* lunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lunch.mp3; sourceTree = "<group>"; };
 		B39FEE22229DA3F100F5B1AC /* hyung.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hyung.mp3; sourceTree = "<group>"; };
@@ -1708,6 +1710,7 @@
 			isa = PBXGroup;
 			children = (
 				B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary.json */,
+				B38463672335451800D24D00 /* Korean_Vocabulary shorter.json */,
 				B39FEE20229DA3F100F5B1AC /* media */,
 			);
 			path = Korean_Vocabulary_by_Evita;
@@ -3393,6 +3396,7 @@
 				B39FF211229DA3F600F5B1AC /* man.mp3 in Resources */,
 				B39FF1F5229DA3F600F5B1AC /* torunaway.mp3 in Resources */,
 				B3E47BEC22970BD100126BC3 /* Bleu_rounded_rectangle.png in Resources */,
+				B38463682335451800D24D00 /* Korean_Vocabulary shorter.json in Resources */,
 				B3D8045B22977AD9005BEA77 /* dictionary.png in Resources */,
 				B39FF2DC229DA3F600F5B1AC /* tobescary.mp3 in Resources */,
 				B39FF21B229DA3F600F5B1AC /* totouch.mp3 in Resources */,
