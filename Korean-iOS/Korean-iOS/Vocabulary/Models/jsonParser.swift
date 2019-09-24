@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct koreanWordsJson: Decodable {
+struct koreanWordsJson: Codable {
 	let fields: [String]
 }
 

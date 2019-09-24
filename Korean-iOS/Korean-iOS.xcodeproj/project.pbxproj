@@ -28,6 +28,7 @@
 		B36E9D612294DF7D006F5DC1 /* grandpa3.png in Resources */ = {isa = PBXBuildFile; fileRef = B36E9D5E2294DF7D006F5DC1 /* grandpa3.png */; };
 		B379D20F2293ABA70080BCED /* images.swift in Sources */ = {isa = PBXBuildFile; fileRef = B379D20E2293ABA70080BCED /* images.swift */; };
 		B38463682335451800D24D00 /* Korean_Vocabulary shorter.json in Resources */ = {isa = PBXBuildFile; fileRef = B38463672335451800D24D00 /* Korean_Vocabulary shorter.json */; };
+		B384636A2335B54B00D24D00 /* RandomWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38463692335B54B00D24D00 /* RandomWords.swift */; };
 		B39FF0FF229DA3F500F5B1AC /* Korean_Vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary.json */; };
 		B39FF100229DA3F500F5B1AC /* lunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE21229DA3F100F5B1AC /* lunch.mp3 */; };
 		B39FF101229DA3F500F5B1AC /* hyung.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE22229DA3F100F5B1AC /* hyung.mp3 */; };
@@ -829,6 +830,7 @@
 		B36E9D5E2294DF7D006F5DC1 /* grandpa3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grandpa3.png; sourceTree = "<group>"; };
 		B379D20E2293ABA70080BCED /* images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = images.swift; sourceTree = "<group>"; };
 		B38463672335451800D24D00 /* Korean_Vocabulary shorter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Korean_Vocabulary shorter.json"; path = "../../../../../../Playground/quickTests.playground/Resources/Korean_Vocabulary shorter.json"; sourceTree = "<group>"; };
+		B38463692335B54B00D24D00 /* RandomWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWords.swift; sourceTree = "<group>"; };
 		B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Korean_Vocabulary.json; sourceTree = "<group>"; };
 		B39FEE21229DA3F100F5B1AC /* lunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lunch.mp3; sourceTree = "<group>"; };
 		B39FEE22229DA3F100F5B1AC /* hyung.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hyung.mp3; sourceTree = "<group>"; };
@@ -1608,6 +1610,7 @@
 		B3E47BEB22970BD100126BC3 /* Bleu_rounded_rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bleu_rounded_rectangle.png; sourceTree = "<group>"; };
 		B3EE127E2292FDE700A3BE4C /* UserSettingsDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsDefaults.swift; sourceTree = "<group>"; };
 		B3EE12802292FE6400A3BE4C /* SinoNumbersOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinoNumbersOptionsViewController.swift; sourceTree = "<group>"; };
+		B3FF109B2339550B00AF5DCB /* Korean-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Korean-iOS.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2481,6 +2484,7 @@
 			isa = PBXGroup;
 			children = (
 				B3D2C2692333251A00B331A1 /* jsonParser.swift */,
+				B38463692335B54B00D24D00 /* RandomWords.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2599,6 +2603,7 @@
 		B3DC6B30228F25D500856252 /* Korean-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				B3FF109B2339550B00AF5DCB /* Korean-iOS.entitlements */,
 				B3DC6B31228F25D500856252 /* AppDelegate.swift */,
 				B3DC6B35228F25D500856252 /* Main.storyboard */,
 				B3E47BE2229649BE00126BC3 /* SinoNumbers.storyboard */,
@@ -3465,6 +3470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B384636A2335B54B00D24D00 /* RandomWords.swift in Sources */,
 				B3A9535A229B364200072420 /* NativeNumberToKoreanViewController.swift in Sources */,
 				B3DC6B48228FA18400856252 /* SinoKoreanToNumberUIViewController.swift in Sources */,
 				B3D2C26A2333251A00B331A1 /* jsonParser.swift in Sources */,
@@ -3646,16 +3652,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Korean-iOS/Korean-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = J4ACLAX7WB;
 				INFOPLIST_FILE = "Korean-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Korean-iOS.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3665,16 +3674,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Korean-iOS/Korean-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = J4ACLAX7WB;
 				INFOPLIST_FILE = "Korean-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Korean-iOS.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
