@@ -9,9 +9,11 @@
 
 import Foundation
 
-func randomWords() {
+func randomWords() -> [Int : koreanWordsJson] {
 	let arrayOfWords = parseJson()
-	let firstArray = arrayOfWords.randomElement()
-	let secondArray = arrayOfWords.randomElement()
-	let thirdArray = arrayOfWords.randomElement()
+	var randomWordsDic: [Int : koreanWordsJson] = [:]
+	for i in 0..<3 {
+		randomWordsDic[i] = arrayOfWords.randomElement()
+	}
+	return randomWordsDic
 }
