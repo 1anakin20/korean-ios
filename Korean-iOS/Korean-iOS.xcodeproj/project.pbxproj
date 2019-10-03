@@ -15,6 +15,10 @@
 		B32D8234229882E700B2A2C1 /* Round_rectangle_bleu_shadows.png in Resources */ = {isa = PBXBuildFile; fileRef = B32D8233229882E600B2A2C1 /* Round_rectangle_bleu_shadows.png */; };
 		B32D8236229883F800B2A2C1 /* purple_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = B32D8235229883F800B2A2C1 /* purple_shadow.png */; };
 		B32D823C2298D3FC00B2A2C1 /* Rectangle_light_purple_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = B32D823B2298D3FC00B2A2C1 /* Rectangle_light_purple_shadow.png */; };
+		B33851852344DF4F00608DDE /* KoreanToEnglishSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33851842344DF4F00608DDE /* KoreanToEnglishSwiftUI.swift */; };
+		B342827F234512F500B39C8B /* Rounded_blue_rectangle_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = B342827E234512F500B39C8B /* Rounded_blue_rectangle_shadow.png */; };
+		B342828223451FBF00B39C8B /* PropertiesSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B342828123451FBF00B39C8B /* PropertiesSwiftUI.swift */; };
+		B342828423467F8800B39C8B /* VocabularyFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B342828323467F8800B39C8B /* VocabularyFunctions.swift */; };
 		B34B386C229452EF000BF459 /* media-offline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B34B386B229452EF000BF459 /* media-offline.jpg */; };
 		B34E11D822938C6C00704125 /* sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34E11D722938C6C00704125 /* sounds.swift */; };
 		B34E11DD2293935A00704125 /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = B34E11DC2293935A00704125 /* incorrect.wav */; };
@@ -817,6 +821,10 @@
 		B32D8233229882E600B2A2C1 /* Round_rectangle_bleu_shadows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round_rectangle_bleu_shadows.png; sourceTree = "<group>"; };
 		B32D8235229883F800B2A2C1 /* purple_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple_shadow.png; sourceTree = "<group>"; };
 		B32D823B2298D3FC00B2A2C1 /* Rectangle_light_purple_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rectangle_light_purple_shadow.png; path = ../../../../Sketch/Rectangle_light_purple_shadow.png; sourceTree = "<group>"; };
+		B33851842344DF4F00608DDE /* KoreanToEnglishSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToEnglishSwiftUI.swift; sourceTree = "<group>"; };
+		B342827E234512F500B39C8B /* Rounded_blue_rectangle_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rounded_blue_rectangle_shadow.png; sourceTree = "<group>"; };
+		B342828123451FBF00B39C8B /* PropertiesSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesSwiftUI.swift; sourceTree = "<group>"; };
+		B342828323467F8800B39C8B /* VocabularyFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyFunctions.swift; sourceTree = "<group>"; };
 		B34B386B229452EF000BF459 /* media-offline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "media-offline.jpg"; sourceTree = "<group>"; };
 		B34E11D722938C6C00704125 /* sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sounds.swift; sourceTree = "<group>"; };
 		B34E11DC2293935A00704125 /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incorrect.wav; sourceTree = "<group>"; };
@@ -1637,6 +1645,7 @@
 		B318B3B922943A560087231C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B342827E234512F500B39C8B /* Rounded_blue_rectangle_shadow.png */,
 				B39FF3FB229DB5F100F5B1AC /* sound.png */,
 				B39FF3E9229DB15900F5B1AC /* Rectangle_green_light.png */,
 				B39FF3EB229DB18500F5B1AC /* Rectangle_green.png */,
@@ -1665,6 +1674,14 @@
 				B3DC6B43228F3F4800856252 /* numbers.swift */,
 			);
 			path = "original source code";
+			sourceTree = "<group>";
+		};
+		B342828023451FA000B39C8B /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				B342828123451FBF00B39C8B /* PropertiesSwiftUI.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		B34B386322944AEE000BF459 /* grandpa */ = {
@@ -2476,6 +2493,7 @@
 				B39FF3E5229DA6F300F5B1AC /* VocabularyViewController.swift */,
 				B39FF3EF229DB31700F5B1AC /* KoreanToEnglishViewController.swift */,
 				B39FF3ED229DB30700F5B1AC /* EnglishToKoreanViewController.swift */,
+				B33851842344DF4F00608DDE /* KoreanToEnglishSwiftUI.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -2485,6 +2503,7 @@
 			children = (
 				B3D2C2692333251A00B331A1 /* jsonParser.swift */,
 				B38463692335B54B00D24D00 /* RandomWords.swift */,
+				B342828323467F8800B39C8B /* VocabularyFunctions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2610,6 +2629,7 @@
 				B3A95350229B206700072420 /* NativeNumbers.storyboard */,
 				B39FF3E1229DA69700F5B1AC /* Vocabulary.storyboard */,
 				B3DC6B3A228F25D700856252 /* LaunchScreen.storyboard */,
+				B342828023451FA000B39C8B /* SwiftUI */,
 				B3E47BD32295B89300126BC3 /* Controllers */,
 				B3A94069229195B000F4C282 /* Models */,
 				B300628A229C97AC00299DC1 /* Numbers */,
@@ -3285,6 +3305,7 @@
 				B39FF2E5229DA3F600F5B1AC /* relatives.mp3 in Resources */,
 				B39FF376229DA3F600F5B1AC /* brothers.mp3 in Resources */,
 				B39FF288229DA3F600F5B1AC /* aisle.mp3 in Resources */,
+				B342827F234512F500B39C8B /* Rounded_blue_rectangle_shadow.png in Resources */,
 				B39FF105229DA3F500F5B1AC /* cellphone.mp3 in Resources */,
 				B39FF358229DA3F600F5B1AC /* owner.mp3 in Resources */,
 				B39FF115229DA3F500F5B1AC /* how.mp3 in Resources */,
@@ -3475,6 +3496,7 @@
 				B3DC6B48228FA18400856252 /* SinoKoreanToNumberUIViewController.swift in Sources */,
 				B3D2C26A2333251A00B331A1 /* jsonParser.swift in Sources */,
 				B3E47BE622964ABA00126BC3 /* PlayViewController.swift in Sources */,
+				B342828423467F8800B39C8B /* VocabularyFunctions.swift in Sources */,
 				B39FF3E6229DA6F300F5B1AC /* VocabularyViewController.swift in Sources */,
 				B3A94068229195AB00F4C282 /* textDefaults.swift in Sources */,
 				B3DC6B45228F3F4800856252 /* numbers.swift in Sources */,
@@ -3485,6 +3507,7 @@
 				B3006288229C91DD00299DC1 /* NativeUserDefaults.swift in Sources */,
 				B34E11D822938C6C00704125 /* sounds.swift in Sources */,
 				B306ADC2229045A100F1E8C1 /* SinoNumbersCreatorFunctions.swift in Sources */,
+				B33851852344DF4F00608DDE /* KoreanToEnglishSwiftUI.swift in Sources */,
 				B3DC6B4A228FA1A300856252 /* SinoNumberToKoreanUIViewController.swift in Sources */,
 				B3DC6B34228F25D500856252 /* SinoNumbersViewController.swift in Sources */,
 				B3DC6B46228F3F4800856252 /* Text.swift in Sources */,
@@ -3498,6 +3521,7 @@
 				B3D8044D229777FF005BEA77 /* DefinitionViewController.swift in Sources */,
 				B3D8044B229777F7005BEA77 /* DictionaryViewController.swift in Sources */,
 				B39FF3F0229DB31700F5B1AC /* KoreanToEnglishViewController.swift in Sources */,
+				B342828223451FBF00B39C8B /* PropertiesSwiftUI.swift in Sources */,
 				B34E11E1229395CD00704125 /* correctOrWrong.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3583,7 +3607,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3638,7 +3662,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -3657,7 +3681,7 @@
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = J4ACLAX7WB;
 				INFOPLIST_FILE = "Korean-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3679,7 +3703,7 @@
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = J4ACLAX7WB;
 				INFOPLIST_FILE = "Korean-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
