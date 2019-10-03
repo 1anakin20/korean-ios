@@ -11,25 +11,34 @@ import UIKit
 class KoreanToEnglishViewController: UIViewController {
 	@IBOutlet weak var acceptButton: UIButton!
 	@IBOutlet weak var showAnswerLabel: UILabel!
+	@IBOutlet weak var image: UIImageView!
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+		// Do any additional setup after loading the view.
+		image.isHidden = true
+		showRandomWords()
+		
+	}
+	
 	@IBAction func acceptButtonPress(_ sender: Any) {
 		
 	}
 	
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+	@IBAction func soundButtonPress(_ sender: Any) {
+		
+	}
+	
+	func showRandomWords() {
+		let showRandomWords = randomWords()
+		let rand = randomNumber(minInt: 0, maxInt: 2)
+		showAnswerLabel.text = String(showRandomWords[rand]!.fields[0])
+		print(showRandomWords)
+	}
+	
+	func checkAnswer() {
+		
+	}
+	
 }
