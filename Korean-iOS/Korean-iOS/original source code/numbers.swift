@@ -25,7 +25,7 @@ let koreanDigitNames = [0:"영",
 	] as [Int : String]
 
 func randomNumber(minInt: Int, maxInt: Int) -> Int {
-	let randomNum = Int.random(in: minInt...maxInt) // 100 for debuggin purposes
+	let randomNum = Int.random(in: minInt...maxInt)
 	return randomNum
 }
 

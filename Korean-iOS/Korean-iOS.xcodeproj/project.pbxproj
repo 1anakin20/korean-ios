@@ -19,6 +19,7 @@
 		B342827F234512F500B39C8B /* Rounded_blue_rectangle_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = B342827E234512F500B39C8B /* Rounded_blue_rectangle_shadow.png */; };
 		B342828223451FBF00B39C8B /* PropertiesSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B342828123451FBF00B39C8B /* PropertiesSwiftUI.swift */; };
 		B342828423467F8800B39C8B /* VocabularyFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B342828323467F8800B39C8B /* VocabularyFunctions.swift */; };
+		B34282862347975800B39C8B /* KoreanToEnglishVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34282852347975800B39C8B /* KoreanToEnglishVariables.swift */; };
 		B34B386C229452EF000BF459 /* media-offline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B34B386B229452EF000BF459 /* media-offline.jpg */; };
 		B34E11D822938C6C00704125 /* sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34E11D722938C6C00704125 /* sounds.swift */; };
 		B34E11DD2293935A00704125 /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = B34E11DC2293935A00704125 /* incorrect.wav */; };
@@ -825,6 +826,7 @@
 		B342827E234512F500B39C8B /* Rounded_blue_rectangle_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rounded_blue_rectangle_shadow.png; sourceTree = "<group>"; };
 		B342828123451FBF00B39C8B /* PropertiesSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesSwiftUI.swift; sourceTree = "<group>"; };
 		B342828323467F8800B39C8B /* VocabularyFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyFunctions.swift; sourceTree = "<group>"; };
+		B34282852347975800B39C8B /* KoreanToEnglishVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToEnglishVariables.swift; sourceTree = "<group>"; };
 		B34B386B229452EF000BF459 /* media-offline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "media-offline.jpg"; sourceTree = "<group>"; };
 		B34E11D722938C6C00704125 /* sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sounds.swift; sourceTree = "<group>"; };
 		B34E11DC2293935A00704125 /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incorrect.wav; sourceTree = "<group>"; };
@@ -2504,6 +2506,7 @@
 				B3D2C2692333251A00B331A1 /* jsonParser.swift */,
 				B38463692335B54B00D24D00 /* RandomWords.swift */,
 				B342828323467F8800B39C8B /* VocabularyFunctions.swift */,
+				B34282852347975800B39C8B /* KoreanToEnglishVariables.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -3513,6 +3516,7 @@
 				B3DC6B46228F3F4800856252 /* Text.swift in Sources */,
 				B3E47BD52295B8DA00126BC3 /* NotesViewController.swift in Sources */,
 				B3EE127F2292FDE700A3BE4C /* UserSettingsDefaults.swift in Sources */,
+				B34282862347975800B39C8B /* KoreanToEnglishVariables.swift in Sources */,
 				B39FF3EE229DB30700F5B1AC /* EnglishToKoreanViewController.swift in Sources */,
 				B3A9535C229B365000072420 /* NativeKoreanToNumberViewController.swift in Sources */,
 				B3A95356229B211F00072420 /* NativeNumbersViewController.swift in Sources */,

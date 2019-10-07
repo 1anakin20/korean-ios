@@ -8,13 +8,12 @@
 
 import Foundation
 
-func chooseRandomWord() {
-    let showRandomWords = randomWords()
-    let rand = randomNumber(minInt: 0, maxInt: 2)
-    print(showRandomWords)
-}
+var showRandomWordsDic: [Int : koreanWordsJson] = [:]
 
-func checkAnswer(buttonPressed: Int) -> Bool {
-    let randomWordsDic = randomWords()
-    if(buttonPressed == )
+func chooseRandomText() -> [Int] {
+    var randomArrayInt: [Int] = []
+    for _ in randomArrayInt {
+        randomArrayInt.append(randomNumber(minInt: 0, maxInt: 2))
+    }
+    return randomArrayInt
 }
