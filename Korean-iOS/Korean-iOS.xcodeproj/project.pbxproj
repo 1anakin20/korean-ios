@@ -34,6 +34,7 @@
 		B379D20F2293ABA70080BCED /* images.swift in Sources */ = {isa = PBXBuildFile; fileRef = B379D20E2293ABA70080BCED /* images.swift */; };
 		B38463682335451800D24D00 /* Korean_Vocabulary shorter.json in Resources */ = {isa = PBXBuildFile; fileRef = B38463672335451800D24D00 /* Korean_Vocabulary shorter.json */; };
 		B384636A2335B54B00D24D00 /* RandomWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38463692335B54B00D24D00 /* RandomWords.swift */; };
+		B3977AA423560B59009F4AEB /* KoreanToEnglishHostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3977AA323560B59009F4AEB /* KoreanToEnglishHostViewController.swift */; };
 		B39FF0FF229DA3F500F5B1AC /* Korean_Vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary.json */; };
 		B39FF100229DA3F500F5B1AC /* lunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE21229DA3F100F5B1AC /* lunch.mp3 */; };
 		B39FF101229DA3F500F5B1AC /* hyung.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39FEE22229DA3F100F5B1AC /* hyung.mp3 */; };
@@ -841,6 +842,7 @@
 		B379D20E2293ABA70080BCED /* images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = images.swift; sourceTree = "<group>"; };
 		B38463672335451800D24D00 /* Korean_Vocabulary shorter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Korean_Vocabulary shorter.json"; path = "../../../../../../Playground/quickTests.playground/Resources/Korean_Vocabulary shorter.json"; sourceTree = "<group>"; };
 		B38463692335B54B00D24D00 /* RandomWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWords.swift; sourceTree = "<group>"; };
+		B3977AA323560B59009F4AEB /* KoreanToEnglishHostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanToEnglishHostViewController.swift; sourceTree = "<group>"; };
 		B39FEE1F229DA3F100F5B1AC /* Korean_Vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Korean_Vocabulary.json; sourceTree = "<group>"; };
 		B39FEE21229DA3F100F5B1AC /* lunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lunch.mp3; sourceTree = "<group>"; };
 		B39FEE22229DA3F100F5B1AC /* hyung.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hyung.mp3; sourceTree = "<group>"; };
@@ -2496,6 +2498,7 @@
 				B39FF3EF229DB31700F5B1AC /* KoreanToEnglishViewController.swift */,
 				B39FF3ED229DB30700F5B1AC /* EnglishToKoreanViewController.swift */,
 				B33851842344DF4F00608DDE /* KoreanToEnglishSwiftUI.swift */,
+				B3977AA323560B59009F4AEB /* KoreanToEnglishHostViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -3514,6 +3517,7 @@
 				B3DC6B4A228FA1A300856252 /* SinoNumberToKoreanUIViewController.swift in Sources */,
 				B3DC6B34228F25D500856252 /* SinoNumbersViewController.swift in Sources */,
 				B3DC6B46228F3F4800856252 /* Text.swift in Sources */,
+				B3977AA423560B59009F4AEB /* KoreanToEnglishHostViewController.swift in Sources */,
 				B3E47BD52295B8DA00126BC3 /* NotesViewController.swift in Sources */,
 				B3EE127F2292FDE700A3BE4C /* UserSettingsDefaults.swift in Sources */,
 				B34282862347975800B39C8B /* KoreanToEnglishVariables.swift in Sources */,

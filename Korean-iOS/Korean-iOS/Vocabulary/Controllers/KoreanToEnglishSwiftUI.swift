@@ -10,14 +10,15 @@ import SwiftUI
 import Combine
 
 struct KoreanToEnglishSwiftUI: View {
-	@Published var KoreanToEnglishData = koreanToEnglishVariables
+//	@ObservedObject var KoreanToEnglishData = koreanToEnglishVariables()
+	
 	
 	var body: some View {
 		VStack(spacing: 30)  {
 			Text("Label")
-				.offset(y: 250)
+			.offset(y: 250)
 			Spacer()
-			Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+			Button(action: {}) {
 				Text("First answer")
 					.modifier(RoundRectangleButton())
 			}
@@ -31,8 +32,13 @@ struct KoreanToEnglishSwiftUI: View {
 			}
 		}
 		.padding(.bottom, 70)
+//		.onAppear() {
+//			assingValues()
+//
+//		}
 	}
 }
+
 
 struct KoreanToEnglishSwiftUI_Previews: PreviewProvider {
 	static var previews: some View {

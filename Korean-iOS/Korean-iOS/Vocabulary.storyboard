@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,13 +21,13 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Korean To English">
                                             <attributes>
-                                                <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="Ux3-HN-df2" kind="show" id="cOl-XJ-2el"/>
+                                    <segue destination="tnk-fY-u0q" kind="show" id="fCc-km-qbQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGB-wK-ZOu">
@@ -59,6 +58,39 @@
             </objects>
             <point key="canvasLocation" x="-84.375" y="60.2112676056338"/>
         </scene>
+        <!--Korean To English Host View Controller-->
+        <scene sceneID="tjt-cE-DRM">
+            <objects>
+                <viewController id="tnk-fY-u0q" customClass="KoreanToEnglishHostViewController" customModule="Korean_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AdJ-je-ykQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LV5-WL-JGx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="ZlM-Be-A9x" kind="embed" id="7uU-BX-gn3"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="yVy-BC-QOc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B2c-uZ-SsX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZa-EZ-Azw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="-558"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="w5X-es-ImJ">
+            <objects>
+                <hostingController id="ZlM-Be-A9x" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fm4-6t-Lf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1873" y="-559"/>
+        </scene>
         <!--Korean To English View Controller-->
         <scene sceneID="1fr-6Q-kwQ">
             <objects>
@@ -68,12 +100,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dRv-Pv-Jes">
-                                <rect key="frame" x="16" y="260" width="230" height="34"/>
+                                <rect key="frame" x="16" y="216" width="230" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFH-lb-gV2">
-                                <rect key="frame" x="254" y="260" width="50" height="30"/>
+                                <rect key="frame" x="254" y="216" width="50" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="250" constant="49" id="D1b-SR-gwT"/>
                                 </constraints>
@@ -84,7 +116,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54M-e2-Ezv">
-                                <rect key="frame" x="139" y="190" width="42" height="21"/>
+                                <rect key="frame" x="139" y="146" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="d3m-dh-7R2"/>
                                 </constraints>
@@ -93,10 +125,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grandma1.png" translatesAutoresizingMaskIntoConstraints="NO" id="aAc-4A-zck">
-                                <rect key="frame" x="75" y="44" width="170" height="138"/>
+                                <rect key="frame" x="75" y="0.0" width="170" height="138"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8S3-dW-qfN">
-                                <rect key="frame" x="257" y="208" width="44" height="44"/>
+                                <rect key="frame" x="257" y="164" width="44" height="44"/>
                                 <state key="normal" image="sound.png"/>
                                 <connections>
                                     <action selector="soundButtonPress:" destination="Ux3-HN-df2" eventType="touchUpInside" id="rOS-nx-Fs0"/>
@@ -132,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0yI-eX-xiO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885" y="-289.43661971830988"/>
+            <point key="canvasLocation" x="1943" y="525"/>
         </scene>
         <!--English To Korean View Controller-->
         <scene sceneID="RGK-HH-gcn">
@@ -187,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuU-1z-c3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885" y="411"/>
+            <point key="canvasLocation" x="885" y="525"/>
         </scene>
     </scenes>
     <resources>

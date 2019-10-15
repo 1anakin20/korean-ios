@@ -27,14 +27,24 @@ import Combine
 class koreanToEnglishVariables: ObservableObject {
 	var dic: [Int : koreanWordsJson]
 	var randomTextArray: [Int]
-	var labelVocabularyKorean: String
-	// Crash?!
-	var firstButton: String = ""
+	@Published var labelVocabularyKorean: String
+	//			= String((dic[randomTextArray[0]]?.fields[0])!)
+	@Published var firstButtonKorean: String = ""
 	
-	init() {
-		self.dic = randomWords()
-		self.randomTextArray = chooseRandomText()
-		self.labelVocabularyKorean = String((dic[randomTextArray[0]]?.fields[0])!)
-		self.firstButton = String((dic[randomTextArray[1]]?.fields[1])!)
+	init(dic: [Int : koreanWordsJson]? = nil, randomTextArray: [Int]? = nil, labelVocabularyKorean: String? = nil) {
+		self.dic = dic!
+		self.randomTextArray = randomTextArray!
+		self.labelVocabularyKorean = labelVocabularyKorean!
+		//String((dic[randomTextArray[0]]?.fields[0])!)
+		// Crash?!
+		//		firstButtonKorean = String((dic[randomTextArray[1]]?.fields[1])!)
 	}
+}
+
+func assingValues() {
+	let dic = randomWords()
+	let randomTextArray = chooseRandomText()
+	let labelVocabularyKorean = String((dic[randomTextArray[0]]?.fields[0])!)
+	//   firstButton = String((dic[randomTextArray[1]].fields[1]))
+	koreanToEnglishVariables.init(dic: dic, randomTextArray: randomTextArray, labelVocabularyKorean: labelVocabularyKorean)
 }
